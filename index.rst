@@ -2,15 +2,14 @@
 | |AGID_logo_carta_intestata| |
 +-----------------------------+
 
-######################################################
-Specifiche Attuative del Nodo dei Pagamenti-SPC v. 3.0
-######################################################
+###########################################################
+Specifiche Attuative del Nodo dei Pagamenti-SPC v. 2.2 Beta
+###########################################################
 
 
-   _docs/DEFINIZIONI_E_ACRONIMI.rst
-   _docs/INTRODUZIONE.rst
-   _docs/SEZIONE_I.rst
-
+_docs/DEFINIZIONI_E_ACRONIMI.rst
+_docs/INTRODUZIONE.rst
+_docs/SEZIONE_I.rst
 
 
 .. |AGID_logo_carta_intestata| image:: _docs/media/header.png
