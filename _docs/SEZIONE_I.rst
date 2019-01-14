@@ -6,8 +6,10 @@
 | **SEZIONE I – FUNZIONAMENTO GENERALE DEL SISTEMA** |
 +----------------------------------------------------+
 
+  .. toctree::
+     :numbered:
 
-SEZIONE I – Funzionamento generale del sistema
+Funzionamento generale del sistema
 ==============================================
 
 Obiettivo strategico del Sistema pagoPA è quello di facilitare e diffondere gli strumenti di pagamento elettronici, in particolare, quelli riferiti
