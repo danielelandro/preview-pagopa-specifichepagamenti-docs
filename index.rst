@@ -10,8 +10,9 @@ Sezione I
 =========
 
 .. toctree::
-	:numbered:
-	:continue:
+	:numbered:   
+	:maxdepth: 2
+    :caption: Indice dei contenuti
 
 	Etichetta1 <foo.rst>
 	Etichetta2 <bar.rst>
@@ -20,7 +21,6 @@ Sezione II
 ==========
 .. toctree::
 	:numbered:
-	:continue:
 
 	Etichetta4 <baz.rst>
 
