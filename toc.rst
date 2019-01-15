@@ -1,7 +1,9 @@
 .. toctree::
+	:numbered:
 
 Sezione I
 *********
+
 .. toctree::
 	:numbered:
 
@@ -25,6 +27,9 @@ sistema.
 
 Sezione II
 **********
+
+.. toctree::
+	:numbered:
 
 Funzionamento generale del sistema 3
 ====================================
