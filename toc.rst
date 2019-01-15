@@ -15,6 +15,5 @@ Sezione II
 ==========
 .. toctree::
 	:numbered:
-	:continue:
 
 	baz.rst
