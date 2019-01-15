@@ -2,7 +2,6 @@
 | |AGID_logo_carta_intestata| |
 +-----------------------------+
 
-
 Introduzione alla versione 2.2
 ******************************
 
