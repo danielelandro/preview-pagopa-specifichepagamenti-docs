@@ -1,3 +1,6 @@
+.. toctree::
+	:numbered:
+
 Funzionamento generale del sistema
 ==================================
 
