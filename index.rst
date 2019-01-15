@@ -18,6 +18,7 @@ Sezione II
 ==========
     .. toctree::
        :numbered:
+       :continue:
 
         Etichetta3 <foo.rst>
         Etichetta4 <bar.rst>
