@@ -1,7 +1,3 @@
-.. toctree::
-	:numbered:
-    :maxdepth: 2
-    :caption: Indice dei contenuti
 
 Sezione I
 =========
@@ -16,5 +12,6 @@ Sezione II
 
 .. toctree::
 	:numbered:
+	:continue:
 
 	baz.rst
