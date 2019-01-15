@@ -23,3 +23,4 @@ Sezione II
        :continue:
 
         Etichetta3 <baz.rst>
+        Etichetta4 <baz.rst>
