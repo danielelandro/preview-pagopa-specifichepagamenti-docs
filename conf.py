@@ -281,4 +281,3 @@ texinfo_documents = [
 ]
 
 numfig = True
-
