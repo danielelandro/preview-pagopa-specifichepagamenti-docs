@@ -12,8 +12,8 @@ Sezione I
     .. toctree::
        :numbered:
 
-        Etichetta1 foo
-        Etichetta2  bar
+        Etichetta1 <foo.rst>
+        Etichetta2 <bar.rst>
 
 Sezione II
 ----------
@@ -22,4 +22,4 @@ Sezione II
        :numbered:
        :continue:
 
-        baz		
+        Etichetta3 <baz.rst>
