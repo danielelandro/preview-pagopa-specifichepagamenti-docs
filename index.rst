@@ -6,24 +6,11 @@
 Specifiche Attuative del Nodo dei Pagamenti-SPC v. 2.2 Beta
 ###########################################################
 
-:caption: Indice dei contenuti
+.. highlights::
 
+pagoPA è un sistema per rendere più semplici, sicuri e trasparenti tutti i pagamenti verso la Pubblica Amministrazione. pagoPA è adottato obbligatoriamente da tutte le Pubbliche Amministrazioni e dagli altri soggetti obbligati per legge e da un numero crescente di Banche e di istituti di pagamento (Prestatori di Servizi a Pagamento - PSP).
 
-Sezione I
-=========
+pagoPA è previsto in attuazione dell’art. 5 del CAD (Codice dell’Amministrazione Digitale) e dal D.L. 179/2012. 
 
-.. toctree::
-	:numbered:   
-	:maxdepth: 2
-
-
-	Etichetta1 <foo.rst>
-	Etichetta2 <bar.rst>
-
-Sezione II
-==========
-.. toctree::
-	:numbered:
-
-	Etichetta3 <baz.rst>
+.. include:: toc.rst
 
