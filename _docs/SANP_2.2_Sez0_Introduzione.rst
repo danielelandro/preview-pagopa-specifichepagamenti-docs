@@ -58,8 +58,7 @@ L’introduzione del Sistema pagoPA porta benefici per i cittadini, la Pubblica 
 
 Il Sistema pagoPA è stato realizzato dall’Agenzia per l’Italia Digitale (AgID) in attuazione dell’art. 5 del CAD , il quale precisa che “Al fine di
 dare attuazione a quanto disposto dall'articolo 5, l’Agenzia per l’Italia Digitale (già DigitPA) mette a disposizione, attraverso il Sistema pubblico
-di connettività, una piattaforma tecnologica per l'interconnessione e l’interoperabilità tra le pubbliche amministrazioni e i prestatori di servizi di
-pagamento abilitati, al fine di assicurare, attraverso strumenti condivisi di riconoscimento unificati, l'autenticazione certa dei soggetti
+di connettività, una piattaforma tecnologica per l'interconnessione e l’interoperabilità tra le pubbliche amministrazioni e i prestatori di servizi di pagamento abilitati, al fine di assicurare, attraverso strumenti condivisi di riconoscimento unificati, l'autenticazione certa dei soggetti
 interessati all'operazione in tutta la gestione del processo di pagamento”.
 
 IL CAD inoltre ha affidato all’Agenzia per l’Italia Digitale, sentita la Banca d'Italia, il compito di definire le Linee guida per la specifica delle
