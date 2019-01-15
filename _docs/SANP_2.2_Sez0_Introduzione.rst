@@ -13,49 +13,49 @@ L’introduzione del Sistema pagoPA porta benefici per i cittadini, la Pubblica 
 
 -  Benefici per i Cittadini
 
--  trasparenza e minori costi
+	-  trasparenza e minori costi
 
--  possibilità di usufruire dei servizi pubblici in maniera più immediata
+	-  possibilità di usufruire dei servizi pubblici in maniera più immediata
 
--  semplificazione del processo di pagamento che consente di usufruire del maggior numero di canali e servizi possibili
+	-  semplificazione del processo di pagamento che consente di usufruire del maggior numero di canali e servizi possibili
 
--  standardizzazione dell’esperienza utente per i pagamenti verso la Pubblica Amministrazione
+	-  standardizzazione dell’esperienza utente per i pagamenti verso la Pubblica Amministrazione
 
--  standardizzazione delle comunicazioni di avviso di pagamento, riconoscibile su tutto il territorio nazionale
+	-  standardizzazione delle comunicazioni di avviso di pagamento, riconoscibile su tutto il territorio nazionale
 
 -  Benefici per la Pubblica Amministrazione:
 
    -  riduzione dei tempi di incasso attraverso l’accredito delle somme direttamente sui conti dell’Ente Beneficiario entro il giorno successivo al
       pagamento
 
--  riduzione dei costi di gestione del contante
+	-  riduzione dei costi di gestione del contante
 
--  miglioramento dell’efficienza della gestione degli incassi attraverso la riconciliazione automatica
+	-  miglioramento dell’efficienza della gestione degli incassi attraverso la riconciliazione automatica
 
--  superamento della necessità bandire gare per l’acquisizione di servizi di incasso, con conseguenti riduzioni di inefficienze e costi di commissione
+	-  superamento della necessità bandire gare per l’acquisizione di servizi di incasso, con conseguenti riduzioni di inefficienze e costi di commissione
    fuori mercato
 
--  riduzione dei costi e tempi di sviluppo delle applicazioni online (riuso soluzioni)
+	-  riduzione dei costi e tempi di sviluppo delle applicazioni online (riuso soluzioni)
 
--  eliminazione della necessità di molteplici accordi di riscossione
+	-  eliminazione della necessità di molteplici accordi di riscossione
 
--  maggiori controlli automatici per evitare i doppi pagamenti e le conseguenti procedure di rimborso
+	-  maggiori controlli automatici per evitare i doppi pagamenti e le conseguenti procedure di rimborso
 
 -  Benefici per i Prestatori di Servizi di Pagamento:
 
--  Eliminazione necessità molteplici accordi con le PA
+	-  Eliminazione necessità molteplici accordi con le PA
 
--  Riduzione dei costi di gestione del contante
+	-  Riduzione dei costi di gestione del contante
 
--  Miglioramento dei servizi resi
+	-  Miglioramento dei servizi resi
 
--  Fidelizzazione della clientela
+	-  Fidelizzazione della clientela
 
 -  Benefici per il Sistema Paese:
 
--  completa aderenza agli standard della PSD2
+	-  completa aderenza agli standard della PSD2
 
--  incentivazione dell’utilizzo dei pagamenti elettronici a livello nazionale attraverso l’utilizzo con le transazioni verso la Pubblica
+	-  incentivazione dell’utilizzo dei pagamenti elettronici a livello nazionale attraverso l’utilizzo con le transazioni verso la Pubblica
    Amministrazione, che consente di stimolare il mercato e favorire, a tendere, una maggiore concorrenza nel mercato dei servizi di pagamento ed un
    livellamento delle commissioni
 
@@ -105,3 +105,7 @@ pubblicazione, saranno contrassegnati dalla seguente dicitura:
 
 
 .. |AGID_logo_carta_intestata| image:: media/AGID_logo.png
+
+.. |image0| image:: media/image1.png
+   :width: 3.93701in
+   :height: 0.89306in
