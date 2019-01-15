@@ -4,7 +4,7 @@
 
 
 Definizioni e Acronimi
-======================
+**********************
 
 +--------------------------------------------------------------------------+--------------------------------------------------------------------------+
 | **Acronimo**                                                             | **Descrizione**                                                          |
@@ -239,5 +239,3 @@ Definizioni e Acronimi
 
 
 .. |AGID_logo_carta_intestata| image:: _docs/media/AGID_logo.png
-   :width: 5.90551in
-   :height: 1.30277in

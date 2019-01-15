@@ -4,7 +4,7 @@
 
 
 Introduzione alla versione 2.2
-==============================
+******************************
 
 Il sistema dei pagamenti elettronici a favore della Pubblica Amministrazione, il Sistema pagoPA, garantisce agli Utilizzatori finali (cittadini e
 imprese) di effettuare pagamenti elettronici alla Pubblica Amministrazione in modo sicuro e affidabile, semplice, in totale trasparenza nei costi di
@@ -106,5 +106,3 @@ pubblicazione, saranno contrassegnati dalla seguente dicitura:
 
 
 .. |AGID_logo_carta_intestata| image:: _docs/media/AGID_logo.png
-   :width: 5.90551in
-   :height: 1.30277in

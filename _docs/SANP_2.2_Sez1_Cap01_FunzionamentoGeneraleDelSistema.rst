@@ -7,6 +7,10 @@
 | SEZIONE I – FUNZIONAMENTO GENERALE DEL SISTEMA |
 +------------------------------------------------+
 
+
+FUNZIONAMENTO GENERALE DEL SISTEMA
+==================================
+
 Obiettivo strategico del Sistema pagoPA è quello di facilitare e diffondere gli strumenti di pagamento elettronici, in particolare, quelli riferiti
 agli incassi della Pubblica Amministrazione, che da un lato associno, nel rispetto delle situazioni già in essere, benefici ai fini della gestione dei
 servizi di tesoreria, dall’altro consentano alla Pubblica Amministrazione di dotarsi di nuove modalità di rapporto con i cittadini e le imprese per
@@ -339,5 +343,3 @@ fornito in modalità nativa per le due principali tecnologie presenti sul mercat
 
 
 .. |AGID_logo_carta_intestata| image:: _docs/media/AGID_logo.png
-   :width: 5.90551in
-   :height: 1.30277in
