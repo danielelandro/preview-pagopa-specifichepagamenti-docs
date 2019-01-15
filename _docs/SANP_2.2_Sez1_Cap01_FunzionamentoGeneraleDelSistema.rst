@@ -52,7 +52,7 @@ nel diagramma di Figura 1, nel quale l’infrastruttura costituita dal NodoSPC s
 |                                                                          | Si distingue infine il **soggetto versante**, ovvero come colui accede   |
 |                                                                          | ai servizi informatici dal Prestatore dei Servizi di Pagamento, e        |
 |                                                                          | dispone il pagamento a favore dell’Ente Creditore.                       |
-+==========================================================================+==========================================================================+
++--------------------------------------------------------------------------+--------------------------------------------------------------------------+
 | **Ente Creditore**                                                       | Soggetto a cui l’utilizzatore finale richiede il servizio e che nei      |
 |                                                                          | confronti del quali si configura come “creditore” per le somme a vario   |
 | **(Creditor)**                                                           | titolo da questi dovute.                                                 |
