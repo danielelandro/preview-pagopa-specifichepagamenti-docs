@@ -1,8 +1,9 @@
 .. toctree::
-	:numbered:
 
 Sezione I
 *********
+.. toctree::
+	:numbered:
 
 Funzionamento generale del sistema 1
 ====================================
