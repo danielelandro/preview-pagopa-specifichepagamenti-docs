@@ -25,8 +25,7 @@ L’introduzione del Sistema pagoPA porta benefici per i cittadini, la Pubblica 
 
 -  Benefici per la Pubblica Amministrazione:
 
-	-  riduzione dei tempi di incasso attraverso l’accredito delle somme direttamente sui conti dell’Ente Beneficiario entro il giorno successivo al
-      pagamento
+	-  riduzione dei tempi di incasso attraverso l’accredito delle somme direttamente sui conti dell’Ente Beneficiario entro il giorno successivo al pagamento
 
 	-  riduzione dei costi di gestione del contante
 
@@ -54,8 +53,7 @@ L’introduzione del Sistema pagoPA porta benefici per i cittadini, la Pubblica 
 
 	-  completa aderenza agli standard della PSD2
 
-	-  incentivazione dell’utilizzo dei pagamenti elettronici a livello nazionale attraverso l’utilizzo con le transazioni verso la Pubblica
-   Amministrazione, che consente di stimolare il mercato e favorire, a tendere, una maggiore concorrenza nel mercato dei servizi di pagamento ed un
+	-  incentivazione dell’utilizzo dei pagamenti elettronici a livello nazionale attraverso l’utilizzo con le transazioni verso la Pubblica Amministrazione, che consente di stimolare il mercato e favorire, a tendere, una maggiore concorrenza nel mercato dei servizi di pagamento ed un
    livellamento delle commissioni
 
 Il Sistema pagoPA è stato realizzato dall’Agenzia per l’Italia Digitale (AgID) in attuazione dell’art. 5 del CAD , il quale precisa che “Al fine di
