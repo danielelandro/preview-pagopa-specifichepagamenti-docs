@@ -10,12 +10,12 @@ Sezione I
 	:maxdepth: 2
 
 
-	Etichetta1 <foo.rst>
-	Etichetta2 <bar.rst>
+	foo.rst
+	bar.rst
 
 Sezione II
 ==========
 .. toctree::
 	:numbered:
 
-	Etichetta3 <baz.rst>
+	baz.rst
