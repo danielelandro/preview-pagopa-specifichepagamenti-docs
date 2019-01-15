@@ -14,7 +14,7 @@ Sezione I
 	bar.rst
 
 Sezione II
-==========
+----------
 
 .. toctree::
 	:numbered: 3
