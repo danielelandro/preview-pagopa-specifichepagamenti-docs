@@ -6,8 +6,6 @@
 Sezione I
 =========
 
-
-
 	foo.rst
 	bar.rst
 
