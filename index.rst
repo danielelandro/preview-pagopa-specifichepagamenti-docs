@@ -11,8 +11,8 @@ Specifiche Attuative del Nodo dei Pagamenti-SPC v. 2.2 Beta
    :caption: Indice dei contenuti
    :maxdepth: 2
 
-   _docs/SANP_2.2_Sez0_DefinizioniAcronimi.rst
-   _docs/SANP_2.2_Sez0_Introduzione.rst
+    Definizioni e acronimi <_docs/SANP_2.2_Sez0_DefinizioniAcronimi.rst>
+    Introduzione <_docs/SANP_2.2_Sez0_Introduzione.rst>
    _docs/SANP_2.2_Sez1_Cap01_FunzionamentoGeneraleDelSistema.rst
 
 
