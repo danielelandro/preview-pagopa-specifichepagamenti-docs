@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*-
 
 # -- PROJECT Variables ----------------------------------------------------
-settings_project_name = 'ANPR'
+settings_project_name = "Specifiche Attuative del Nodo dei Pagamenti-SPC"
 settings_copyright_copyleft = 'AgID - Team Digitale'
 settings_editor_name = 'AgID - Team Digitale'
 settings_doc_version = 'version: latest'
 settings_doc_release = 'version: latest'
-settings_basename = 'ANPRdoc'
-settings_file_name = 'ANPRdoc'
+settings_basename = 'pagopa-specifichepagamenti-docs'
+settings_file_name = 'pagopa-specifichepagamenti-docs'
 
 # -- No need to change below here
 
@@ -123,6 +123,7 @@ html_theme_options = {
     # This option can be used with docs-italia-theme to customise how the versions "badge" is shown:
     # 'False': default (alabaster) badge | 'True': custom (italia) badge
     'custom_versions_badge': 'True',
+    'collapse_navigation': 'True'
 }
 # -- ReadTheDoc requirements and local template generation---------------------
 
@@ -280,5 +281,4 @@ texinfo_documents = [
 ]
 
 numfig = True
-
 
