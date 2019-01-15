@@ -7,8 +7,9 @@ Specifiche Attuative del Nodo dei Pagamenti-SPC v. 2.2 Beta
 ###########################################################
 
 .. toctree::
-   :caption: Indice dei contenuti
-   :maxdepth: 2
+	:numbered:
+   	:caption: Indice dei contenuti
+   	:maxdepth: 1
 
     Definizioni e acronimi <_docs/SANP_2.2_Sez0_DefinizioniAcronimi.rst>
     Introduzione <_docs/SANP_2.2_Sez0_Introduzione.rst>
