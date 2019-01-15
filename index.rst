@@ -6,7 +6,8 @@
 Specifiche Attuative del Nodo dei Pagamenti-SPC v. 2.2 Beta
 ###########################################################
 
-    :caption: Indice dei contenuti
+:caption: Indice dei contenuti
+
 
 Sezione I
 =========
