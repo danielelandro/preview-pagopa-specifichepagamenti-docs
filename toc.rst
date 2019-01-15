@@ -7,10 +7,10 @@
 Sezione I
 =========
 
-	.. include:: foo.rst
-	.. include:: bar.rst
+	foo.rst
+	bar.rst
 
 Sezione II
 ==========
 
-	.. include:: baz.rst
+	baz.rst
