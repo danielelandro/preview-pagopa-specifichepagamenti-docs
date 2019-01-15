@@ -12,5 +12,8 @@ pagoPA è un sistema per rendere più semplici, sicuri e trasparenti tutti i pag
 
 pagoPA è previsto in attuazione dell’art. 5 del CAD (Codice dell’Amministrazione Digitale) e dal D.L. 179/2012. 
 
+Questa pagina raccoglie la documentazione tecnica del sistema.
+
+
 .. include:: toc.rst
 
