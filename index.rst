@@ -6,17 +6,19 @@
 Specifiche Attuative del Nodo dei Pagamenti-SPC v. 2.2 Beta
 ###########################################################
 
+Sezione I
+=========
     .. toctree::
        :numbered:
-
-
-
-Sezione I
----------
 
         Etichetta1 <foo.rst>
         Etichetta2 <bar.rst>
 
 Sezione II
-----------
+==========
+    .. toctree::
+       :numbered:
+
+        Etichetta3 <foo.rst>
+        Etichetta4 <bar.rst>
 
