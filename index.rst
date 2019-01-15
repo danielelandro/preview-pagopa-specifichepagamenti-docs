@@ -20,6 +20,5 @@ Sezione II
        :numbered:
        :continue:
 
-        Etichetta3 <foo.rst>
-        Etichetta4 <bar.rst>
+        Etichetta4 <baz.rst>
 
