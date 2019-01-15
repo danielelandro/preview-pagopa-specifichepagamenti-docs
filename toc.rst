@@ -7,10 +7,10 @@
 Sezione I
 ---------
 
-	./foo.rst
-	./bar.rst
+	foo.rst
+	bar.rst
 
 Sezione II
 ----------
 
-	./baz.rst
+	baz.rst
