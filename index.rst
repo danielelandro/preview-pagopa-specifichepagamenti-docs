@@ -15,3 +15,6 @@ pagoPA è previsto in attuazione dell’art. 5 del CAD (Codice dell’Amministra
 
 .. include:: toc.rst
 
+.. |AGID_logo_carta_intestata.png| image:: media/header.png
+   :width: 5.90551in
+   :height: 1.30277in
