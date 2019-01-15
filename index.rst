@@ -14,7 +14,7 @@ Sezione I
 
         Etichetta1 <foo.rst>
         Etichetta2 <bar.rst>
-
+        
 Sezione II
 ----------
 
