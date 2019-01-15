@@ -25,15 +25,14 @@ L’introduzione del Sistema pagoPA porta benefici per i cittadini, la Pubblica 
 
 -  Benefici per la Pubblica Amministrazione:
 
-   -  riduzione dei tempi di incasso attraverso l’accredito delle somme direttamente sui conti dell’Ente Beneficiario entro il giorno successivo al
+	-  riduzione dei tempi di incasso attraverso l’accredito delle somme direttamente sui conti dell’Ente Beneficiario entro il giorno successivo al
       pagamento
 
 	-  riduzione dei costi di gestione del contante
 
 	-  miglioramento dell’efficienza della gestione degli incassi attraverso la riconciliazione automatica
 
-	-  superamento della necessità bandire gare per l’acquisizione di servizi di incasso, con conseguenti riduzioni di inefficienze e costi di commissione
-   fuori mercato
+	-  superamento della necessità bandire gare per l’acquisizione di servizi di incasso, con conseguenti riduzioni di inefficienze e costi di commissione fuori mercato
 
 	-  riduzione dei costi e tempi di sviluppo delle applicazioni online (riuso soluzioni)
 
