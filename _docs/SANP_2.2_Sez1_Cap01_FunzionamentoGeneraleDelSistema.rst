@@ -36,9 +36,9 @@ Il modello di funzionamento del Sistema fa riferimento ai principi del *Four Cor
 nel diagramma di Figura 1, nel quale l’infrastruttura costituita dal NodoSPC si pone quale facilitatore del colloquio i vari soggetti coinvolti:
 
 +--------------------------------------------------------------------------+--------------------------------------------------------------------------+
-| **Utilizzatore finale**                                                  | Rappresenta il privato cittadino, professionista, impresa, che effettua  |
+|  **Utilizzatore finale**                                                 | Rappresenta il privato cittadino, professionista, impresa, che effettua  |
 |                                                                          | pagamenti a favore della Pubblica Amministrazione con modalità           |
-| **(Debtor)**                                                             | informatiche. L’identità dell’utilizzatore finale può essere determinata |
+|  **(Debtor)**                                                            | informatiche. L’identità dell’utilizzatore finale può essere determinata |
 |                                                                          | con modalità informatiche (tipicamente SPID) per accedere ai servizi     |
 |                                                                          | informatici dell’Ente Creditore.                                         |
 |                                                                          |                                                                          |
