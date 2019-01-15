@@ -8,7 +8,7 @@
 +------------------------------------------------+
 
 
-FUNZIONAMENTO GENERALE DEL SISTEMA
+Funzionamento generale del sistema
 ==================================
 
 Obiettivo strategico del Sistema pagoPA è quello di facilitare e diffondere gli strumenti di pagamento elettronici, in particolare, quelli riferiti
@@ -342,4 +342,4 @@ Lo SDK è disponibile in download, previa sottoscrizione di un apposito *disclai
 fornito in modalità nativa per le due principali tecnologie presenti sul mercato: IOS e Android.
 
 
-.. |AGID_logo_carta_intestata| image:: _docs/media/AGID_logo.png
+.. |AGID_logo_carta_intestata| image:: media/AGID_logo.png

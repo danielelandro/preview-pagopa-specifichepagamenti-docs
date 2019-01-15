@@ -238,4 +238,4 @@ Definizioni e Acronimi
 
 
 
-.. |AGID_logo_carta_intestata| image:: _docs/media/AGID_logo.png
+.. |AGID_logo_carta_intestata| image:: media/AGID_logo.png
