@@ -1,3 +1,4 @@
+.. toctree::
 
 Sezione I
 =========
@@ -11,7 +12,6 @@ Sezione II
 ==========
 
 .. toctree::
-	:numbered:
-	:continue:
+	:numbered: 3
 
 	baz.rst
