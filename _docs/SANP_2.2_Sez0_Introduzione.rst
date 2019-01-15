@@ -101,6 +101,6 @@ pubblicazione, saranno contrassegnati dalla seguente dicitura:
 
 .. |AGID_logo_carta_intestata| image:: media/AGID_logo.png
 
-.. |image0| image:: media/image1.png
+.. |image0| image:: media_Introduzione/image1.png
    :width: 3.93701in
    :height: 0.89306in
