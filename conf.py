@@ -7,8 +7,8 @@ settings_copyright_copyleft = 'AgID - Team Digitale'
 settings_editor_name = 'AgID - Team Digitale'
 settings_doc_version = 'version: latest'
 settings_doc_release = 'version: latest'
-settings_basename = 'pagopa-specifichepagamenti-docs'
-settings_file_name = 'pagopa-specifichepagamenti-docs'
+settings_basename = 'preview-pagopa-specifichepagamenti-docs'
+settings_file_name = 'preview-pagopa-specifichepagamenti-docs'
 
 # -- No need to change below here
 
@@ -281,3 +281,4 @@ texinfo_documents = [
 ]
 
 numfig = True
+
