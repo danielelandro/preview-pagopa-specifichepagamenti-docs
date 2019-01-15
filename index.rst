@@ -18,6 +18,7 @@ Sezione I
 Sezione II
 ==========
 .. toctree::
+	:numbered:
 
 	Etichetta4 <baz.rst>
 
