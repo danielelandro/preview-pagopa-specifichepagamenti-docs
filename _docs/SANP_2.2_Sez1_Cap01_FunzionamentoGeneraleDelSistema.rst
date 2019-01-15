@@ -7,9 +7,6 @@
 | **SEZIONE I – FUNZIONAMENTO GENERALE DEL SISTEMA** |
 +----------------------------------------------------+
 
-.. toctree::
-   :numbered:
-   :maxdepth: 2
 
 ==================================
 Funzionamento generale del sistema

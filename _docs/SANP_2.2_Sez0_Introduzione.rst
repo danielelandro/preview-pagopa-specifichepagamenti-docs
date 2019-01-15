@@ -53,9 +53,8 @@ L’introduzione del Sistema pagoPA porta benefici per i cittadini, la Pubblica 
 
 	-  completa aderenza agli standard della PSD2
 
-	-  incentivazione dell’utilizzo dei pagamenti elettronici a livello nazionale attraverso l’utilizzo con le transazioni verso la Pubblica Amministrazione, che consente di stimolare il mercato e favorire, a tendere, una maggiore concorrenza nel mercato dei servizi di pagamento ed un
-   livellamento delle commissioni
-
+	-  incentivazione dell’utilizzo dei pagamenti elettronici a livello nazionale attraverso l’utilizzo con le transazioni verso la Pubblica Amministrazione, che consente di stimolare il mercato e favorire, a tendere, una maggiore concorrenza nel mercato dei servizi di pagamento ed un livellamento delle commissioni
+	   
 Il Sistema pagoPA è stato realizzato dall’Agenzia per l’Italia Digitale (AgID) in attuazione dell’art. 5 del CAD , il quale precisa che “Al fine di
 dare attuazione a quanto disposto dall'articolo 5, l’Agenzia per l’Italia Digitale (già DigitPA) mette a disposizione, attraverso il Sistema pubblico
 di connettività, una piattaforma tecnologica per l'interconnessione e l’interoperabilità tra le pubbliche amministrazioni e i prestatori di servizi di pagamento abilitati, al fine di assicurare, attraverso strumenti condivisi di riconoscimento unificati, l'autenticazione certa dei soggetti
