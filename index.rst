@@ -13,7 +13,8 @@ Specifiche Attuative del Nodo dei Pagamenti-SPC v. 2.2 Beta
 
     Definizioni e acronimi <_docs/SANP_2.2_Sez0_DefinizioniAcronimi.rst>
     Introduzione <_docs/SANP_2.2_Sez0_Introduzione.rst>
-   _docs/SANP_2.2_Sez1_Cap01_FunzionamentoGeneraleDelSistema.rst
+    Sezione I
+    _docs/SANP_2.2_Sez1_Cap01_FunzionamentoGeneraleDelSistema.rst
 
 
 .. |AGID_logo_carta_intestata| image:: _docs/media/AGID_logo.png
