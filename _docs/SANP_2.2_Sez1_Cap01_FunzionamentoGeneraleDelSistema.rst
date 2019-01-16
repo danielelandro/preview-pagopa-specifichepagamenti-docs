@@ -347,11 +347,9 @@ fornito in modalità nativa per le due principali tecnologie presenti sul mercat
     Vedi http://www.indicepa.gov.it/
 
 .. [2]
-    Aggiornato con DM 20 marzo 2013, recante "Modifiche all'allegato A del decreto 8 luglio 2005 del Ministro per l'innovazione e le tecnologie,
-   recante: «Requisiti tecnici e i diversi livelli per l'accessibilità agli strumenti informatici»" pubblicato in GU Serie Generale n.217 del
-   16-9-2013
+    Aggiornato con DM 20 marzo 2013, recante "Modifiche all'allegato A del decreto 8 luglio 2005 del Ministro per l'innovazione e le tecnologie, recante: 
+    «Requisiti tecnici e i diversi livelli per l'accessibilità agli strumenti informatici»" pubblicato in GU Serie Generale n.217 del 16-9-2013
 
- 
 .. |AGID_logo_carta_intestata| image:: media/AGID_logo.png
 .. |image1| image:: media_Cap01_FunzionamentoGeneraleDelSistema/image1.png
    :width: 3.39472in
