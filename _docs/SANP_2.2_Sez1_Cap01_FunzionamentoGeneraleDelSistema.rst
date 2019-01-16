@@ -88,8 +88,7 @@ nel diagramma di Figura 1, nel quale l’infrastruttura costituita dal NodoSPC s
 |                                                                          | tesoriere.                                                               |
 +--------------------------------------------------------------------------+--------------------------------------------------------------------------+
 
-|image2|
-
+|image1|
 **Figura 1 – EPC Four Corners model**
 
 Il perfezionamento delle operazioni tra banche avviene attraverso il sistema di regolamento e compensazione (CSM) utilizzando le regole SEPA.
@@ -136,8 +135,7 @@ Nell’ambito delle relazioni tra l’utilizzatore finale e gli Enti Creditori, 
 associata a procedimenti amministrativi che prevedono il rispetto di regole per il loro corretto svolgimento (ad esempio: la verifica di prerequisiti)
 e seguono un preordinato “Ciclo di vita” che può essere schematizzato nella Figura 2.
 
-|image3|
-
+|image2|
 **Figura 2 - Ciclo di vita del pagamento**
 
 1. L’esigenza del pagamento può nascere in due modi che innescano processi di business differenti:
@@ -344,3 +342,9 @@ fornito in modalità nativa per le due principali tecnologie presenti sul mercat
 
 
 .. |AGID_logo_carta_intestata| image:: media/AGID_logo.png
+.. |image1| image:: media_Cap01_FunzionamentoGeneraleDelSistema/image1.png
+   :width: 3.39472in
+   :height: 2.11312in
+.. |image2| image:: media_Cap01_FunzionamentoGeneraleDelSistema/image2.png
+   :width: 6.43198in
+   :height: 0.93413in
