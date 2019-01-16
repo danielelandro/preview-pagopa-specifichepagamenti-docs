@@ -7,6 +7,8 @@
 | **SEZIONE I – FUNZIONAMENTO GENERALE DEL SISTEMA** |
 +----------------------------------------------------+
 
+SEZIONE I
+*********
 
 ==================================
 Funzionamento generale del sistema
