@@ -89,6 +89,7 @@ nel diagramma di Figura 1, nel quale l’infrastruttura costituita dal NodoSPC s
 +--------------------------------------------------------------------------+--------------------------------------------------------------------------+
 
 |image1|
+
 **Figura 1 – EPC Four Corners model**
 
 Il perfezionamento delle operazioni tra banche avviene attraverso il sistema di regolamento e compensazione (CSM) utilizzando le regole SEPA.
@@ -136,6 +137,7 @@ associata a procedimenti amministrativi che prevedono il rispetto di regole per 
 e seguono un preordinato “Ciclo di vita” che può essere schematizzato nella Figura 2.
 
 |image2|
+
 **Figura 2 - Ciclo di vita del pagamento**
 
 1. L’esigenza del pagamento può nascere in due modi che innescano processi di business differenti:
