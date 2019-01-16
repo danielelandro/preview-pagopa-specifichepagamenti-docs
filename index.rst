@@ -20,8 +20,8 @@ pagoPA è un sistema per rendere più semplici, sicuri e trasparenti tutti i pag
 	_docs/SANP_2.2_Sez0_DefinizioniAcronimi.rst
 	_docs/SANP_2.2_Sez0_Introduzione.rst
 	_docs/SANP_2.2_Sez1_Cap01_FunzionamentoGeneraleDelSistema.rst
-	_docs/SANP_2.2_Sez2_Cap01_RegoleFunzionamento.rst
-	_docs/SANP_2.2_Sez2_Cap02_GestionePosizioneDebitoria.rst
+	_docs/SANP_2.2_Sez2_Cap02_RegoleFunzionamento.rst
+	_docs/SANP_2.2_Sez2_Cap03_GestionePosizioneDebitoria.rst
 
 
 .. |AGID_logo_carta_intestata| image:: _docs/media/AGID_logo.png
