@@ -1,9 +1,5 @@
-+-----------------------------+
-| |AGID_logo_carta_intestata| |
-+-----------------------------+
-
 Introduzione alla versione 2.2
-------------------------------
+==============================
 
 Il sistema dei pagamenti elettronici a favore della Pubblica Amministrazione, il Sistema pagoPA, garantisce agli Utilizzatori finali (cittadini e
 imprese) di effettuare pagamenti elettronici alla Pubblica Amministrazione in modo sicuro e affidabile, semplice, in totale trasparenza nei costi di
@@ -13,51 +9,56 @@ L’introduzione del Sistema pagoPA porta benefici per i cittadini, la Pubblica 
 
 -  Benefici per i Cittadini
 
-	-  trasparenza e minori costi
+   -  trasparenza e minori costi
 
-	-  possibilità di usufruire dei servizi pubblici in maniera più immediata
+   -  possibilità di usufruire dei servizi pubblici in maniera più immediata
 
-	-  semplificazione del processo di pagamento che consente di usufruire del maggior numero di canali e servizi possibili
+   -  semplificazione del processo di pagamento che consente di usufruire del maggior numero di canali e servizi possibili
 
-	-  standardizzazione dell’esperienza utente per i pagamenti verso la Pubblica Amministrazione
+   -  standardizzazione dell’esperienza utente per i pagamenti verso la Pubblica Amministrazione
 
-	-  standardizzazione delle comunicazioni di avviso di pagamento, riconoscibile su tutto il territorio nazionale
+   -  standardizzazione delle comunicazioni di avviso di pagamento, riconoscibile su tutto il territorio nazionale
 
 -  Benefici per la Pubblica Amministrazione:
 
-	-  riduzione dei tempi di incasso attraverso l’accredito delle somme direttamente sui conti dell’Ente Beneficiario entro il giorno successivo al pagamento
+   -  riduzione dei tempi di incasso attraverso l’accredito delle somme direttamente sui conti dell’Ente Beneficiario entro il giorno successivo al
+      pagamento
 
-	-  riduzione dei costi di gestione del contante
+   -  riduzione dei costi di gestione del contante
 
-	-  miglioramento dell’efficienza della gestione degli incassi attraverso la riconciliazione automatica
+   -  miglioramento dell’efficienza della gestione degli incassi attraverso la riconciliazione automatica
 
-	-  superamento della necessità bandire gare per l’acquisizione di servizi di incasso, con conseguenti riduzioni di inefficienze e costi di commissione fuori mercato
+   -  superamento della necessità bandire gare per l’acquisizione di servizi di incasso, con conseguenti riduzioni di inefficienze e costi di
+      commissione fuori mercato
 
-	-  riduzione dei costi e tempi di sviluppo delle applicazioni online (riuso soluzioni)
+   -  riduzione dei costi e tempi di sviluppo delle applicazioni online (riuso soluzioni)
 
-	-  eliminazione della necessità di molteplici accordi di riscossione
+   -  eliminazione della necessità di molteplici accordi di riscossione
 
-	-  maggiori controlli automatici per evitare i doppi pagamenti e le conseguenti procedure di rimborso
+   -  maggiori controlli automatici per evitare i doppi pagamenti e le conseguenti procedure di rimborso
 
 -  Benefici per i Prestatori di Servizi di Pagamento:
 
-	-  Eliminazione necessità molteplici accordi con le PA
+   -  Eliminazione necessità molteplici accordi con le PA
 
-	-  Riduzione dei costi di gestione del contante
+   -  Riduzione dei costi di gestione del contante
 
-	-  Miglioramento dei servizi resi
+   -  Miglioramento dei servizi resi
 
-	-  Fidelizzazione della clientela
+   -  Fidelizzazione della clientela
 
 -  Benefici per il Sistema Paese:
 
-	-  completa aderenza agli standard della PSD2
+   -  completa aderenza agli standard della PSD2
 
-	-  incentivazione dell’utilizzo dei pagamenti elettronici a livello nazionale attraverso l’utilizzo con le transazioni verso la Pubblica Amministrazione, che consente di stimolare il mercato e favorire, a tendere, una maggiore concorrenza nel mercato dei servizi di pagamento ed un livellamento delle commissioni
-	   
+   -  incentivazione dell’utilizzo dei pagamenti elettronici a livello nazionale attraverso l’utilizzo con le transazioni verso la Pubblica
+      Amministrazione, che consente di stimolare il mercato e favorire, a tendere, una maggiore concorrenza nel mercato dei servizi di pagamento ed un
+      livellamento delle commissioni.
+
 Il Sistema pagoPA è stato realizzato dall’Agenzia per l’Italia Digitale (AgID) in attuazione dell’art. 5 del CAD , il quale precisa che “Al fine di
 dare attuazione a quanto disposto dall'articolo 5, l’Agenzia per l’Italia Digitale (già DigitPA) mette a disposizione, attraverso il Sistema pubblico
-di connettività, una piattaforma tecnologica per l'interconnessione e l’interoperabilità tra le pubbliche amministrazioni e i prestatori di servizi di pagamento abilitati, al fine di assicurare, attraverso strumenti condivisi di riconoscimento unificati, l'autenticazione certa dei soggetti
+di connettività, una piattaforma tecnologica per l'interconnessione e l’interoperabilità tra le pubbliche amministrazioni e i prestatori di servizi di
+pagamento abilitati, al fine di assicurare, attraverso strumenti condivisi di riconoscimento unificati, l'autenticazione certa dei soggetti
 interessati all'operazione in tutta la gestione del processo di pagamento”.
 
 IL CAD inoltre ha affidato all’Agenzia per l’Italia Digitale, sentita la Banca d'Italia, il compito di definire le Linee guida per la specifica delle
@@ -94,13 +95,9 @@ N.B. Si fa presente che i paragrafi per i quali è prevista una proposta evoluti
 pubblicazione, saranno contrassegnati dalla seguente dicitura:
 
 +----------+-----------------------------------------------+
-| |image1| | **Paragrafo soggetto a proposta di modifica** |
+| |image0| | **Paragrafo soggetto a proposta di modifica** |
 +----------+-----------------------------------------------+
 
-
-
-.. |AGID_logo_carta_intestata| image:: media/AGID_logo.png
-
-.. |image1| image:: media_Introduzione/image1.png
-   :width: 3.93701in
-   :height: 0.89306in
+.. |image0| image:: ..\output/media/image1.png
+   :width: 0.81568in
+   :height: 0.4403in
