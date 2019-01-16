@@ -352,8 +352,4 @@ fornito in modalità nativa per le due principali tecnologie presenti sul mercat
 
 .. |AGID_logo_carta_intestata| image:: media/AGID_logo.png
 .. |image1| image:: media_Cap01_FunzionamentoGeneraleDelSistema/image1.png
-   :width: 3.39472in
-   :height: 2.11312in
 .. |image2| image:: media_Cap01_FunzionamentoGeneraleDelSistema/image2.png
-   :width: 6.43198in
-   :height: 0.93413in
