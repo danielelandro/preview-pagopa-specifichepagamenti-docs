@@ -11,9 +11,8 @@ pagoPA è un sistema per rendere più semplici, sicuri e trasparenti tutti i pag
 
 
 .. toctree::
-	:numbered:
+   	:maxdepth: 2
    	:caption: Indice dei contenuti
-   	:maxdepth: 1
 
     _docs/SANP_2.2_Sez0_DefinizioniAcronimi.rst
     _docs/SANP_2.2_Sez0_Introduzione.rst
