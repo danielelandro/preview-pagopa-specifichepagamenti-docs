@@ -2,13 +2,12 @@
 | |AGID_logo_carta_intestata| |
 +-----------------------------+
 
-###############################################
-Specifiche Attuative del Nodo dei Pagamenti-SPC
-###############################################
+#############################################################
+Specifiche Attuative del Nodo dei Pagamenti-SPC ver. 2.2 Beta
+#############################################################
 
-:version: 2.2 Beta
 
-.. highlights::
+:abstract:
 pagoPA è un sistema per rendere più semplici, sicuri e trasparenti tutti i pagamenti verso la Pubblica Amministrazione. 
 
 
