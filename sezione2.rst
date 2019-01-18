@@ -4,7 +4,8 @@ S2
 ====
 
 .. toctree::
-	:numbered: 3
+	:numbered:
+	:sectnum: 3
 	
 	
 	capitolo1.rst
