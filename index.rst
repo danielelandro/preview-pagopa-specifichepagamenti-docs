@@ -1,8 +1,10 @@
 
 	
-	Indice
+Indice
+======
 
 .. toctree::
+	:caption: Indice dei contenuti
 
 
 	preambolo.rst
