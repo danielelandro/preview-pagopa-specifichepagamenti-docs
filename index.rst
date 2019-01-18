@@ -1,6 +1,8 @@
 
 	
 
+.. toctree::
+	:numbered:
 
 
 	preambolo.rst
