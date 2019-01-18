@@ -3,6 +3,9 @@
 S1
 ====
 
+.. toctree::
+	:numbered:
+
 .. sectnum::
 	:start: 1
 	
