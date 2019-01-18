@@ -1,9 +1,8 @@
 
 	
 	Indice
-	
+
 .. toctree::
-	:numbered:
 
 
 	preambolo.rst
