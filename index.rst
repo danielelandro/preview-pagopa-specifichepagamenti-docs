@@ -6,6 +6,8 @@
 Specifiche Attuative del Nodo dei Pagamenti-SPC v. 2.2 Beta
 ###########################################################
 
+:version: 1
+
 .. highlights::
 pagoPA è un sistema per rendere più semplici, sicuri e trasparenti tutti i pagamenti verso la Pubblica Amministrazione. 
 
@@ -14,8 +16,8 @@ pagoPA è un sistema per rendere più semplici, sicuri e trasparenti tutti i pag
 | **Indice dei contenuti** |
 +--------------------------+
 
-.. toctree:: Indice dei contenuti
-
+.. contents:: Table of Contents
+.. section-numbering::
 
 
 	_docs/SANP_2.2_Sez0_DefinizioniAcronimi.rst
