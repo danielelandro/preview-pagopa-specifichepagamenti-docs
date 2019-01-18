@@ -4,8 +4,7 @@ S2
 ====
 
 .. toctree::
-	:numbered:
-	:continue:
+	:numbered: 3
 	
 	
 	capitolo1.rst
