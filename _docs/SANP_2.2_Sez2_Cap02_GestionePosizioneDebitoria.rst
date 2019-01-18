@@ -8,6 +8,7 @@
 | **SEZIONE II – REGOLE DI FUNZIONAMENTO DEL SISTEMA** |
 +------------------------------------------------------+
 
+================================================
 SEZIONE II – REGOLE DI FUNZIONAMENTO DEL SISTEMA
 ================================================
 
