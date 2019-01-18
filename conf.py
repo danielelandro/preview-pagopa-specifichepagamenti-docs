@@ -49,6 +49,7 @@ extensions = [
     'sphinx.ext.coverage',
     'sphinx.ext.ifconfig',
     'docs-italia-theme',
+    'part-toctree'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
