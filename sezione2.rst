@@ -5,7 +5,7 @@ S2
 
 .. toctree::
 	:numbered:
-	:sectnum: 3
+	:sectnum: 2
 	
 	
 	capitolo1.rst
