@@ -3,7 +3,7 @@
 +-----------------------------+
 
 Introduzione alla versione 2.2
-------------------------------
+==============================
 
 Il sistema dei pagamenti elettronici a favore della Pubblica Amministrazione, il Sistema pagoPA, garantisce agli Utilizzatori finali (cittadini e
 imprese) di effettuare pagamenti elettronici alla Pubblica Amministrazione in modo sicuro e affidabile, semplice, in totale trasparenza nei costi di

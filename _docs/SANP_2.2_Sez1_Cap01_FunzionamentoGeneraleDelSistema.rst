@@ -7,8 +7,8 @@
 | **SEZIONE I – FUNZIONAMENTO GENERALE DEL SISTEMA** |
 +----------------------------------------------------+
 
+.. section-numbering::
 
-==============================================
 SEZIONE I – Funzionamento generale del sistema
 ==============================================
 
