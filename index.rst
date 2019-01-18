@@ -1,7 +1,6 @@
 
 	
 
-.. toctree::
 
 
 	preambolo.rst
