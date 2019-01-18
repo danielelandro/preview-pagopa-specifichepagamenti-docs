@@ -13,7 +13,7 @@ pagoPA è un sistema per rendere più semplici, sicuri e trasparenti tutti i pag
 
 
 .. contents:: **Indice dei contenuti** 
-.. section-numbering::
+.. toctree::
 
 
 	_docs/SANP_2.2_Sez0_DefinizioniAcronimi.rst
