@@ -14,7 +14,7 @@ settings_file_name = 'anteprima-sanp'
 
 import sys, os
 docs_italia_theme = __import__("docs-italia-theme")
-from recommonmark.transform import AutoStructify
+
 from recommonmark.parser import CommonMarkParser
 
 # -- RTD configuration ------------------------------------------------
