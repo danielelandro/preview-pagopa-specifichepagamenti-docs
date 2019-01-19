@@ -4,5 +4,5 @@
 
 
 	preambolo.rst
-	sezione1.rst
-	sezione2.rst
+	sec1/sezione1.rst
+	sec2/sezione2.rst
