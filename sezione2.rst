@@ -3,9 +3,7 @@
 S2
 ====
 
-.. toctree::
-	:numbered:
-	:section-number: 7
+.. contents:: :local:
 
 	
 	
