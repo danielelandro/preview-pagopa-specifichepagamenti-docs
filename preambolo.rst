@@ -1,7 +1,0 @@
-
-Pre
-====
-
-.. toctree::
-	
-	intro.rst

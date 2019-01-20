@@ -1,6 +1,0 @@
-
-	
-Terzo
-=====
-
- Il testo

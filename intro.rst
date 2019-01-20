@@ -1,6 +1,0 @@
-
-
-Introduzione
-============
-
-Introduzione testo
