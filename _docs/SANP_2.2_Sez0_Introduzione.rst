@@ -136,9 +136,9 @@ N.B. Si fa presente che i paragrafi per i quali è prevista una proposta
 evolutiva per la versione 3.0 delle Specifiche Attuative di prossima
 pubblicazione, saranno contrassegnati dalla seguente dicitura:
 
-======== =============================================
-|image0| **Paragrafo soggetto a proposta di modifica**
-======== =============================================
++----------+-----------------------------------------------+
+| |image0| | **Paragrafo soggetto a proposta di modifica** |
++----------+-----------------------------------------------+
 
 .. |image0| image:: media_Introduzione/media/image1.png
    :width: 0.81568in

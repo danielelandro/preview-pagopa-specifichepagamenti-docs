@@ -1,6 +1,6 @@
-==============================================
-SEZIONE I – FUNZIONAMENTO GENERALE DEL SISTEMA
-==============================================
++------------------------------------------------+
+| SEZIONE I – FUNZIONAMENTO GENERALE DEL SISTEMA |
++------------------------------------------------+
 
 Introduzione alla Sezione I
 ===========================
@@ -45,29 +45,102 @@ riportato nel diagramma di Figura 1, nel quale l’infrastruttura
 costituita dal NodoSPC si pone quale facilitatore del colloquio i vari
 soggetti coinvolti:
 
-======================================
-============================================================================================================================================================================================================================================================================================================================================================================
-**Utilizzatore finale**                Rappresenta il privato cittadino, professionista, impresa, che effettua pagamenti a favore della Pubblica Amministrazione con modalità informatiche. L’identità dell’utilizzatore finale può essere determinata con modalità informatiche (tipicamente SPID) per accedere ai servizi informatici dell’Ente Creditore.
-                                      
-**(Debtor)**                           Nell’ambito del processo di pagamento si distingue il ruolo del **soggetto debitore**, cioè colui che ha contratto un debito a favore dell’Ente Creditore, ovvero effettua un pagamento di sua iniziativa per ottenere a un servizio o una certificazione. Nel rapporto con Ente Creditore si può presumere che l’utilizzatore finale sia il soggetto debitore
-                                      
-                                       Si distingue infine il **soggetto versante**, ovvero come colui accede ai servizi informatici dal Prestatore dei Servizi di Pagamento, e dispone il pagamento a favore dell’Ente Creditore.
-======================================
-============================================================================================================================================================================================================================================================================================================================================================================
-**Ente Creditore**                     Soggetto a cui l’utilizzatore finale richiede il servizio e che nei confronti del quali si configura come “creditore” per le somme a vario titolo da questi dovute.
-                                      
-**(Creditor)**                         L’Ente Creditore, che identifica il soggetto pagatore e la causale del pagamento, offre il servizio tramite il NodoSPC a cui accede direttamente o tramite un soggetto pubblico o privato, quale intermediario tecnologico nei confronti dell’Ente Creditore .
-**Prestatore di Servizi di Pagamento** È il soggetto, abilitato dalle norme vigenti in materia, ad eseguire le richieste di pagamento in via elettronica ed a restituire la ricevuta elettronica di avvenuto pagamento/incasso.
-                                      
-**(Debtor e Creditor Bank)**           Il Prestatore di Servizi di Pagamento offre i propri servizi di pagamento mettendo a disposizione direttamente o tramite **terze parti (intermediari)** i canali di pagamento, fisici e telematici, su cui l’utilizzatore finale può effettuare l’operazione.
-                                      
-                                       In questo contesto il Prestatore di Servizi di Pagamento può svolgere anche, sulla base di appositi accordi con l’ente, funzioni di “Incasso” per conto dello stesso e provvedere, laddove richiesto, al successivo riversamento delle somme percepite sui conti di tesoreria che l’Ente Creditore detiene presso il Prestatore di Servizi di Pagamento dell’Ente Creditore.
-                                      
-                                       È il Prestatore di Servizi di Pagamento che, nel rispetto delle normative vigenti, svolge le proprie funzioni di Tesoreria o di Cassa nei confronti dell’Ente Creditore e può non coincidere con il Prestatore di Servizi di Pagamento dell’Ente Creditore stesso.
-                                      
-                                       L’utilizzo dell’infrastruttura del NodoSPC non altera in alcun modo i rapporti esistenti tra l’Ente Creditore ed il proprio istituto tesoriere.
-======================================
-============================================================================================================================================================================================================================================================================================================================================================================
++-----------------------------------+-----------------------------------+
+| **Utilizzatore finale**           | Rappresenta il privato cittadino, |
+|                                   | professionista, impresa, che      |
+| **(Debtor)**                      | effettua pagamenti a favore della |
+|                                   | Pubblica Amministrazione con      |
+|                                   | modalità informatiche. L’identità |
+|                                   | dell’utilizzatore finale può      |
+|                                   | essere determinata con modalità   |
+|                                   | informatiche (tipicamente SPID)   |
+|                                   | per accedere ai servizi           |
+|                                   | informatici dell’Ente Creditore.  |
+|                                   |                                   |
+|                                   | Nell’ambito del processo di       |
+|                                   | pagamento si distingue il ruolo   |
+|                                   | del **soggetto debitore**, cioè   |
+|                                   | colui che ha contratto un debito  |
+|                                   | a favore dell’Ente Creditore,     |
+|                                   | ovvero effettua un pagamento di   |
+|                                   | sua iniziativa per ottenere a un  |
+|                                   | servizio o una certificazione.    |
+|                                   | Nel rapporto con Ente Creditore   |
+|                                   | si può presumere che              |
+|                                   | l’utilizzatore finale sia il      |
+|                                   | soggetto debitore                 |
+|                                   |                                   |
+|                                   | Si distingue infine il **soggetto |
+|                                   | versante**, ovvero come colui     |
+|                                   | accede ai servizi informatici dal |
+|                                   | Prestatore dei Servizi di         |
+|                                   | Pagamento, e dispone il pagamento |
+|                                   | a favore dell’Ente Creditore.     |
++===================================+===================================+
+| **Ente Creditore**                | Soggetto a cui l’utilizzatore     |
+|                                   | finale richiede il servizio e che |
+| **(Creditor)**                    | nei confronti del quali si        |
+|                                   | configura come “creditore” per le |
+|                                   | somme a vario titolo da questi    |
+|                                   | dovute.                           |
+|                                   |                                   |
+|                                   | L’Ente Creditore, che identifica  |
+|                                   | il soggetto pagatore e la causale |
+|                                   | del pagamento, offre il servizio  |
+|                                   | tramite il NodoSPC a cui accede   |
+|                                   | direttamente o tramite un         |
+|                                   | soggetto pubblico o privato,      |
+|                                   | quale intermediario tecnologico   |
+|                                   | nei confronti dell’Ente Creditore |
+|                                   | .                                 |
++-----------------------------------+-----------------------------------+
+| **Prestatore di Servizi di        | È il soggetto, abilitato dalle    |
+| Pagamento**                       | norme vigenti in materia, ad      |
+|                                   | eseguire le richieste di          |
+| **(Debtor e Creditor Bank)**      | pagamento in via elettronica ed a |
+|                                   | restituire la ricevuta            |
+|                                   | elettronica di avvenuto           |
+|                                   | pagamento/incasso.                |
+|                                   |                                   |
+|                                   | Il Prestatore di Servizi di       |
+|                                   | Pagamento offre i propri servizi  |
+|                                   | di pagamento mettendo a           |
+|                                   | disposizione direttamente o       |
+|                                   | tramite terze parti               |
+|                                   | (intermediari) i canali di        |
+|                                   | pagamento, fisici e telematici,   |
+|                                   | su cui l’utilizzatore finale può  |
+|                                   | effettuare l’operazione.          |
+|                                   |                                   |
+|                                   | In questo contesto il Prestatore  |
+|                                   | di Servizi di Pagamento può       |
+|                                   | svolgere anche, sulla base di     |
+|                                   | appositi accordi con l’ente,      |
+|                                   | funzioni di “Incasso” per conto   |
+|                                   | dello stesso e provvedere,        |
+|                                   | laddove richiesto, al successivo  |
+|                                   | riversamento delle somme          |
+|                                   | percepite sui conti di tesoreria  |
+|                                   | che l’Ente Creditore detiene      |
+|                                   | presso il Prestatore di Servizi   |
+|                                   | di Pagamento dell’Ente Creditore. |
+|                                   |                                   |
+|                                   | È il Prestatore di Servizi di     |
+|                                   | Pagamento che, nel rispetto delle |
+|                                   | normative vigenti, svolge le      |
+|                                   | proprie funzioni di Tesoreria o   |
+|                                   | di Cassa nei confronti dell’Ente  |
+|                                   | Creditore e può non coincidere    |
+|                                   | con il Prestatore di Servizi di   |
+|                                   | Pagamento dell’Ente Creditore     |
+|                                   | stesso.                           |
+|                                   |                                   |
+|                                   | L’utilizzo dell’infrastruttura    |
+|                                   | del NodoSPC non altera in alcun   |
+|                                   | modo i rapporti esistenti tra     |
+|                                   | l’Ente Creditore ed il proprio    |
+|                                   | istituto tesoriere.               |
++-----------------------------------+-----------------------------------+
 
 |image0|
 
