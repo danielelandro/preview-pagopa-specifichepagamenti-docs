@@ -4,11 +4,10 @@
 
 
 **********
-Sezione I
+SEZIONE I 
 **********
 
 .. toctree::
-
 
 	
 	SANP_2.2_Sez1_Cap01_FunzionamentoGeneraleDelSistema
