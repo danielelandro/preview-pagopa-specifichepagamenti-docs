@@ -10,8 +10,7 @@ Sezione I
 .. toctree::
 
 	
-	SANP_2.2_Sez0_DefinizioniAcronimi.rst
-	SANP_2.2_Sez0_Introduzione.rst
+	SANP_2.2_Sez1_Cap01_FunzionamentoGeneraleDelSistema
 
 
 
