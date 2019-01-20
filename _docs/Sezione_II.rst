@@ -1,5 +1,5 @@
 Sezione II
-==========
+##########
 
 .. toctree::
 	:numbered:
