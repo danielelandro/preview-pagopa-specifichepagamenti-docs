@@ -2,7 +2,7 @@
 | **SEZIONE I – FUNZIONAMENTO GENERALE DEL SISTEMA** |
 +----------------------------------------------------+
 
-FUNZIONAMENTO GENERALE DEL SISTEMA
+Funzionamento generale del sistema
 ==================================
 
 Obiettivo strategico del Sistema pagoPA è quello di facilitare e

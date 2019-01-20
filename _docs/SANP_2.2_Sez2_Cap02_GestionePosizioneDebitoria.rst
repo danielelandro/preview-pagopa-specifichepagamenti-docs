@@ -1,7 +1,7 @@
 **SEZIONE II – REGOLE DI FUNZIONAMENTO DEL SISTEMA**
 
-Introduzione alla Sezione II
-============================
+Introduzione
+============
 
 I due diversi *workflow* gestiti sul Sistema pagoPA si differenziano
 principalmente in base al soggetto che innesca il pagamento. Avremo
