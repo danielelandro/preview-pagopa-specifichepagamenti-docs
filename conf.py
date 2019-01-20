@@ -14,7 +14,7 @@ settings_file_name = 'anteprima-sanp'
 
 import sys, os
 docs_italia_theme = __import__("docs-italia-theme")
-
+from recommonmark.transform import AutoStructify
 from recommonmark.parser import CommonMarkParser
 
 # -- RTD configuration ------------------------------------------------
@@ -33,7 +33,6 @@ rtd_project = os.environ.get('READTHEDOCS_PROJECT', '')
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
-sys.path.insert(0, os.path.abspath('.'))
 
 # -- General configuration -----------------------------------------------------
 
@@ -43,7 +42,6 @@ sys.path.insert(0, os.path.abspath('.'))
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = [
-	'part-toctree',
     'sphinx.ext.autodoc',
     'sphinx.ext.doctest',
     'sphinx.ext.intersphinx',
@@ -103,7 +101,14 @@ exclude_patterns = ['.DS_Store', 'README', 'README.md', '.venv*']
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
-
+# -- AutoStructify --------------------------------------------------------
+def setup(app):
+    app.add_config_value('recommonmark_config', {
+        'auto_toc_tree_section': 'Contents',
+        'enable_eval_rst': True,
+        'enable_auto_doc_ref': True
+    }, True)
+    app.add_transform(AutoStructify)
 
 
 # -- Options for HTML output ----------------------------------------------
