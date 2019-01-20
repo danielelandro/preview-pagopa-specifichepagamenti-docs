@@ -1,6 +1,7 @@
 Definizioni e Acronimi
 ======================
 
+=========================================================
 =================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 **Acronimo**                                              **Descrizione**
                                                          
@@ -8,7 +9,7 @@ Definizioni e Acronimi
    AgID                                                      Ente istituito ai sensi del decreto legge n. 83 del 22 giugno 2012 convertito con legge n. 134 del 7 agosto 2012 (già DigitPA).
                                                          
    Agenzia per l’Italia Digitale                             Gestore del Nodo dei Pagamenti-SPC.
-   Allegato A                                                Il documento "*Specifiche attuative dei codici identificativi di versamento, riversamento e rendicontazione*" allegato alle Linee guida.
+   Allegato A                                                Il documento allegato alle Linee guida.
    Buyer Bank                                                Nell’ambito del servizio MyBank è la banca dell’utilizzatore finale.
    CAD                                                       Codice dell'amministrazione digitale: decreto legislativo 7 marzo 2005, n. 82 aggiornato con le modifiche e integrazioni successivamente introdotte.
    CCP                                                       Codice Contesto di Pagamento.
@@ -27,7 +28,7 @@ Definizioni e Acronimi
    Intermediario tecnologico                                 PA o Prestatore di Servizi di Pagamento aderente a pagoPA che gestisce le attività di interconnessione al NodoSPC per conto di altri soggetti aderenti a pagoPA (PA o Prestatore di Servizi di Pagamento), ai sensi del § 8.3.3 delle Linee guida.
    Istituto tesoriere                                        Soggetto finanziario affidatario del servizio di tesoreria o di cassa della singola amministrazione, ivi compresa la Banca d’Italia, o del gestore di pubblici servizi
    IUV                                                       Identificativo Univoco Versamento
-   Linee guida                                               Il documento “Linee guida per l'effettuazione dei pagamenti a favore delle pubbliche amministrazioni e dei gestori di pubblici servizi” di cui le presenti specifiche attuative rappresentano l’Allegato B.
+   Linee guida                                               Il documento di cui le presenti specifiche attuative rappresentano l’Allegato B.
    MEF                                                       Ministero dell’Economia e delle Finanze
    MyBank                                                    Servizio che consente ai consumatori di effettuare in modo sicuro pagamenti online usando il servizio di online banking delle propria banca o un’app da smartphone o tablet.
    NodoSPC                                                   Piattaforma tecnologica per l’interconnessione e l’interoperabilità tra le Pubbliche Amministrazioni e i Prestatori di Servizi di Pagamento di cui all’art. 5, comma 2 del CAD
@@ -81,4 +82,5 @@ Definizioni e Acronimi
    WSDL                                                      *Web service* Description Language.
                                                          
                                                              È un linguaggio formale utilizzato per la creazione di "documenti" che definiscono il “Web Service”.
+=========================================================
 =================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
