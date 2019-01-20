@@ -72,7 +72,7 @@ soggetti coinvolti:
 |                                   | Prestatore dei Servizi di         |
 |                                   | Pagamento, e dispone il pagamento |
 |                                   | a favore dell’Ente Creditore.     |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | **Ente Creditore**                | Soggetto a cui l’utilizzatore     |
 |                                   | finale richiede il servizio e che |
 | **(Creditor)**                    | nei confronti del quali si        |
