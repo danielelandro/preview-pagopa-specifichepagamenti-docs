@@ -4,7 +4,7 @@
 
 
 ***********
-Sezione III
+SEZIONE III
 ***********
 
 .. toctree::

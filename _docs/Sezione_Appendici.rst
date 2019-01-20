@@ -4,7 +4,7 @@
 
 
 **********
-Appendici
+APPENDICI
 **********
 
 .. toctree::
