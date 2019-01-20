@@ -2,9 +2,6 @@
 | SEZIONE I – FUNZIONAMENTO GENERALE DEL SISTEMA |
 +------------------------------------------------+
 
-Introduzione alla Sezione I
-===========================
-
 Obiettivo strategico del Sistema pagoPA è quello di facilitare e
 diffondere gli strumenti di pagamento elettronici, in particolare,
 quelli riferiti agli incassi della Pubblica Amministrazione, che da un
