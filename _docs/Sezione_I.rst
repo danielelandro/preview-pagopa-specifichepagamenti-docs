@@ -1,5 +1,6 @@
+**********
 Sezione I
-#########
+**********
 
 .. toctree::
 	:numbered:
