@@ -8,6 +8,7 @@ Sezione I
 **********
 
 .. toctree::
+	:numbered:
 
 	
 	SANP_2.2_Sez1_Cap01_FunzionamentoGeneraleDelSistema
