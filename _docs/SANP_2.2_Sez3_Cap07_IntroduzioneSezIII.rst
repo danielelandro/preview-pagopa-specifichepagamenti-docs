@@ -32,7 +32,7 @@ demandato il compito di gestire la propria piattaforma software di
 interconnessione e rendere disponibili le interfacce verso il NodoSPC.
 Nella figura seguente sono rappresentate le varie casistiche possibili.
 
-|C:\Users\mogi\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\2QI8WBLX\deploymentDiagram.png|
+|image_deploymentDiagram.png|
 
 **Figura XX – Diagramma delle connessioni logiche al NodoSPC**
 
@@ -74,9 +74,7 @@ cooperazione:
    interattivo per la scelta del PSP con cui effettuare il pagamento da
    parte dell’Utilizzatore finale.
 
-..
-
-   |C:\Users\mogi\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\2QI8WBLX\cd_interfacce.png|
+|image_cd_interfacce.png|
 
 **Figura XX – Diagramma delle interfacce di comunicazione**
 
@@ -911,10 +909,10 @@ stessi *task*.
 
 **Tabella XX – Quadro sinottico delle transazioni di stato**
 
-.. |C:\Users\mogi\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\2QI8WBLX\deploymentDiagram.png| image:: media_IntroduzioneSezIII/media/image1.png
+.. |image_deploymentDiagram.png| image:: media_IntroduzioneSezIII/media/image1.png
    :width: 5.36207in
    :height: 4.8097in
-.. |C:\Users\mogi\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\2QI8WBLX\cd_interfacce.png| image:: media_IntroduzioneSezIII/media/image2.png
+.. |image_cd_interfacce.png| image:: media_IntroduzioneSezIII/media/image2.png
    :width: 6.69272in
    :height: 2.02431in
 .. |image2| image:: media_IntroduzioneSezIII/media/image3.png
