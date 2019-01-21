@@ -1,8 +1,8 @@
-1. .. rubric:: Modello dei dati
-      :name: modello-dei-dati
+8 Modello-dei-dati
+==================
 
-   1. .. rubric:: Avvisatura digitale
-         :name: avvisatura-digitale
+8.1 Avvisatura digitale
+-----------------------
 
 +----------+-----------------------------------------------+
 | |image0| | **Paragrafo soggetto a proposta di modifica** |
@@ -32,8 +32,8 @@ precedenti.
 
 **Figura XX – Diagramma delle classi dell’avvisatura**
 
-Avviso digitale
-~~~~~~~~~~~~~~~
+8.1.1 Avviso digitale
+~~~~~~~~~~~~~~~~~~~~~
 
 L’Avvisatura rappresenta il documento telematico con il quale un EC
 notifica ad un Soggetto Pagatore un Avviso di Pagamento.
@@ -95,8 +95,8 @@ Inoltre contiene informazioni in merito a:
 Il tipo *ListaAvvisiDigitali* è la struttura composta dall’insieme di
 più avvisi, purché di numero inferiore a 100.000 elementi.
 
-Esito Inoltro Avvisatura
-~~~~~~~~~~~~~~~~~~~~~~~~
+8.1.2 Esito Inoltro Avvisatura
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 È un oggetto informatico, predisposto dal Nodo-SPC, che permette all’EC
 di conoscere l’esito del relativo inoltro massivo di Avvisi digitali.
@@ -129,8 +129,8 @@ L’esito di un avvisatura è descritto dai seguenti parametri:
 -  *descrizioneEsito*: testo libero che, in caso di esito negativo
    (codiceEsito<>0), descrive l’evento stesso.
 
-   3. .. rubric:: Iscrizione al servizio
-         :name: iscrizione-al-servizio
+8.1.3 Iscrizione al servizio
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Definisce lo schema secondo il quale un PSP richiede al NodoSPC di
 ricevere le avvisature destinate ad un Soggetto Pagatore.
@@ -153,8 +153,8 @@ Contiene al suo interno informazioni riguardo a:
 
    -  ‘D’= disattivazione
 
-   2. .. rubric:: Pagamenti
-         :name: pagamenti
+8.2 Pagamenti
+-------------
 
 In questo paragrafo sono descritti i seguenti documenti XML scambiati
 tra gli attori del sistema nell’ambito dei processi di pagamento:
@@ -227,8 +227,8 @@ In particolare:
 
 -  ad un ER corrisponde una ed una sola RR.
 
-   4. .. rubric:: Richiesta di Pagamento Telematica (RPT)
-         :name: richiesta-di-pagamento-telematica-rpt
+8.2.1 Richiesta di Pagamento Telematica (RPT)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 La RPT descrive una richiesta di pagamento di una Posizione Debitoria.
 
@@ -338,8 +338,8 @@ necessari per tali operazioni:
    dell’imputazione della specifica entrata per esporre la natura
    contabile del pagamento, specificando il tipo e codice contabilità.
 
-   5. .. rubric:: Richiesta di acquisto Marca da Bollo Digitale
-         :name: richiesta-di-acquisto-marca-da-bollo-digitale
+8.2.2 Richiesta di acquisto Marca da Bollo Digitale
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 L’EC può consentire all’Utilizzatore finale, con un unico versamento, il
 contestuale acquisto di uno o più Marche da bollo digitali, con le
@@ -365,8 +365,8 @@ rendere disponibili all’Utilizzatore finale, durante il processo di
 selezione dei PSP, quelli convenzionati con l’Agenzia delle Entrate per
 l’acquisto della Marca da Bollo Digitale (sistema @e.bollo).
 
-Ricevuta Telematica (RT)
-~~~~~~~~~~~~~~~~~~~~~~~~
+8.2.3 Ricevuta Telematica (RT)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 La RT restituisce all’EC il documento che conclude il flusso innescato
 da una richiesta di pagamento (RPT) ed attesta, qualora l’esito sia
@@ -409,8 +409,8 @@ generati dal PSP:
    *identificativoMessaggioRichiest*\ a della univoca RPT di
    riferimento.
 
-   7. .. rubric:: Richiesta di revoca (RR)
-         :name: richiesta-di-revoca-rr
+8.2.4 Richiesta di revoca (RR)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 La RR contiene tutte le informazioni necessarie per gestire sia la
 revoca che lo storno di un pagamento, definiti in sezione II.
@@ -435,12 +435,12 @@ In particolare, la RR è composta dai seguenti elementi:
 
 -  **datiRevoca**: descrive il dettaglio dell’operazione di revoca.
 
-   8. .. rubric:: Esito Della Revoca (ER)
-         :name: esito-della-revoca-er
+8.2.5 Esito Della Revoca (ER)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 La ER descrive l’esito di una RR di un pagamento effettuato.
 
-|C:\Users\mogi\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\2QI8WBLX\cd_ES.png|
+|image_cd_ES.png|
 
 **Figura XX – Diagramma delle classi dell’Esito della Revoca**
 
@@ -462,8 +462,8 @@ In particolare la ER è composta dai seguenti elementi:
 
 -  **riferimento**: insieme dei campi che identificano la RR effettuata.
 
-   9. .. rubric:: Flusso di rendicontazione (FR)
-         :name: flusso-di-rendicontazione-fr
+8.2.6 Flusso di rendicontazione (FR)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Il FR referenzia i singoli pagamenti accreditati tramite bonifico
 cumulativo di un conto corrente dell’EC, conformemente a quanto
@@ -515,8 +515,8 @@ In particolare, il FR è identificato dai seguenti parametri:
       l’\ *indiceDatiSingoloPagamento* che specifica l’indice (numero
       d’ordine) nella lista di versamenti all’interno della RT.
 
-   3. .. rubric:: Giornale degli eventi
-         :name: giornale-degli-eventi
+8.3 Giornale degli eventi
+-------------------------
 
 Il Giornale degli Eventi (GDE) ha l’obiettivo di consentire la
 tracciabilità di ogni operazione di pagamento (andata a buon fine o
@@ -957,15 +957,15 @@ pagamento) così valorizzando i seguenti campi del giornale:
 
 -  *identificativoErogatore* a “GENERAZIONE-RT”.
 
-   4. .. rubric:: Messaggi di errore
-         :name: messaggi-di-errore
+8.4 Messaggi di errore
+----------------------
 
 In caso di errori verificatisi nel colloquio tra i vari soggetti
 aderenti (EC e PSP) ed il NodoSPC, i relativi messaggi di errore vengono
 descritti utilizzando la struttura **faultBean** mostrata nel seguente
 diagramma.
 
-|https://www.plantuml.com/plantuml/img/LOv12eDG34JtEONxN49gwGKyGV2d4eZvaiHLyUxQebXdDJnumxIHvBbC2di6fOZcJOlcWycQ3w0Km1_eQk6ZzkbY8s3X65pcb6g0mIwaWDLb52DzNT8DdV89dtyZw_T4orRsFni0|
+|image_bean|
 
 **Figura XX – Oggetto fauBean**
 
@@ -1254,8 +1254,8 @@ condizioni di errore (*faultString*).
 
 **Tabella** XX **– Codici di errore**
 
-Configurazione
---------------
+8.5 Configurazione
+------------------
 
 In questo paragrafo vengono descritte tutte le informazioni necessarie
 al NodoSPC per configurare opportunamente gli attori ad esso connessi,
@@ -1265,8 +1265,8 @@ Per la comunicazione di tali informazioni il NodoSPC mette a
 disposizione l’applicazione *web* Portale delle Adesioni. Per ulteriori
 dettagli consultare la Sezione IV.
 
-Ente Creditore
-~~~~~~~~~~~~~~
+8.5.1. Ente Creditore
+~~~~~~~~~~~~~~~~~~~~~
 
 L’oggetto Ente Creditore viene identificato nel sistema attraverso il
 proprio codice fiscale (campo *idDominio*) e caratterizzato dai seguenti
@@ -1289,8 +1289,8 @@ primitive SOAP descritte fra le funzioni ausiliarie.
 
 **Figura XX – Diagramma delle classi per la configurazione di un EC**
 
-PSP
-~~~
+8.5.2 PSP
+~~~~~~~~~
 
 L’oggetto PSP viene identificato nel sistema (campo *identificativoPSP*)
 attraverso il codice BIC oppure da un codice formato dalla
@@ -1316,8 +1316,8 @@ Inoltre, per la configurazione delle modalità di pagamento nel sistema
 pagoPA, il PSP produce il documento Catalogo Dati Informativi, come
 riportato nella sezione IV.
 
- Pubblicazione
-~~~~~~~~~~~~~~
+8.5.2.1 Pubblicazione
+~~~~~~~~~~~~~~~~~~~~~
 
 All’interno di questa struttura, il PSP specifica gli attributi comuni a
 tutti i servizi di pagamento che rende disponibili sul sistema:
@@ -1341,9 +1341,8 @@ tutti i servizi di pagamento che rende disponibili sul sistema:
    l’Agenzia delle Entrate come rivenditore della Marca da bollo
    digitale attraverso il sistema *@e.bollo*.
 
-   2. .. rubric:: Canale
-         :name: canale
-         :class: Titolo4n
+8.5.2.2 Canale
+~~~~~~~~~~~~~~
 
 La struttura raccoglie tutte le informazioni relative a un servizio di
 pagamento messo a disposizione dal PSP sul sistema pagoPA:
@@ -1432,8 +1431,8 @@ pagamento messo a disposizione dal PSP sul sistema pagoPA:
 Inoltre, un canale è definito dagli attributi di seguito descritti in
 paragrafi dedicati:
 
-Servizio
-~~~~~~~~
+8.5.2.2.1 Servizio
+~~~~~~~~~~~~~~~~~~
 
 La struttura descrive come verrà visualizzato all’Utilizzatore finale
 per selezionare il PSP sul sistema WISP:
@@ -1443,9 +1442,8 @@ per selezionare il PSP sul sistema WISP:
 -  *logoServizio*: logotipo del servizio / app. Con risoluzione
    400x128px.
 
-   2. .. rubric:: Informazioni dettaglio Servizio
-         :name: informazioni-dettaglio-servizio
-         :class: Titolo5n
+8.5.2.2.2 Informazioni dettaglio Servizio
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  *codiceLingua*: identifica la lingua utilizzata per le informazioni
    di dettaglio della presente struttura. Le lingue supportate dal
@@ -1469,16 +1467,15 @@ per selezionare il PSP sul sistema WISP:
 -  *tavoloOperativo*: indica i riferimenti del presidio tecnico
    predisposto per cooperare con il Tavolo Operativo del NodoSPC.
 
-   3. .. rubric:: Plugin
-         :name: plugin
-         :class: Titolo5n
+8.5.2.2.3 Plugin
+~~~~~~~~~~~~~~~~
 
 La struttura permette al PSP di definire un set di parametri
 personalizzato da utilizzare per interpretare i parametri della redirect
 di risposta alla pagina di erogazione del servizio WISP vedi capitolo 9.
 
-Costi
-~~~~~
+8.5.2.2.4 Costi
+~~~~~~~~~~~~~~~
 
 La struttura definisce la *policy* del calcolo delle commissioni che il
 sistema pagoPA deve applicare.
@@ -1502,9 +1499,8 @@ commissione:
    effettuare. In questo caso è possibile specificare il costo della
    commissione in base alla fascia di prezzo.
 
-   5. .. rubric:: Acquirer
-         :name: acquirer
-         :class: Titolo5n
+8.5.2.2.5 Acquirer
+~~~~~~~~~~~~~~~~~~
 
 L’\ *Acquirer* è un soggetto che ha instaurato un rapporto con un PSP
 aderente a pagoPA al fine di gestire le transazioni con le carte di
@@ -1556,13 +1552,13 @@ L’\ *Acquirer* viene configurato attraverso i seguenti parametri:
 .. |image9| image:: media_ModelloDati/media/image10.png
    :width: 6.69306in
    :height: 1.89868in
-.. |C:\Users\mogi\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\2QI8WBLX\cd_ES.png| image:: media_ModelloDati/media/image11.png
+.. |image_cd_ES.png| image:: media_ModelloDati/media/image11.png
    :width: 6.69306in
    :height: 1.69857in
 .. |image11| image:: media_ModelloDati/media/image12.png
    :width: 6.69306in
    :height: 2.61481in
-.. |https://www.plantuml.com/plantuml/img/LOv12eDG34JtEONxN49gwGKyGV2d4eZvaiHLyUxQebXdDJnumxIHvBbC2di6fOZcJOlcWycQ3w0Km1_eQk6ZzkbY8s3X65pcb6g0mIwaWDLb52DzNT8DdV89dtyZw_T4orRsFni0| image:: media_ModelloDati/media/image13.png
+.. |image_bean| image:: media_ModelloDati/media/image13.png
    :width: 1.54653in
    :height: 1.75in
 .. |cd_ConfigurazioneEnti| image:: media_ModelloDati/media/image14.png
