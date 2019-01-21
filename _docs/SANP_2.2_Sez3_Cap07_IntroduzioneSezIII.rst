@@ -1,7 +1,7 @@
 **SEZIONE III – SPECIFICHE TECNICHE**
 
-Introduzione 
-=============
+7. Introduzione
+===============
 
 La presente sezione descrive le interfacce di cooperazione applicativa
 del software che implementa i servizi del NodoSPC.
@@ -59,8 +59,8 @@ Nelle descrizioni seguenti si ometterà di fare riferimento a detti
 intermediari, in quanto essi non svolgono un ruolo logicamente
 distinguibile dai soggetti intermediati.
 
-Interfacce/Protocolli
----------------------
+7.1 Interfacce/Protocolli
+-------------------------
 
 Il NodoSPC espone diverse interfacce per realizzare le funzioni di
 cooperazione:
@@ -142,8 +142,8 @@ Per l’interfaccia WISP nei confronti dell’Utilizzatore finale sono resi
 disponibili per gli EC degli SDK per lo sviluppo di applicazioni
 *mobile*.
 
-Architettura Funzionale
------------------------
+7.2 Architettura Funzionale
+---------------------------
 
 Per descrivere l’interazione tra EC, NodoSPC e PSP questa sezione è
 stata articolata nei seguenti capitoli:
@@ -360,8 +360,8 @@ NodoSPC, in riferimento a ogni caso d’uso, saranno trattate le possibili
 strategie di risoluzione ed evidenziati i percorsi critici per cui è
 necessario l’instaurazione del Tavolo Operativo di cui alla sezione IV.
 
-Stato del Pagamento
--------------------
+7.3 Stato del Pagamento
+-----------------------
 
 Nei processi di *business* descritti nella sezione II, il processo di
 pagamento può essere definito da un insieme discreto di transazioni fra
