@@ -1,8 +1,8 @@
-1. .. rubric:: Pagamento presso l’Ente Creditore
-      :name: pagamento-presso-lente-creditore
+9. Pagamento presso l’Ente Creditore
+====================================
 
-   1. .. rubric:: Attori e casi d’uso
-         :name: attori-e-casi-duso
+9.1 Attori e casi d’uso
+-----------------------
 
 All’interno di questo capitolo vengono descritti i casi d’uso per il
 pagamento innescato dall’Utilizzatore Finale attraverso l’interazione
@@ -34,9 +34,8 @@ Lo scenario di utilizzo è descritto dal seguente caso d’uso nominale:
    guidata tramite apposita interfaccia *web* resa disponibile dal
    NodoSPC.
 
-   2. .. rubric:: Pagamento online con guida interattiva di selezione
-         del PSP (WISP)
-         :name: pagamento-online-con-guida-interattiva-di-selezione-del-psp-wisp
+9.2 Pagamento online con guida interattiva di selezione del PSP (WISP)
+----------------------------------------------------------------------
 
 +-----------------------------------+-----------------------------------+
 | Pre-Condizione                    | L’Utilizzatore finale innesca il  |
@@ -312,8 +311,8 @@ effettuata tramite il parametro *ibanAddebito* valorizzato dall’EC,
 all’interno della RPT, con il codice IBAN del conto corrente del
 soggetto versante.
 
-Prenotazione Rifiutata
-----------------------
+9.3 Prenotazione Rifiutata
+--------------------------
 
 Si descrive nel seguito lo scenario secondario che si verifica quando
 l’\ *Acquirer* non autorizza il pagamento con carta.
@@ -369,8 +368,8 @@ Il pagamento transisce a *PAGAMENTO_RIFIUTATO.*
 Il *workflow* si conclude riprendendo dal punto 28 dello scenario
 nominale.
 
-Gestione degli errori
----------------------
+9.4 Gestione degli errori
+-------------------------
 
 Il paragrafo descrive la gestione degli errori nel processo di Pagamento
 attivato presso l’Ente Creditore secondo le possibili eccezioni
