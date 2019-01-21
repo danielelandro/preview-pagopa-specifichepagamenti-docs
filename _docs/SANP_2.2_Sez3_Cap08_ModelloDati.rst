@@ -1317,7 +1317,7 @@ pagoPA, il PSP produce il documento Catalogo Dati Informativi, come
 riportato nella sezione IV.
 
 8.5.2.1 Pubblicazione
-~~~~~~~~~~~~~~~~~~~~~
+'''''''''''''''''''''
 
 All’interno di questa struttura, il PSP specifica gli attributi comuni a
 tutti i servizi di pagamento che rende disponibili sul sistema:
@@ -1342,7 +1342,7 @@ tutti i servizi di pagamento che rende disponibili sul sistema:
    digitale attraverso il sistema *@e.bollo*.
 
 8.5.2.2 Canale
-~~~~~~~~~~~~~~
+'''''''''''''''
 
 La struttura raccoglie tutte le informazioni relative a un servizio di
 pagamento messo a disposizione dal PSP sul sistema pagoPA:
@@ -1432,7 +1432,7 @@ Inoltre, un canale è definito dagli attributi di seguito descritti in
 paragrafi dedicati:
 
 8.5.2.2.1 Servizio
-~~~~~~~~~~~~~~~~~~
+''''''''''''''''''
 
 La struttura descrive come verrà visualizzato all’Utilizzatore finale
 per selezionare il PSP sul sistema WISP:
@@ -1443,7 +1443,7 @@ per selezionare il PSP sul sistema WISP:
    400x128px.
 
 8.5.2.2.2 Informazioni dettaglio Servizio
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'''''''''''''''''''''''''''''''''''''''''
 
 -  *codiceLingua*: identifica la lingua utilizzata per le informazioni
    di dettaglio della presente struttura. Le lingue supportate dal
@@ -1468,14 +1468,14 @@ per selezionare il PSP sul sistema WISP:
    predisposto per cooperare con il Tavolo Operativo del NodoSPC.
 
 8.5.2.2.3 Plugin
-~~~~~~~~~~~~~~~~
+''''''''''''''''
 
 La struttura permette al PSP di definire un set di parametri
 personalizzato da utilizzare per interpretare i parametri della redirect
 di risposta alla pagina di erogazione del servizio WISP vedi capitolo 9.
 
 8.5.2.2.4 Costi
-~~~~~~~~~~~~~~~
+''''''''''''''''
 
 La struttura definisce la *policy* del calcolo delle commissioni che il
 sistema pagoPA deve applicare.
@@ -1500,7 +1500,7 @@ commissione:
    commissione in base alla fascia di prezzo.
 
 8.5.2.2.5 Acquirer
-~~~~~~~~~~~~~~~~~~
+''''''''''''''''''
 
 L’\ *Acquirer* è un soggetto che ha instaurato un rapporto con un PSP
 aderente a pagoPA al fine di gestire le transazioni con le carte di
