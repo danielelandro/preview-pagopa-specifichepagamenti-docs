@@ -541,371 +541,161 @@ modelli di business di cui alla sezione II le primitive SOAP coinvolte,
 evidenziando le transizioni di stato causate dall’esecuzione degli
 stessi *task*.
 
-+---------+---------+---------+---------+---------+---------+---------+
-| Task    | Primiti | Stato   | Stato   | Pre-con | Post-co | Note    |
-|         | va      | di      | di      | dizioni | ndizion |         |
-|         |         | Ingress | Uscita  |         | i       |         |
-|         |         | o       |         |         |         |         |
-+=========+=========+=========+=========+=========+=========+=========+
-| T2.2.1  | -       | n.a.    | S1 -    | n.a.    | L’EC ha | Lo      |
-|         |         |         | “In     |         | ricevut | stato   |
-|         |         |         | attesa  |         | o       | S1 è il |
-|         |         |         | generaz |         | la      | primo   |
-|         |         |         | ione    |         | richies | stato   |
-|         |         |         | PD”     |         | ta      | present |
-|         |         |         |         |         | di      | e       |
-|         |         |         |         |         | generaz | a       |
-|         |         |         |         |         | ione    | sistema |
-|         |         |         |         |         | della   | in caso |
-|         |         |         |         |         | Posizio | di      |
-|         |         |         |         |         | ne      | pagamen |
-|         |         |         |         |         | Debitor | to      |
-|         |         |         |         |         | ia      | spontan |
-|         |         |         |         |         | da      | eo      |
-|         |         |         |         |         | parte   |         |
-|         |         |         |         |         | del PSP |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| T1.1.1  | *nodoIn | n.a.    | S2 –    | n.a.    | L’EC ha | Lo      |
-|         | viaAvvi |         | “PD in  |         | effettu | stato   |
-|         | soDigit |         | attesa” |         | ato     | S2 è il |
-|         | ale*    |         |         |         | la      | primo   |
-|         |         |         |         |         | generaz | stato   |
-|         |         |         |         |         | ione    | present |
-|         |         |         |         |         | della   | e       |
-|         |         |         |         |         | Posizio | a       |
-|         |         |         |         |         | ne      | sistema |
-|         |         |         |         |         | Debitor | in caso |
-|         |         |         |         |         | ia,     | di      |
-|         |         |         |         |         | che è   | pagamen |
-|         |         |         |         |         | pronta  | to      |
-|         |         |         |         |         | per     | con     |
-|         |         |         |         |         | essere  | avviso  |
-|         |         |         |         |         | lavorat |         |
-|         |         |         |         |         | a       |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| T2.1.1  | -       | n.a     | S2 –    | n.a.    | L’EC ha |         |
-|         |         |         | “PD in  |         | effettu |         |
-|         |         |         | attesa” |         | ato     |         |
-|         |         |         |         |         | la      |         |
-|         |         |         |         |         | generaz |         |
-|         |         |         |         |         | ione    |         |
-|         |         |         |         |         | della   |         |
-|         |         |         |         |         | Posizio |         |
-|         |         |         |         |         | ne      |         |
-|         |         |         |         |         | Debitor |         |
-|         |         |         |         |         | ia,     |         |
-|         |         |         |         |         | che è   |         |
-|         |         |         |         |         | pronta  |         |
-|         |         |         |         |         | per     |         |
-|         |         |         |         |         | essere  |         |
-|         |         |         |         |         | lavorat |         |
-|         |         |         |         |         | a       |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| T2.2.2  | -       | S1 -    | S2 –    | L’EC ha | L’EC ha |         |
-|         |         | “In     | “PD in  | ricevut | effettu |         |
-|         |         | attesa  | attesa” | o       | ato     |         |
-|         |         | generaz |         | la      | la      |         |
-|         |         | ione    |         | richies | generaz |         |
-|         |         | PD”     |         | ta      | ione    |         |
-|         |         |         |         | di      | della   |         |
-|         |         |         |         | generaz | Posizio |         |
-|         |         |         |         | ione    | ne      |         |
-|         |         |         |         | della   | Debitor |         |
-|         |         |         |         | posizio | ia,     |         |
-|         |         |         |         | ne      | che è   |         |
-|         |         |         |         | debitor | pronta  |         |
-|         |         |         |         | ia      | per     |         |
-|         |         |         |         | da      | essere  |         |
-|         |         |         |         | parte   | lavorat |         |
-|         |         |         |         | del PSP | a       |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| T1.1.1  | -       | S2 –    | S11 –   | L’EC    | La      |         |
-|         |         | “PD in  | “PD     | riceve  | Posizio |         |
-|         |         | attesa” | Annulla | il      | ne      |         |
-|         |         |         | ta”     | pagamen | Debitor |         |
-|         |         |         |         | to      | ia      |         |
-|         |         |         |         | al di   | non è   |         |
-|         |         |         |         | fuori   | più     |         |
-|         |         |         |         | del     | lavorab |         |
-|         |         |         |         | circuit | ile     |         |
-|         |         |         |         | o       |         |         |
-|         |         |         |         | pagoPA  |         |         |
-|         |         |         |         | oppure  |         |         |
-|         |         |         |         | vuole   |         |         |
-|         |         |         |         | annulla |         |         |
-|         |         |         |         | re      |         |         |
-|         |         |         |         | la      |         |         |
-|         |         |         |         | posizio |         |         |
-|         |         |         |         | ne      |         |         |
-|         |         |         |         | debitor |         |         |
-|         |         |         |         | ia      |         |         |
-|         |         |         |         | perché  |         |         |
-|         |         |         |         | errata  |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| T2.1.2  | *nodoIn | S2 –    | S3 –    | E’      | L’EC ha |         |
-|         | viaRPT* | “PD in  | “RPT    | stata   | indiriz |         |
-|         |         | attesa” | Attivat | generat | zato    |         |
-|         |         |         | a”      | a       | su WISP |         |
-|         |         |         |         | una     | e       |         |
-|         |         |         |         | Posizio | pagoPA  |         |
-|         |         |         |         | ne      | ha      |         |
-|         |         |         |         | Debitor | preso   |         |
-|         |         |         |         | ia.     | in      |         |
-|         |         |         |         |         | carico  |         |
-|         |         |         |         | L’Utili | il      |         |
-|         |         |         |         | zzatore | carrell |         |
-|         |         |         |         | finale  | o       |         |
-|         |         |         |         | genera  | di RPT  |         |
-|         |         |         |         | un      |         |         |
-|         |         |         |         | carrell |         |         |
-|         |         |         |         | o       |         |         |
-|         |         |         |         | di RPT  |         |         |
-|         |         |         |         | e avvia |         |         |
-|         |         |         |         | la      |         |         |
-|         |         |         |         | procedu |         |         |
-|         |         |         |         | ra      |         |         |
-|         |         |         |         | di      |         |         |
-|         |         |         |         | pagamen |         |         |
-|         |         |         |         | to      |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| T2.2.7  | *nodoIn | S2 –    | S3 –    | È stata | L’EC ha |         |
-|         | viaRPT* | “PD in  | “RPT    | generat | attivat |         |
-|         |         | attesa” | Attivat | a       | o       |         |
-|         |         |         | a”      | una     | l’RPT e |         |
-|         |         |         |         | Posizio | l’ha    |         |
-|         |         |         |         | ne      | inoltra |         |
-|         |         |         |         | Debitor | ta      |         |
-|         |         |         |         | ia.     | al PSP  |         |
-|         |         |         |         |         |         |         |
-|         |         |         |         | L’EC    |         |         |
-|         |         |         |         | riceve  |         |         |
-|         |         |         |         | una     |         |         |
-|         |         |         |         | richies |         |         |
-|         |         |         |         | ta      |         |         |
-|         |         |         |         | di      |         |         |
-|         |         |         |         | attivaz |         |         |
-|         |         |         |         | ione    |         |         |
-|         |         |         |         | RPT da  |         |         |
-|         |         |         |         | parte   |         |         |
-|         |         |         |         | del PSP |         |         |
-|         |         |         |         | oppure  |         |         |
-|         |         |         |         | l’Utili |         |         |
-|         |         |         |         | zzatore |         |         |
-|         |         |         |         | finale  |         |         |
-|         |         |         |         | accede  |         |         |
-|         |         |         |         | diretta |         |         |
-|         |         |         |         | mente   |         |         |
-|         |         |         |         | ai      |         |         |
-|         |         |         |         | canali  |         |         |
-|         |         |         |         | messi a |         |         |
-|         |         |         |         | disposi |         |         |
-|         |         |         |         | zione   |         |         |
-|         |         |         |         | dall’EC |         |         |
-|         |         |         |         | ed ha   |         |         |
-|         |         |         |         | scelto  |         |         |
-|         |         |         |         | la      |         |         |
-|         |         |         |         | Posizio |         |         |
-|         |         |         |         | ne      |         |         |
-|         |         |         |         | Debitor |         |         |
-|         |         |         |         | ia      |         |         |
-|         |         |         |         | da      |         |         |
-|         |         |         |         | pagare  |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| T2.1.5  | -       | S3 –    | S4 –    | La RPT  | L’Utili |         |
-|         |         | “RPT    | “Pagame | è stata | zzatore |         |
-|         |         | Attivat | nto     | attivat | finale  |         |
-|         |         | a”      | autoriz | a       | ha      |         |
-|         |         |         | zato”   |         | approva |         |
-|         |         |         |         |         | to      |         |
-|         |         |         |         |         | il      |         |
-|         |         |         |         |         | pagamen |         |
-|         |         |         |         |         | to      |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| T2.2.8  | -       | S3 –    | S4 –    | La RPT  | L’Utili |         |
-|         |         | “RPT    | “Pagame | è stata | zzatore |         |
-|         |         | Attivat | nto     | attivat | finale  |         |
-|         |         | a”      | autoriz | a       | ha      |         |
-|         |         |         | zato”   |         | approva |         |
-|         |         |         |         |         | to      |         |
-|         |         |         |         |         | il      |         |
-|         |         |         |         |         | pagamen |         |
-|         |         |         |         |         | to      |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| T2.1.9  | *pspInv | S4 –    | S5 –    | L’Utili | Il PSP  |         |
-|         | iaRPT*  | “Pagame | “RPT    | zzatore | ha      |         |
-|         |         | nto     | Pagata” | finale  | incassa |         |
-|         |         | autoriz |         | ha      | to      |         |
-|         |         | zato”   |         | approva | il      |         |
-|         |         |         |         | to      | pagamen |         |
-|         |         |         |         | il      | to      |         |
-|         |         |         |         | pagamen |         |         |
-|         |         |         |         | to      |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| T2.2.9  | -       | S4 –    | S5 –    | L’Utili | Il PSP  | In caso |
-|         |         | “Pagame | “RPT    | zzatore | ha      | di      |
-|         |         | nto     | Pagata” | finale  | incassa | pagamen |
-|         |         | autoriz |         | ha      | to      | to      |
-|         |         | zato”   |         | approva | il      | attrave |
-|         |         |         |         | to      | pagamen | rso     |
-|         |         |         |         | il      | to      | PSP è   |
-|         |         |         |         | pagamen |         | possibi |
-|         |         |         |         | to      |         | le      |
-|         |         |         |         |         |         | che il  |
-|         |         |         |         |         |         | pagamen |
-|         |         |         |         |         |         | to      |
-|         |         |         |         |         |         | da      |
-|         |         |         |         |         |         | parte   |
-|         |         |         |         |         |         | dell’Ut |
-|         |         |         |         |         |         | ente    |
-|         |         |         |         |         |         | finale  |
-|         |         |         |         |         |         | avvenga |
-|         |         |         |         |         |         | prima   |
-|         |         |         |         |         |         | del     |
-|         |         |         |         |         |         | ricevim |
-|         |         |         |         |         |         | ento    |
-|         |         |         |         |         |         | dell’RP |
-|         |         |         |         |         |         | T       |
-|         |         |         |         |         |         | da      |
-|         |         |         |         |         |         | parte   |
-|         |         |         |         |         |         | dello   |
-|         |         |         |         |         |         | stesso  |
-|         |         |         |         |         |         | PSP,    |
-|         |         |         |         |         |         | per     |
-|         |         |         |         |         |         | questo  |
-|         |         |         |         |         |         | si      |
-|         |         |         |         |         |         | raccoma |
-|         |         |         |         |         |         | nda     |
-|         |         |         |         |         |         | di      |
-|         |         |         |         |         |         | effettu |
-|         |         |         |         |         |         | are     |
-|         |         |         |         |         |         | sempre  |
-|         |         |         |         |         |         | la      |
-|         |         |         |         |         |         | verific |
-|         |         |         |         |         |         | a       |
-|         |         |         |         |         |         | dell’RP |
-|         |         |         |         |         |         | T       |
-|         |         |         |         |         |         | (*Gatew |
-|         |         |         |         |         |         | ay*     |
-|         |         |         |         |         |         | G2.5)   |
-+---------+---------+---------+---------+---------+---------+---------+
-| T2.1.12 | *nodoIn | S5 –    | S6 –    | Il PSP  | La RT è |         |
-|         | viaRT*  | “RPT    | “RT     | ha      | stata   |         |
-|         |         | Pagata” | Nodo”   | ricevut | ricevut |         |
-|         |         |         |         | o       | a       |         |
-|         |         |         |         | la RPT  | da      |         |
-|         |         |         |         | ed ha   | pagoPA  |         |
-|         |         |         |         | incassa |         |         |
-|         |         |         |         | to      |         |         |
-|         |         |         |         | il      |         |         |
-|         |         |         |         | pagamen |         |         |
-|         |         |         |         | to      |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| T2.2.11 | *nodoIn | S5 –    | S6 –    | Il PSP  | La RT è |         |
-|         | viaRT*  | “RPT    | “RT     | ha      | stata   |         |
-|         |         | Pagata” | Nodo”   | ricevut | ricevut |         |
-|         |         |         |         | o       | a       |         |
-|         |         |         |         | la RPT  | da      |         |
-|         |         |         |         | ed ha   | pagoPA  |         |
-|         |         |         |         | incassa |         |         |
-|         |         |         |         | to      |         |         |
-|         |         |         |         | il      |         |         |
-|         |         |         |         | pagamen |         |         |
-|         |         |         |         | to      |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| T2.1.13 | *paaInv | S6 –    | S7 –    | La RT è | L’EC ha |         |
-|         | iaRT*   | “RT     | “RT EC” | stata   | ricevut |         |
-|         |         | Nodo”   |         | ricevut | o       |         |
-|         |         |         |         | a       | l’RT    |         |
-|         |         |         |         | da      |         |         |
-|         |         |         |         | pagoPA  |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| T2.2.12 | *paaInv | S6 –    | S7 –    | La RT è | L’EC ha |         |
-|         | iaRT*   | “RT     | “RT EC” | stata   | ricevut |         |
-|         |         | Nodo”   |         | ricevut | o       |         |
-|         |         |         |         | a       | l’RT    |         |
-|         |         |         |         | da      |         |         |
-|         |         |         |         | pagoPA  |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| T2.1.16 | -       | S7 –    | S8 –    | Il PSP  | Il PSP  |         |
-|         |         | “RT EC” | “Accred | ha      | ha      |         |
-|         |         |         | itata”  | incassa | accredi |         |
-|         |         |         |         | to      | tato    |         |
-|         |         |         |         | il      | il      |         |
-|         |         |         |         | pagamen | pagamen |         |
-|         |         |         |         | to      | to      |         |
-|         |         |         |         |         | sul     |         |
-|         |         |         |         |         | conto   |         |
-|         |         |         |         |         | dell’EC |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| T2.2.15 | -       | S7 –    | S8 –    | Il PSP  | Il PSP  |         |
-|         |         | “RT EC” | “Accred | ha      | ha      |         |
-|         |         |         | itata”  | incassa | accredi |         |
-|         |         |         |         | to      | tato    |         |
-|         |         |         |         | il      | il      |         |
-|         |         |         |         | pagamen | pagamen |         |
-|         |         |         |         | to      | to      |         |
-|         |         |         |         |         | sul     |         |
-|         |         |         |         |         | conto   |         |
-|         |         |         |         |         | dell’EC |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| T2.1.17 | *nodoIn | S8 –    | S9 –    | Il PSP  | Il PSP  |         |
-|         | viaFlus | “Accred | “RT     | ha      | ha      |         |
-|         | si*     | itata”  | Rendico | accredi | inviato |         |
-|         |         |         | ntata   | tato    | il      |         |
-|         |         |         | PSP”    | il      | rendico |         |
-|         |         |         |         | pagamen | nto     |         |
-|         |         |         |         | to      | degli   |         |
-|         |         |         |         | sul     | accredi |         |
-|         |         |         |         | conto   | ti      |         |
-|         |         |         |         | dell’EC | effettu |         |
-|         |         |         |         |         | ati     |         |
-|         |         |         |         |         | a       |         |
-|         |         |         |         |         | pagoPA  |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| T2.2.16 | *nodoIn | S8 –    | S9 –    | Il PSP  | Il PSP  | In caso |
-|         | viaFlus | “Accred | “RT     | ha      | ha      | di      |
-|         | si*     | itata”  | Rendico | accredi | inviato | pagamen |
-|         |         |         | ntata   | tato    | il      | to      |
-|         |         |         | PSP”    | il      | rendico | di      |
-|         |         |         |         | pagamen | nto     | singola |
-|         |         |         |         | to      | degli   | RT, il  |
-|         |         |         |         | sul     | accredi | PSP     |
-|         |         |         |         | conto   | ti      | potrebb |
-|         |         |         |         | dell’EC | effettu | e       |
-|         |         |         |         |         | ati     | non     |
-|         |         |         |         |         | a       | inviare |
-|         |         |         |         |         | pagoPA  | il      |
-|         |         |         |         |         |         | rendico |
-|         |         |         |         |         |         | nto     |
-+---------+---------+---------+---------+---------+---------+---------+
-| T2.1.18 | *nodoCh | S9 –    | S10 –   | Il PSP  | pagoPA  |         |
-|         | iediFlu | “RT     | “Pronto | ha      | ha      |         |
-|         | ssoRend | Rendico | per     | inviato | fornito |         |
-|         | icontaz | ntata   | riconci | il      | i       |         |
-|         | ione*   | PSP”    | liazion | rendico | rendico |         |
-|         |         |         | e”      | nto     | nti     |         |
-|         |         |         |         | degli   | ricevut |         |
-|         |         |         |         | accredi | i       |         |
-|         |         |         |         | ti      | all’EC  |         |
-|         |         |         |         | effettu |         |         |
-|         |         |         |         | ati     |         |         |
-|         |         |         |         | a       |         |         |
-|         |         |         |         | pagoPA  |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| T2.2.17 | *nodoCh | S9 –    | S10 –   | Il PSP  | pagoPA  |         |
-|         | iediFlu | “RT     | “Pronto | ha      | ha      |         |
-|         | ssoRend | Rendico | per     | inviato | fornito |         |
-|         | icontaz | ntata   | riconci | il      | i       |         |
-|         | ione*   | PSP”    | liazion | rendico | rendico |         |
-|         |         |         | e”      | nto     | nti     |         |
-|         |         |         |         | degli   | ricevut |         |
-|         |         |         |         | accredi | i       |         |
-|         |         |         |         | ti      | all’EC  |         |
-|         |         |         |         | effettu |         |         |
-|         |         |         |         | ati     |         |         |
-|         |         |         |         | a       |         |         |
-|         |         |         |         | pagoPA  |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
+
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| Task               | Primitiva          | Stato di Ingresso  | Stato di Uscita    | Pre-condizioni     | Post-condizioni    | Note               |
++====================+====================+====================+====================+====================+====================+====================+
+| T2.2.1             | -                  | n.a.               | S1 - “In attesa    | n.a.               | L’EC ha ricevuto   | Lo stato S1 è il   |
+|                    |                    |                    | generazione PD”    |                    | la richiesta di    | primo stato        |
+|                    |                    |                    |                    |                    | generazione della  | presente a sistema |
+|                    |                    |                    |                    |                    | Posizione          | in caso di         |
+|                    |                    |                    |                    |                    | Debitoria da parte | pagamento          |
+|                    |                    |                    |                    |                    | del PSP            | spontaneo          |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| T1.1.1             | *nodoInviaAvvisoDi | n.a.               | S2 – “PD in        | n.a.               | L’EC ha effettuato | Lo stato S2 è il   |
+|                    | gitale*            |                    | attesa”            |                    | la generazione     | primo stato        |
+|                    |                    |                    |                    |                    | della Posizione    | presente a sistema |
+|                    |                    |                    |                    |                    | Debitoria, che è   | in caso di         |
+|                    |                    |                    |                    |                    | pronta per essere  | pagamento con      |
+|                    |                    |                    |                    |                    | lavorata           | avviso             |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| T2.1.1             | -                  | n.a                | S2 – “PD in        | n.a.               | L’EC ha effettuato |                    |
+|                    |                    |                    | attesa”            |                    | la generazione     |                    |
+|                    |                    |                    |                    |                    | della Posizione    |                    |
+|                    |                    |                    |                    |                    | Debitoria, che è   |                    |
+|                    |                    |                    |                    |                    | pronta per essere  |                    |
+|                    |                    |                    |                    |                    | lavorata           |                    |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| T2.2.2             | -                  | S1 - “In attesa    | S2 – “PD in        | L’EC ha ricevuto   | L’EC ha effettuato |                    |
+|                    |                    | generazione PD”    | attesa”            | la richiesta di    | la generazione     |                    |
+|                    |                    |                    |                    | generazione della  | della Posizione    |                    |
+|                    |                    |                    |                    | posizione          | Debitoria, che è   |                    |
+|                    |                    |                    |                    | debitoria da parte | pronta per essere  |                    |
+|                    |                    |                    |                    | del PSP            | lavorata           |                    |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| T1.1.1             | -                  | S2 – “PD in        | S11 – “PD          | L’EC riceve il     | La Posizione       |                    |
+|                    |                    | attesa”            | Annullata”         | pagamento al di    | Debitoria non è    |                    |
+|                    |                    |                    |                    | fuori del circuito | più lavorabile     |                    |
+|                    |                    |                    |                    | pagoPA oppure      |                    |                    |
+|                    |                    |                    |                    | vuole annullare la |                    |                    |
+|                    |                    |                    |                    | posizione          |                    |                    |
+|                    |                    |                    |                    | debitoria perché   |                    |                    |
+|                    |                    |                    |                    | errata             |                    |                    |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| T2.1.2             | *nodoInviaRPT*     | S2 – “PD in        | S3 – “RPT          | E’ stata generata  | L’EC ha            |                    |
+|                    |                    | attesa”            | Attivata”          | una Posizione      | indirizzato su     |                    |
+|                    |                    |                    |                    | Debitoria.         | WISP e pagoPA ha   |                    |
+|                    |                    |                    |                    |                    | preso in carico il |                    |
+|                    |                    |                    |                    | L’Utilizzatore     | carrello di RPT    |                    |
+|                    |                    |                    |                    | finale genera un   |                    |                    |
+|                    |                    |                    |                    | carrello di RPT e  |                    |                    |
+|                    |                    |                    |                    | avvia la procedura |                    |                    |
+|                    |                    |                    |                    | di pagamento       |                    |                    |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| T2.2.7             | *nodoInviaRPT*     | S2 – “PD in        | S3 – “RPT          | È stata generata   | L’EC ha attivato   |                    |
+|                    |                    | attesa”            | Attivata”          | una Posizione      | l’RPT e l’ha       |                    |
+|                    |                    |                    |                    | Debitoria.         | inoltrata al PSP   |                    |
+|                    |                    |                    |                    |                    |                    |                    |
+|                    |                    |                    |                    | L’EC riceve una    |                    |                    |
+|                    |                    |                    |                    | richiesta di       |                    |                    |
+|                    |                    |                    |                    | attivazione RPT da |                    |                    |
+|                    |                    |                    |                    | parte del PSP      |                    |                    |
+|                    |                    |                    |                    | oppure             |                    |                    |
+|                    |                    |                    |                    | l’Utilizzatore     |                    |                    |
+|                    |                    |                    |                    | finale accede      |                    |                    |
+|                    |                    |                    |                    | direttamente ai    |                    |                    |
+|                    |                    |                    |                    | canali messi a     |                    |                    |
+|                    |                    |                    |                    | disposizione       |                    |                    |
+|                    |                    |                    |                    | dall’EC ed ha      |                    |                    |
+|                    |                    |                    |                    | scelto la          |                    |                    |
+|                    |                    |                    |                    | Posizione          |                    |                    |
+|                    |                    |                    |                    | Debitoria da       |                    |                    |
+|                    |                    |                    |                    | pagare             |                    |                    |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| T2.1.5             | -                  | S3 – “RPT          | S4 – “Pagamento    | La RPT è stata     | L’Utilizzatore     |                    |
+|                    |                    | Attivata”          | autorizzato”       | attivata           | finale ha          |                    |
+|                    |                    |                    |                    |                    | approvato il       |                    |
+|                    |                    |                    |                    |                    | pagamento          |                    |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| T2.2.8             | -                  | S3 – “RPT          | S4 – “Pagamento    | La RPT è stata     | L’Utilizzatore     |                    |
+|                    |                    | Attivata”          | autorizzato”       | attivata           | finale ha          |                    |
+|                    |                    |                    |                    |                    | approvato il       |                    |
+|                    |                    |                    |                    |                    | pagamento          |                    |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| T2.1.9             | *pspInviaRPT*      | S4 – “Pagamento    | S5 – “RPT Pagata”  | L’Utilizzatore     | Il PSP ha          |                    |
+|                    |                    | autorizzato”       |                    | finale ha          | incassato il       |                    |
+|                    |                    |                    |                    | approvato il       | pagamento          |                    |
+|                    |                    |                    |                    | pagamento          |                    |                    |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| T2.2.9             | -                  | S4 – “Pagamento    | S5 – “RPT Pagata”  | L’Utilizzatore     | Il PSP ha          | In caso di         |
+|                    |                    | autorizzato”       |                    | finale ha          | incassato il       | pagamento          |
+|                    |                    |                    |                    | approvato il       | pagamento          | attraverso PSP è   |
+|                    |                    |                    |                    | pagamento          |                    | possibile che il   |
+|                    |                    |                    |                    |                    |                    | pagamento da parte |
+|                    |                    |                    |                    |                    |                    | dell’Utente finale |
+|                    |                    |                    |                    |                    |                    | avvenga prima del  |
+|                    |                    |                    |                    |                    |                    | ricevimento        |
+|                    |                    |                    |                    |                    |                    | dell’RPT da parte  |
+|                    |                    |                    |                    |                    |                    | dello stesso PSP,  |
+|                    |                    |                    |                    |                    |                    | per questo si      |
+|                    |                    |                    |                    |                    |                    | raccomanda di      |
+|                    |                    |                    |                    |                    |                    | effettuare sempre  |
+|                    |                    |                    |                    |                    |                    | la verifica        |
+|                    |                    |                    |                    |                    |                    | dell’RPT           |
+|                    |                    |                    |                    |                    |                    | (*Gateway* G2.5)   |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| T2.1.12            | *nodoInviaRT*      | S5 – “RPT Pagata”  | S6 – “RT Nodo”     | Il PSP ha ricevuto | La RT è stata      |                    |
+|                    |                    |                    |                    | la RPT ed ha       | ricevuta da pagoPA |                    |
+|                    |                    |                    |                    | incassato il       |                    |                    |
+|                    |                    |                    |                    | pagamento          |                    |                    |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| T2.2.11            | *nodoInviaRT*      | S5 – “RPT Pagata”  | S6 – “RT Nodo”     | Il PSP ha ricevuto | La RT è stata      |                    |
+|                    |                    |                    |                    | la RPT ed ha       | ricevuta da pagoPA |                    |
+|                    |                    |                    |                    | incassato il       |                    |                    |
+|                    |                    |                    |                    | pagamento          |                    |                    |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| T2.1.13            | *paaInviaRT*       | S6 – “RT Nodo”     | S7 – “RT EC”       | La RT è stata      | L’EC ha ricevuto   |                    |
+|                    |                    |                    |                    | ricevuta da pagoPA | l’RT               |                    |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| T2.2.12            | *paaInviaRT*       | S6 – “RT Nodo”     | S7 – “RT EC”       | La RT è stata      | L’EC ha ricevuto   |                    |
+|                    |                    |                    |                    | ricevuta da pagoPA | l’RT               |                    |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| T2.1.16            | -                  | S7 – “RT EC”       | S8 – “Accreditata” | Il PSP ha          | Il PSP ha          |                    |
+|                    |                    |                    |                    | incassato il       | accreditato il     |                    |
+|                    |                    |                    |                    | pagamento          | pagamento sul      |                    |
+|                    |                    |                    |                    |                    | conto dell’EC      |                    |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| T2.2.15            | -                  | S7 – “RT EC”       | S8 – “Accreditata” | Il PSP ha          | Il PSP ha          |                    |
+|                    |                    |                    |                    | incassato il       | accreditato il     |                    |
+|                    |                    |                    |                    | pagamento          | pagamento sul      |                    |
+|                    |                    |                    |                    |                    | conto dell’EC      |                    |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| T2.1.17            | *nodoInviaFlussi*  | S8 – “Accreditata” | S9 – “RT           | Il PSP ha          | Il PSP ha inviato  |                    |
+|                    |                    |                    | Rendicontata PSP”  | accreditato il     | il rendiconto      |                    |
+|                    |                    |                    |                    | pagamento sul      | degli accrediti    |                    |
+|                    |                    |                    |                    | conto dell’EC      | effettuati a       |                    |
+|                    |                    |                    |                    |                    | pagoPA             |                    |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| T2.2.16            | *nodoInviaFlussi*  | S8 – “Accreditata” | S9 – “RT           | Il PSP ha          | Il PSP ha inviato  | In caso di         |
+|                    |                    |                    | Rendicontata PSP”  | accreditato il     | il rendiconto      | pagamento di       |
+|                    |                    |                    |                    | pagamento sul      | degli accrediti    | singola RT, il PSP |
+|                    |                    |                    |                    | conto dell’EC      | effettuati a       | potrebbe non       |
+|                    |                    |                    |                    |                    | pagoPA             | inviare il         |
+|                    |                    |                    |                    |                    |                    | rendiconto         |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| T2.1.18            | *nodoChiediFlussoR | S9 – “RT           | S10 – “Pronto per  | Il PSP ha inviato  | pagoPA ha fornito  |                    |
+|                    | endicontazione*    | Rendicontata PSP”  | riconciliazione”   | il rendiconto      | i rendiconti       |                    |
+|                    |                    |                    |                    | degli accrediti    | ricevuti all’EC    |                    |
+|                    |                    |                    |                    | effettuati a       |                    |                    |
+|                    |                    |                    |                    | pagoPA             |                    |                    |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| T2.2.17            | *nodoChiediFlussoR | S9 – “RT           | S10 – “Pronto per  | Il PSP ha inviato  | pagoPA ha fornito  |                    |
+|                    | endicontazione*    | Rendicontata PSP”  | riconciliazione”   | il rendiconto      | i rendiconti       |                    |
+|                    |                    |                    |                    | degli accrediti    | ricevuti all’EC    |                    |
+|                    |                    |                    |                    | effettuati a       |                    |                    |
+|                    |                    |                    |                    | pagoPA             |                    |                    |
++--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+
 
 **Tabella XX – Quadro sinottico delle transazioni di stato**
 
