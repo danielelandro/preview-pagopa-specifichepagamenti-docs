@@ -1,5 +1,5 @@
-Attivazione di un EC direttamente connesso
-==========================================
+16. Attivazione di un EC direttamente connesso
+==============================================
 
 Il Referente Pagamenti di un Ente Creditore che abbia deciso di
 attivarsi su pagoPA collegandosi direttamente all’infrastruttura del
@@ -72,8 +72,8 @@ riferimento, pubblicate sul sito istituzionale dell’Agenzia, tranne nei
 periodi transitori di modifica per l'implementazione di nuove
 specifiche.
 
-Processo di avvio in Esercizio
-------------------------------
+16.1 Processo di avvio in Esercizio
+-----------------------------------
 
 Il processo di avvio in Esercizio di un Ente Creditore collegato
 direttamente all’infrastruttura del Nodo-SPC prevede il soddisfacimento

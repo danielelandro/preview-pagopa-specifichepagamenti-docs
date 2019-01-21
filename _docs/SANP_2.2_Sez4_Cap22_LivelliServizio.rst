@@ -1,5 +1,5 @@
-Livelli di Servizio
-===================
+22. Livelli di Servizio
+=======================
 
 I livelli di servizio, intesi come tempi massimi di risposta applicativa
 percepiti dall’utilizzatore finale del sistema pagoPA, devono essere
@@ -7,8 +7,8 @@ conformi a quanto specificato nel documento dal titolo “\ *Indicatori di
 qualità per i soggetti aderenti*\ ”, disponibile sul sito istituzionale
 dell’Agenzia.
 
-Indicatori di qualità del Nodo-SPC
-----------------------------------
+22.1 Indicatori di qualità del Nodo-SPC
+---------------------------------------
 
 Gli indicatori di qualità inerenti i servizi erogati dal Nodo-SPC ai
 soggetti aderenti sono valutati sulla base di indicatori di performance

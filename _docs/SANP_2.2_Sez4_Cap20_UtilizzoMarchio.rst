@@ -1,5 +1,5 @@
-Utilizzo del marchio pagoPA
-===========================
+20. Utilizzo del marchio pagoPA
+===============================
 
 L’Agenzia per l’Italia Digitale ha realizzato e registrato il marchio
 pagoPA attraverso la definizione di un logotipo atto a individuare i
