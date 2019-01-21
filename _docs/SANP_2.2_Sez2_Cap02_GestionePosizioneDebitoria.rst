@@ -36,8 +36,8 @@ i simboli utilizzati e il loro significato.
 
 **Figura 3 – Notazioni BPMN 2.0 utilizzate**
 
-Gestione della posizione debitoria
-==================================
+2. Gestione della posizione debitoria
+=====================================
 
 Come previsto dalle Linee guida, tutte le tipologie di pagamento gestite
 dal Sistema pagoPA prevedono che l’Ente Creditore, per rendere
@@ -146,8 +146,8 @@ avvisatura digitale:
 I paragrafi che seguono descrivono i *workflow* gestiti da pagoPA nei
 due casi.
 
-Avvisatura digitale push (su iniziativa dell’Ente Creditore)
-------------------------------------------------------------
+2.1 Avvisatura digitale push (su iniziativa dell’Ente Creditore)
+----------------------------------------------------------------
 
 La funzione di avvisatura digitale in modalità *push* è un servizio
 messo a disposizione dal Sistema pagoPA attraverso il NodoSPC che
@@ -248,8 +248,8 @@ l’indicazione che si tratta di una cancellazione.
 Il processo di aggiornamento e annullamento dell’avviso digitale è
 analogo a quello della generazione (Figura 5).
 
-Avvisatura digitale pull (verifica della posizione debitoria)
--------------------------------------------------------------
+2.2 Avvisatura digitale pull (verifica della posizione debitoria)
+-----------------------------------------------------------------
 
 L’avvisatura *pull* è una funzionalità messa a disposizione
 dell'utilizzatore finale che consente allo stesso di accedere alla

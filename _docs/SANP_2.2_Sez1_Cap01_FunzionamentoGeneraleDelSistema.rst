@@ -226,12 +226,12 @@ può essere schematizzato nella Figura 2.
 1. L’esigenza del pagamento può nascere in due modi che innescano
    processi di business differenti:
 
--  sulla base di un bisogno dell’Utilizzatore finale che necessita, ad
-   esempio, di un servizio da parte dell’ente
+    -  sulla base di un bisogno dell’Utilizzatore finale che necessita, ad
+       esempio, di un servizio da parte dell’ente
 
--  quando quest’ultimo deve richiedere all’Utilizzatore finale
-   l’estinzione di un debito creatosi nei suoi confronti: ad esempio il
-   pagamento di una multa o di un’ammenda.
+    -  quando quest’ultimo deve richiedere all’Utilizzatore finale
+       l’estinzione di un debito creatosi nei suoi confronti: ad esempio il
+       pagamento di una multa o di un’ammenda.
 
 2. L’esigenza di pagamento si concretizza attraverso la generazione di
    una **posizione debitoria**, cioè l’insieme di informazioni che

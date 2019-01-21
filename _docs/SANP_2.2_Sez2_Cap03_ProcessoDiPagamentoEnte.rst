@@ -1,5 +1,5 @@
-Il Processo di pagamento attivato presso l’Ente Creditore
-=========================================================
+3. Il Processo di pagamento attivato presso l’Ente Creditore
+============================================================
 
 Rientrano in questa categoria di pagamenti quelli richiesti
 dall’utilizzatore finale attraverso i siti web o *mobile app* o altri
@@ -39,16 +39,16 @@ Nel processo in oggetto (Figura 7) sono coinvolti quattro soggetti:
 
 **Figura** **2 Il processo del pagamento da Ente Creditore**
 
-Avvio del pagamento
--------------------
+3.1 Avvio del pagamento
+-----------------------
 
 Come descritto nei paragrafi precedenti, l’utilizzatore finale può
 eseguire un pagamento per ragioni diverse che generano due diramazioni
 distinte (gateway G2.1.1) nel caso abbia disponibile o meno un avviso di
 pagamento (digitale e analogico).
 
-Generazione posizione debitoria
--------------------------------
+3.2 Generazione posizione debitoria
+-----------------------------------
 
 La generazione della posizione debitoria è l’evento che costituisce la
 premessa al pagamento sul Sistema pagoPA.
@@ -74,8 +74,8 @@ alla stampa di un avviso analogico, da utilizzare per disporre il
 pagamento presso i Prestatori di Servizi di Pagamento che offrono tale
 opzione.
 
-Scelta canale di pagamento 
----------------------------
+3.3 Scelta canale di pagamento
+------------------------------
 
 L’utilizzatore finale accede ai sistemi dell’EC per pagare uno o più
 avvisi che gli sono stati recapitati e/o uno o più pagamenti spontanei e
@@ -109,8 +109,8 @@ per tali finalità è dunque obbligatorio e non richiede un esplicito
 consenso, pena l’impossibilità per l’AgID di erogare i servizi sopra
 citati.
 
-Autorizzazione del pagamento 
------------------------------
+3.4 Autorizzazione del pagamento
+--------------------------------
 
 L’autorizzazione del pagamento viene effettuata in maniera differente a
 seconda del servizio scelto dall’utilizzatore finale:
@@ -227,8 +227,8 @@ dell’Utilizzatore finale una ricevuta (*Task* T2.18).
 L’Utilizzatore finale a questo punto può ottenere la ricevuta (Task
 T2.1.19) e terminare il processo.
 
-Accredito e rendiconto
-----------------------
+3.5 Accredito e rendiconto
+--------------------------
 
 Dopo aver effettuato il pagamento, il Prestatore Servizi di Pagamento lo
 accredita sul conto dell’Ente Creditore (*Task* T2.1.20).
