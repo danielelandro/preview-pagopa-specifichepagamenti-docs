@@ -4,27 +4,15 @@
 Il NodoSPC definisce modalità standard per la gestione dei flussi
 finanziari:
 
--  adotta gli standard XML ISO 20022 per i tracciati dei flussi
-      finanziari correlati alle singole operazioni;
+-  adotta gli standard XML ISO 20022 per i tracciati dei flussi finanziari correlati alle singole operazioni;
 
--  introduce uno standard per la richiesta di pagamento telematico e per
-      la ricevuta telematica di pagamento adottato a livello nazionale
-      su qualunque canale di pagamento, al fine di automatizzare la
-      tratta G2B (*Government to Bank*);
+-  introduce uno standard per la richiesta di pagamento telematico e per la ricevuta telematica di pagamento adottato a livello nazionale su qualunque canale di pagamento, al fine di automatizzare la tratta G2B (*Government to Bank*);
 
--  nell’ambito delle attività legate al commercio elettronico abilita
-      l’interconnessione con i circuiti internazionali di autorizzazione
-      di tali pagamenti;
+-  nell’ambito delle attività legate al commercio elettronico abilita l’interconnessione con i circuiti internazionali di autorizzazione di tali pagamenti;
 
--  assicura l’univocità del pagamento attraverso la definizione di un
-      codice identificativo del pagamento (IUV). Al suddetto
-      identificativo può essere associato uno o più oggetti grafici
-      (codice a barre, glifo, QR-code, ecc.), al fine di consentire e
-      facilitare l’effettuazione del pagamento attraverso qualunque
-      canale oggi esistente;
+-  assicura l’univocità del pagamento attraverso la definizione di un codice identificativo del pagamento (IUV). Al suddetto       identificativo può essere associato uno o più oggetti grafici (codice a barre, glifo, QR-code, ecc.), al fine di consentire e       facilitare l’effettuazione del pagamento attraverso qualunque canale oggi esistente;
 
--  de-materializza tutte le ricevute di pagamento restituite all’Ente
-      Creditore;
+-  de-materializza tutte le ricevute di pagamento restituite all’Ente Creditore;
 
 -  de-materializza gli avvisi di pagamento.
 
@@ -56,19 +44,13 @@ diversi canali.
 Comprende vari agenti software tra cui i principali sono quelli che
 permettono:
 
--  la gestione del “Giornale degli Eventi” dove sono registrati - per
-      ogni operazione - tutti gli scambi necessari alla corretta
-      esecuzione del processo;
+-  la gestione del “Giornale degli Eventi” dove sono registrati - per ogni operazione - tutti gli scambi necessari alla corretta esecuzione del processo;
 
--  la gestione del “Tavolo Operativo” dove sono monitorati tutti i
-      componenti del sistema e lo stato di esecuzione delle operazioni;
+-  la gestione del “Tavolo Operativo” dove sono monitorati tutti i componenti del sistema e lo stato di esecuzione delle operazioni;
 
--  l’indirizzamento ai singoli servizi e/o sotto-servizi in funzione
-      delle richieste e delle risposte previste dai diversi modelli di
-      funzionamento;
+-  l’indirizzamento ai singoli servizi e/o sotto-servizi in funzione delle richieste e delle risposte previste dai diversi modelli di funzionamento;
 
--  la memorizzazione e la gestione delle “richieste di servizio” per la
-      tracciatura delle operazioni e la gestione delle eccezioni;
+-  la memorizzazione e la gestione delle “richieste di servizio” per la tracciatura delle operazioni e la gestione delle eccezioni;
 
 -  la gestione degli errori;
 
@@ -96,25 +78,19 @@ territoriali, eventualmente per mezzo di soggetti intermediari.
 Tra le principali attività svolte dalla componente si richiamano, a
 titolo esemplificativo:
 
--  incapsulamento delle chiamate dei metodi *Web service*, rendendole
-      disponibili in forma mediata verso la Porta di Dominio;
+-  incapsulamento delle chiamate dei metodi *Web service*, rendendole disponibili in forma mediata verso la Porta di Dominio;
 
--  memorizzazione temporanea e trattamento, secondo la priorità
-      indicata, dei messaggi verso la Porta di Dominio;
+-  memorizzazione temporanea e trattamento, secondo la priorità indicata, dei messaggi verso la Porta di Dominio;
 
 -  tracciamento dei riferimenti univoci dei messaggi;
 
--  trattamento degli header dei messaggi scambiati via Porta di Dominio
-      ai fini della correlazione applicativa attuata dalla Porta di
-      Dominio stessa;
+-  trattamento degli header dei messaggi scambiati via Porta di Dominio ai fini della correlazione applicativa attuata dalla Porta di Dominio stessa;
 
 -  gestione degli errori e delle conferme di natura trasmissiva;
 
--  generazione e propagazione dei messaggi d’errore di natura
-      applicativa;
+-  generazione e propagazione dei messaggi d’errore di natura applicativa;
 
--  mantenimento di un proprio registro degli eventi finalizzato
-      all’aggiornamento del Giornale degli Eventi;
+-  mantenimento di un proprio registro degli eventi finalizzato all’aggiornamento del Giornale degli Eventi;
 
 -  mantenimento del sincronismo temporale.
 
@@ -139,21 +115,17 @@ titolarità del rapporto con il NodoSPC.
 
 Di seguito le principali attività svolte dalla componente:
 
--  incapsulamento delle chiamate al fine di renderle disponibili in
-   forma mediata verso gli specifici canali;
+-  incapsulamento delle chiamate al fine di renderle disponibili in forma mediata verso gli specifici canali;
 
 -  memorizzazione temporanea dei messaggi applicativi verso i canali;
 
--  tracciamento dei riferimenti univoci dei messaggi
-   memorizzati/inviati;
+-  tracciamento dei riferimenti univoci dei messaggi memorizzati/inviati;
 
 -  gestione degli errori e delle conferme di natura trasmissiva;
 
--  generazione e propagazione dei messaggi d’errore di natura
-   applicativa;
+-  generazione e propagazione dei messaggi d’errore di natura applicativa;
 
--  mantenimento di un proprio registro degli eventi finalizzato
-   all’aggiornamento del Giornale degli Eventi;
+-  mantenimento di un proprio registro degli eventi finalizzato all’aggiornamento del Giornale degli Eventi;
 
 -  mantenimento del sincronismo temporale.
 
@@ -176,14 +148,9 @@ disposizione dal Prestatore di Servizi di Pagamento.
 
 In questo caso:
 
--  il Prestatore di Servizi di Pagamento consente all’Utilizzatore
-      finale di eseguire il pagamento con i diversi strumenti di
-      pagamento;
+-  il Prestatore di Servizi di Pagamento consente all’Utilizzatore finale di eseguire il pagamento con i diversi strumenti di pagamento;
 
--  la componente Web-FESP agisce da normalizzatore e provvede ad
-      uniformare le informazioni ricevute, re-inviandole attraverso il
-      NodoSPC all’Ente Creditore per consentire di completare
-      l’operazione di pagamento.
+-  la componente Web-FESP agisce da normalizzatore e provvede ad uniformare le informazioni ricevute, re-inviandole attraverso il NodoSPC all’Ente Creditore per consentire di completare l’operazione di pagamento.
 
 6.7 Componente WISP
 -------------------
@@ -225,23 +192,17 @@ MyBank”.
 La gestione dell'avvisatura digitale in modalità *push* avviene
 attraverso l'utilizzo di componenti del NodoSPC che consentono:
 
--  agli Enti Creditori l'invio degli avvisi sia in modalità SFTP (File
-      transfer sicuro), sia attraverso l'utilizzo di appositi *web
-      service*;
+-  agli Enti Creditori l'invio degli avvisi sia in modalità SFTP (File transfer sicuro), sia attraverso l'utilizzo di appositi *web service*;
 
--  ai Prestatore di Servizi di Pagamento di inviare via *web service* al
-   NodoSPC le richieste di iscrizione al servizio;
+-  ai Prestatore di Servizi di Pagamento di inviare via *web service* al NodoSPC le richieste di iscrizione al servizio;
 
 -  al NodoSPC di:
 
-   -  inviare gli avvisi digitali ai Prestatori di Servizi di Pagamento
-      via *web service*;
+   -  inviare gli avvisi digitali ai Prestatori di Servizi di Pagamento via *web service*;
 
-   -  inviare gli avvisi digitali agli Utilizzatori finali tramite
-         e-mail (protocollo SMTP);
+   -  inviare gli avvisi digitali agli Utilizzatori finali tramite e-mail (protocollo SMTP);
 
-   -  notificare ai servizi di Cittadinanza Digitale gli avvisi digitali
-         (predisposizione per funzionalità future).
+   -  notificare ai servizi di Cittadinanza Digitale gli avvisi digitali (predisposizione per funzionalità future).
 
 6.10 File Transfer sicuro
 -------------------------
@@ -262,8 +223,7 @@ singole componenti del NodoSPC: FESP; Web FESP; *Repository*, ecc.
 
 Le principali attività svolte dalla componente riguardano:
 
--  la raccolta delle informazioni attinenti alle operazioni svolte dalle
-      componenti del NodoSPC, come ad esempio:
+-  la raccolta delle informazioni attinenti alle operazioni svolte dalle componenti del NodoSPC, come ad esempio:
 
 -  tipo di operazione (RPT; RT; …),
 
@@ -271,19 +231,15 @@ Le principali attività svolte dalla componente riguardano:
 
 -  *timestamp* dell’evento e della registrazione,
 
--  componente in cui si verifica l’evento (FESP; Web-FESP;
-      *Repository*);
+-  componente in cui si verifica l’evento (FESP; Web-FESP; *Repository*);
 
--  esposizione di un’interfaccia di interrogazione per l’accesso alle
-      registrazioni degli eventi che consente:
+-  esposizione di un’interfaccia di interrogazione per l’accesso alle registrazioni degli eventi che consente:
 
--  la selezione degli eventi in base a criteri di ricerca (tipo di
-      operazione, id, ecc.),
+-  la selezione degli eventi in base a criteri di ricerca (tipo di operazione, id, ecc.),
 
 -  l’esame nel dettaglio di un evento selezionato;
 
--  la disponibilità di dati di sintesi (totali di tipo di operazione per
-      stato, per intervallo temporale, ecc.).
+-  la disponibilità di dati di sintesi (totali di tipo di operazione per stato, per intervallo temporale, ecc.).
 
 6.12 Componenti di utilità
 --------------------------
@@ -295,11 +251,9 @@ applicativi all'interno del NodoSPC:
 
 -  traduttore XML: struttura e assembla i messaggi XML dei servizi;
 
--  modulo crittografia: cifra/decifra informazioni e gestisce i
-      certificati crittografici;
+-  modulo crittografia: cifra/decifra informazioni e gestisce i certificati crittografici;
 
--  modulo diagnostico: effettua controlli di natura sintattica e alcuni
-      controlli semantici.
+-  modulo diagnostico: effettua controlli di natura sintattica e alcuni controlli semantici.
 
 Ognuna delle componenti di utilità, oltre ad attività specifiche alla
 propria funzione, svolge le attività di interfacciamento ed integrazione
@@ -347,11 +301,9 @@ risultare conformi agli Standard di Servizio.
 Qualora fosse riscontrata una mancata conformità a detti Standard di
 Servizio, il soggetto ricevente ha l’obbligo:
 
--  di bloccare l’esecuzione del relativo flusso elaborativo e di
-      trattamento dei dati;
+-  di bloccare l’esecuzione del relativo flusso elaborativo e di trattamento dei dati;
 
--  rendere disponibile un’evidenza dello stato del flusso a fronte di
-      una eventuale situazione di blocco del flusso stesso.
+-  rendere disponibile un’evidenza dello stato del flusso a fronte di una eventuale situazione di blocco del flusso stesso.
 
 6.16 Servizi applicativi opzionali
 ----------------------------------
