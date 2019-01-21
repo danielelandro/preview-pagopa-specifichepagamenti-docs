@@ -1,12 +1,12 @@
-Avvisatura
-==========
+11. Avvisatura
+==============
 
 +----------+-----------------------------------------------+
 | |image0| | **Paragrafo soggetto a proposta di modifica** |
 +----------+-----------------------------------------------+
 
-Scenari e casi d’uso
---------------------
+11.1 Scenari e casi d’uso
+-------------------------
 
 La funzionalità di Avvisatura Digitale consente ad un EC la trasmissione
 in formato elettronico di avvisi di pagamenti bonari agli Utilizzatori
@@ -53,8 +53,8 @@ I casi d’uso sono:
    d’uso è interrogare l’EC al fine di reperire tutti gli avvisi di
    pagamento a lui intestati.
 
-   2. .. rubric:: Iscrizione avvisatura
-         :name: iscrizione-avvisatura
+11.2 Iscrizione avvisatura
+--------------------------
 
 +-----------------------------------+-----------------------------------+
 | Pre-condizioni                    | N/A                               |
@@ -98,8 +98,8 @@ I casi d’uso sono:
 
 4. il NodoSPC notifica l’avvenuta iscrizione del PSP.
 
-   3. .. rubric:: Invio sincrono avviso digitale
-         :name: invio-sincrono-avviso-digitale
+11.3 Invio sincrono avviso digitale
+-----------------------------------
 
 +-----------------------------------+-----------------------------------+
 | Pre-condizioni                    | Esiste una posizione debitoria    |
@@ -171,8 +171,8 @@ I casi d’uso sono:
 10. in conformità al canale sottoscritto per mezzo del PSP, il soggetto
     pagatore riceverà notifica dell’avviso.
 
-    4. .. rubric:: Invio massivo avvisi digitali
-          :name: invio-massivo-avvisi-digitali
+11.4 Invio massivo avvisi digitali
+----------------------------------
 
 +-----------------------------------+-----------------------------------+
 | Pre-condizioni                    | Esistono molteplici posizione     |
@@ -286,8 +286,8 @@ Esempio: 12345678901_10987654321_20181201_00_AV.zip
     l’avviso di pagamento dai canali messi a disposizione del soggetto
     pagatore.
 
-    5. .. rubric:: Avvisatura pull
-          :name: avvisatura-pull
+11.5 Avvisatura pull
+--------------------
 
 +-----------------------------------+-----------------------------------+
 | Pre-condizioni                    | N/A.                              |
@@ -370,8 +370,8 @@ Esempio: 12345678901_10987654321_20181201_00_AV.zip
 
 9. il PSP espone gli avvisi all’Utilizzatore finale.
 
-   6. .. rubric:: Gestione degli errori
-         :name: gestione-degli-errori
+11.6 Gestione degli errori
+---------------------------
 
 Il paragrafo descrive la gestione degli errori nel processo di
 Avvisatura Digitale.

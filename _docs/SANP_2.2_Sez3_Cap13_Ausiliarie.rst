@@ -1,8 +1,8 @@
-1. .. rubric:: Ausiliarie
-      :name: ausiliarie
+13. Ausiliarie
+==============
 
-   1. .. rubric:: Scenari, casi d’uso e attori
-         :name: scenari-casi-duso-e-attori
+13.1 Scenari, casi d’uso e attori
+---------------------------------
 
 Le funzionalità ausiliarie disponibili all’interno del Sistema pagoPA
 rappresentano funzionalità accessorie per la gestione dei processi
@@ -22,8 +22,8 @@ verifica e gestione degli errori nei processi di pagamento.
 Figura XX: Rappresentazione degli erogatori e fruitori delle
 funzionalità di supporto
 
-Funzioni Ausiliarie per L’Ente Creditore
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+13.1.1 Funzioni Ausiliarie per L’Ente Creditore
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Il paragrafo si focalizza sulle funzioni ausiliarie del NodoSPC, ovvero
 quelle funzioni, dedicate all’EC, che permettono l’espletamento dei
@@ -278,8 +278,8 @@ L’evoluzione temporale è la seguente:
 
 -  PPT_SYSTEM_ERROR: errore nella generazione del file XML richiesto
 
-   2. .. rubric:: Funzioni ausiliarie per il PSP
-         :name: funzioni-ausiliarie-per-il-psp
+13.1.2 Funzioni ausiliarie per il PSP
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Richiesta del Catalogo dei Servizi**
 
@@ -482,8 +482,8 @@ Caso KO
 3. Il NodoSPC il NodoSPC replica con esito KO emanando un *faultBean* il
    cui *faultBean*.\ *faultCode* è PPT_SEMANTICA.
 
-   3. .. rubric:: Funzioni Ausiliarie per il NodoSPC
-         :name: funzioni-ausiliarie-per-il-nodospc
+13.1.3 Ausiliarie per il NodoSPC
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Richiesta avanzamento RPT**
 

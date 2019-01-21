@@ -1,8 +1,8 @@
-1. .. rubric:: Pagamento presso il PSP
-      :name: pagamento-presso-il-psp
+10. Pagamento presso il PSP
+============================
 
-   1. .. rubric:: Attori e casi d’uso
-         :name: attori-e-casi-duso
+10.1 Attori e casi d’uso
+------------------------
 
 All’interno di questo capitolo vengono descritti i casi d’uso relativi
 ai possibili processi di pagamento da parte di un Utilizzatore finale,
@@ -58,8 +58,8 @@ Gli scenari di utilizzo sono descritti dai seguenti casi d’uso nominali:
    Pagamento della Tassa Automobilistica presso i PSP” pubblicato sul
    sito istituzionale dell’Agenzia.
 
-Pagamento mediante Avviso (scenario principale) 
-------------------------------------------------
+10.2 Pagamento mediante Avviso (scenario principale)
+----------------------------------------------------
 
 +-----------------------------------+-----------------------------------+
 | Pre-condizioni                    | L’Utilizzatore finale è in        |
@@ -268,9 +268,8 @@ interface* messe a disposizione dal PSP.
 
 23. il NodoSPC notifica al PSP la ricezione dell’RT da parte dell’EC.
 
-    3. .. rubric:: Pagamento mediante Avviso (scenario alternativo)
-          DEPRECATO
-          :name: pagamento-mediante-avviso-scenario-alternativo-deprecato
+10.3 Pagamento mediante Avviso (scenario alternativo) DEPRECATO
+---------------------------------------------------------------
 
 +-----------------------------------+-----------------------------------+
 | Pre-condizioni                    | L’Utilizzatore finale è in        |
@@ -516,8 +515,8 @@ interface* messe a disposizione dal PSP.
 
 31. il PSP può concludere il pagamento.
 
-    4. .. rubric:: Pagamento spontaneo
-          :name: pagamento-spontaneo
+10.4 Pagamento spontaneo
+------------------------
 
 +----------+-----------------------------------------------+
 | |image2| | **Paragrafo soggetto a proposta di modifica** |
@@ -612,8 +611,8 @@ interface* messe a disposizione dal PSP.
 
 Il sequence di tale processo è ancora in fase di definizione.
 
-Gestione degli errori
----------------------
+10.5 Gestione degli errori
+--------------------------
 
 Il paragrafo descrive la gestione degli errori nel processo di Pagamento
 attivato presso il PSP secondo le possibili eccezioni riportate nel
