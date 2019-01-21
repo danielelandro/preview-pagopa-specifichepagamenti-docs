@@ -1,8 +1,8 @@
-1. .. rubric:: Funzioni accessorie
-      :name: funzioni-accessorie
+5. Funzioni accessorie
+=======================
 
-   1. .. rubric:: Revoca della Ricevuta Telematica
-         :name: revoca-della-ricevuta-telematica
+5.1 Revoca della Ricevuta Telematica
+------------------------------------
 
 Qualora l’utilizzatore finale - ai sensi degli articoli 13 e 14 del
 decreto legislativo 27 gennaio 2010, n. 11, ovvero per richieste
@@ -61,8 +61,8 @@ procedure amministrative di back-office al fine di gestire, nel rispetto
 della normativa vigente, i flussi relativi a reclami, rimborsi e revoche
 sia dal punto di vista amministrativo, sia dal punto di vista contabile.
 
-Annullo tecnico
----------------
+5.2 Annullo tecnico
+-------------------
 
 L’annullo tecnico è una casistica dell’invio di una richiesta di revoca
 che indica che la RT inviata è tecnicamente errata, dunque il Prestatore
@@ -108,8 +108,8 @@ tecnico al NodoSPC (*Task* T4.1), che verifica la casistica del caso
    dall’Ente Creditore (*Task* T4.11) attraverso il NodoSPC (*Task*
    T4.10)
 
-   3. .. rubric:: Storno del pagamento
-         :name: storno-del-pagamento
+5.3 Storno del pagamento
+------------------------
 
 Qualora l’Utilizzatore finale chieda a vario titolo l’annullamento
 (storno) di un pagamento all’Ente Creditore presso il quale questo è
@@ -150,8 +150,8 @@ L’Ente Creditore esamina la richiesta (*Gateway* G5.1):
    attraverso il NodoSPC (*Task* T5.8). A questo punto l’Ente Creditore
    è in grado di riconciliare correttamente gli importi (*Task* T5.10)
 
-   4. .. rubric:: Attestazione del pagamento
-         :name: attestazione-del-pagamento
+5.4 Attestazione del pagamento
+------------------------------
 
 L’attestazione di avvenuto pagamento è rappresentata dal documento
 informatico (Ricevuta Telematica) che l’Ente Creditore riceve dal
@@ -211,8 +211,8 @@ Sistema pagoPA, almeno le seguenti informazioni:
 -  Causale del versamento indicata nella richiesta di pagamento
    telematico.
 
-   5. .. rubric:: Riconciliazione dei pagamenti
-         :name: riconciliazione-dei-pagamenti
+5.5 Riconciliazione dei pagamenti
+---------------------------------
 
 Con rifermento alle macro-fasi del processo, una volta effettuata la
 fase di “Regolamento contabile” da parte del Prestatore di Servizi di
@@ -308,8 +308,8 @@ identificativo univoco di riscossione: pertanto l’Ente Creditore dovrà
 opportunamente tenerne conto nelle proprie procedure applicative di
 riconciliazione.
 
-Altre funzioni accessorie
--------------------------
+5.6 Altre funzioni accessorie
+-----------------------------
 
 Seppur meno utilizzate nella pratica comune, si citano di seguito alcune
 ulteriori funzione accessorie messe a disposizione dal Sistema pagoPA:
