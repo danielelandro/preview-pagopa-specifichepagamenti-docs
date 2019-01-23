@@ -1,4 +1,4 @@
-8 Modello-dei-dati
+﻿8 Modello-dei-dati
 ==================
 
 
@@ -1084,7 +1084,7 @@ L’\ *Acquirer* viene configurato attraverso i seguenti parametri:
    emesse da altri soggetti.
    
    
- 8.5 Giornale degli eventi
+8.5 Giornale degli eventi
 -------------------------
 
 Il Giornale degli Eventi (GDE) ha l’obiettivo di consentire la
