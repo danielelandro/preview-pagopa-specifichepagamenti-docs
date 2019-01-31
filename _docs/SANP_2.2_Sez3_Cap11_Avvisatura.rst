@@ -1,12 +1,12 @@
-11. Avvisatura
-==============
+Avvisatura
+==========
 
 +----------+-----------------------------------------------+
 | |image0| | **Paragrafo soggetto a proposta di modifica** |
 +----------+-----------------------------------------------+
 
-11.1 Scenari e casi d’uso
--------------------------
+Scenari e casi d’uso
+--------------------
 
 La funzionalità di Avvisatura Digitale consente ad un EC la trasmissione
 in formato elettronico di avvisi di pagamenti bonari agli Utilizzatori
@@ -53,8 +53,8 @@ I casi d’uso sono:
    d’uso è interrogare l’EC al fine di reperire tutti gli avvisi di
    pagamento a lui intestati.
 
-11.2 Iscrizione avvisatura
---------------------------
+Iscrizione avvisatura
+---------------------
 
 +-----------------------------------+-----------------------------------+
 | Pre-condizioni                    | N/A                               |
@@ -78,7 +78,7 @@ I casi d’uso sono:
 
 |image1|
 
-**Fig. XX - XX**
+**Figura** **1: Avvisatura**
 
 1. l’Utilizzatore finale richiede al PSP di riceve gli Avvisi di
    Pagamento da parte di uno o più EC aderenti al sistema;
@@ -98,8 +98,8 @@ I casi d’uso sono:
 
 4. il NodoSPC notifica l’avvenuta iscrizione del PSP.
 
-11.3 Invio sincrono avviso digitale
------------------------------------
+Invio sincrono avviso digitale
+------------------------------
 
 +-----------------------------------+-----------------------------------+
 | Pre-condizioni                    | Esiste una posizione debitoria    |
@@ -133,7 +133,7 @@ I casi d’uso sono:
 
 |image2|
 
-**Figura XX - XX**
+**Figura** **2: Invio sincrono avviso digitale**
 
 1.  l’EC, tramite la primitiva *nodoInviaAvvisoDigitale,* richiede al
     NodoSPC di inoltrare l’avviso al soggetto pagatore. L’avviso
@@ -171,8 +171,8 @@ I casi d’uso sono:
 10. in conformità al canale sottoscritto per mezzo del PSP, il soggetto
     pagatore riceverà notifica dell’avviso.
 
-11.4 Invio massivo avvisi digitali
-----------------------------------
+Invio massivo avvisi digitali
+-----------------------------
 
 +-----------------------------------+-----------------------------------+
 | Pre-condizioni                    | Esistono molteplici posizione     |
@@ -208,7 +208,7 @@ I casi d’uso sono:
 
 |image3|
 
-**Figura XX - XX**
+**Figura** **3: Invio massivo avvisi digitali**
 
 1. l’EC, a partire dall’Archivio dei Pagamenti in Attesa, genera il file
    contenente l’elenco degli Avvisi Digitali;
@@ -222,21 +222,23 @@ I casi d’uso sono:
 
 nel quale le varie componenti assumono il seguente significato:
 
-a) *idIntermediario:* è il codice fiscale del soggetto intermediario
+a. *idIntermediario:* è il codice fiscale del soggetto intermediario
    mittente, può coincidere con il dato <idDominio>;
 
-b) *idDominio:* è il codice fiscale del soggetto mittente del flusso;
+b. *idDominio:* è il codice fiscale del soggetto mittente del flusso;
    deve coincidere con il dato identificativoDominio presente nel
    flusso;
 
-c) *idSessioneTrasmissione*: è la data di invio del flusso, nel formato
+c. *idSessioneTrasmissione*: è la data di invio del flusso, nel formato
    YYYYMMDD;
 
-d) *progressivoFile*: è un numero di due cifre rappresentativo del file
+d. *progressivoFile*: è un numero di due cifre rappresentativo del file
    inviato nell’ambito della stessa sessione:‘00’ per il primo, ‘01’ per
    il secondo, ecc. [1]_;
 
-Esempio: 12345678901_10987654321_20181201_00_AV.zip
+..
+
+   Esempio: 12345678901_10987654321_20181201_00_AV.zip
 
 3. l’EC invia il file compresso al NodoSPC utilizzando il protocollo di
    trasferimento dati SFTP;
@@ -286,8 +288,8 @@ Esempio: 12345678901_10987654321_20181201_00_AV.zip
     l’avviso di pagamento dai canali messi a disposizione del soggetto
     pagatore.
 
-11.5 Avvisatura pull
---------------------
+Avvisatura pull
+---------------
 
 +-----------------------------------+-----------------------------------+
 | Pre-condizioni                    | N/A.                              |
@@ -329,7 +331,7 @@ Esempio: 12345678901_10987654321_20181201_00_AV.zip
 
 |image4|
 
-**Fig. XX - XX**
+**Figura** **4: Avvisatura pull**
 
 1. l’Utilizzatore finale richiede, tramite il canale del PSP, di
    ricevere le posizioni debitorie a lui intestate presso uno o tutti
@@ -370,8 +372,8 @@ Esempio: 12345678901_10987654321_20181201_00_AV.zip
 
 9. il PSP espone gli avvisi all’Utilizzatore finale.
 
-11.6 Gestione degli errori
----------------------------
+Gestione degli errori
+---------------------
 
 Il paragrafo descrive la gestione degli errori nel processo di
 Avvisatura Digitale.
@@ -402,7 +404,7 @@ Avvisatura Digitale.
 
    |image5|
 
-**Figura XX - XX**
+**Figura** **5: Errore nella composizione sintattica**
 
    L’evoluzione temporale è la seguente:
 
@@ -420,8 +422,8 @@ Avvisatura Digitale.
    risolvere l’anomalia, attiverà il TAVOLO OPERATIVO.
 
 +-----------------------+-----------------------+-----------------------+
-| Strategia di          | Tipologia Errore      | Azione di Controllo   |
-| risoluzione           |                       | Suggerita             |
+| **Strategia di        | **Tipologia Errore**  | **Azione di Controllo |
+| risoluzione**         |                       | Suggerita**           |
 +=======================+=======================+=======================+
 |                       | PPT_SEMANTICA         | Verificare l’avviso   |
 |                       |                       | digitale inviato,     |
@@ -430,7 +432,7 @@ Avvisatura Digitale.
 |                       |                       | OPERATIVO.            |
 +-----------------------+-----------------------+-----------------------+
 
-**Tabella XX - XX**
+**Tabella** **1: Verifica avviso**
 
 **Mancata Consegna al PSP**
 
@@ -466,7 +468,7 @@ Avvisatura Digitale.
 
 |image6|
 
-**Figura XX - XX**
+**Figura** **6: Mancata Consegna al PSP**
 
    L’evoluzione temporale è la seguente:
 
@@ -516,8 +518,8 @@ Avvisatura Digitale.
     sarà necessario notificare il *SoggettoPagatore* con altri mezzi;
 
 +-----------------------+-----------------------+-----------------------+
-| Strategia di          | Tipologia Errore      | Azione di Controllo   |
-| risoluzione           |                       | Suggerita             |
+| **Strategia di        | **Tipologia Errore**  | **Azione di Controllo |
+| risoluzione**         |                       | Suggerita**           |
 +=======================+=======================+=======================+
 |                       | PPT_CANALE_ERRORE     | Tale condizione,      |
 |                       |                       | potrebbe attivare il  |
@@ -555,7 +557,7 @@ Avvisatura Digitale.
 
 |image7|
 
-**Figura XX - XX**
+**Figura** **7: Errore di trasferimento**
 
 L’evoluzione temporale può essere originata da una delle seguenti
 alternative:
@@ -594,7 +596,7 @@ alternative:
 
 |image8|
 
-**Figura XX - XX**
+**Figura** **8: Mancata Ricezione Dati Attesi**
 
 L’evoluzione temporale può essere originata da una delle seguenti
 alternative:
@@ -634,7 +636,7 @@ alternative:
 
 |image9|
 
-**Figura XX - XX**
+**Figura** **9: Errore nel recupero degli avvisi digitali**
 
 L’evoluzione temporale è la seguente:
 
@@ -682,8 +684,8 @@ L’evoluzione temporale è la seguente:
     eventualmente attivare il Tavolo Operativo.
 
 +-----------------------+-----------------------+-----------------------+
-| Strategia di          | Tipologia Errore      | Azione di Controllo   |
-| risoluzione           |                       | Suggerita             |
+| **Strategia di        | **Tipologia Errore**  | **Azione di Controllo |
+| risoluzione**         |                       | Suggerita**           |
 +=======================+=======================+=======================+
 |                       | PPT_ERRORE_EMESSO_DA_ | Il PSP attiva il      |
 |                       | PAA                   | Tavolo Operativo.     |

@@ -1,5 +1,4 @@
 APPENDICE I – APPROFONDIMENTI (ENTI CREDITORI)
-==============================================
 
 Integrità e non ripudiabilità della Ricevuta Telematica
 -------------------------------------------------------
@@ -16,7 +15,7 @@ ricevuta telematica attraverso la firma digitale o la firma elettronica
 qualificata dello stesso da parte del Prestatore di Servizi di
 Pagamento.
 
-Acquisto della marca da bollo digitale
+Acquisto della marca da bollo digitale 
 ---------------------------------------
 
 L'Agenzia delle Entrate ha realizzato il servizio @e.bollo che permette
@@ -67,7 +66,6 @@ Il caso d’uso del pagamento della marca da bollo digitale è descritto
 nel dettaglio nella Sezione III del presente documento.
 
 APPENDICE II – APPROFONDIMENTI (PRESTATORI DI SERVIZI DI PAGAMENTO)
-===================================================================
 
 Il servizio MyBank
 ------------------

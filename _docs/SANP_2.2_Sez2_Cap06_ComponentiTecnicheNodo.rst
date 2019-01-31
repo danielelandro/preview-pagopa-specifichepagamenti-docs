@@ -1,31 +1,43 @@
-6. Componenti tecniche del NodoSPC
-==================================
+componenti tecniche del NodoSPC
+===============================
 
 Il NodoSPC definisce modalità standard per la gestione dei flussi
 finanziari:
 
--  adotta gli standard XML ISO 20022 per i tracciati dei flussi finanziari correlati alle singole operazioni;
+-  adotta gli standard XML ISO 20022 per i tracciati dei flussi
+      finanziari correlati alle singole operazioni;
 
--  introduce uno standard per la richiesta di pagamento telematico e per la ricevuta telematica di pagamento adottato a livello nazionale su qualunque canale di pagamento, al fine di automatizzare la tratta G2B (*Government to Bank*);
+-  introduce uno standard per la richiesta di pagamento telematico e per
+      la ricevuta telematica di pagamento adottato a livello nazionale
+      su qualunque canale di pagamento, al fine di automatizzare la
+      tratta G2B (*Government to Bank*);
 
--  nell’ambito delle attività legate al commercio elettronico abilita l’interconnessione con i circuiti internazionali di autorizzazione di tali pagamenti;
+-  nell’ambito delle attività legate al commercio elettronico abilita
+      l’interconnessione con i circuiti internazionali di autorizzazione
+      di tali pagamenti;
 
--  assicura l’univocità del pagamento attraverso la definizione di un codice identificativo del pagamento (IUV). Al suddetto       identificativo può essere associato uno o più oggetti grafici (codice a barre, glifo, QR-code, ecc.), al fine di consentire e       facilitare l’effettuazione del pagamento attraverso qualunque canale oggi esistente;
+-  assicura l’univocità del pagamento attraverso la definizione di un
+      codice identificativo del pagamento (IUV). Al suddetto
+      identificativo può essere associato uno o più oggetti grafici
+      (codice a barre, glifo, QR-code, ecc.), al fine di consentire e
+      facilitare l’effettuazione del pagamento attraverso qualunque
+      canale oggi esistente;
 
--  de-materializza tutte le ricevute di pagamento restituite all’Ente Creditore;
+-  de-materializza tutte le ricevute di pagamento restituite all’Ente
+      Creditore;
 
 -  de-materializza gli avvisi di pagamento.
 
-Nella Figura 13 sono evidenziate le componenti ed i soggetti che
+Nella **Figura 1** sono evidenziate le componenti ed i soggetti che
 interagiscono tra di loro per consentire lo svolgersi del processo di
 pagamento telematico secondo i modelli descritti in precedenza.
 
 |image0|
 
-**Figura 13 – Schema architetturale del Sistema pagoPA**
+**Figura** **1: Schema architetturale del Sistema pagoPA**
 
-6.1 Gestore del Workflow Applicativo
-------------------------------------
+Gestore del Workflow Applicativo
+--------------------------------
 
 È la macro-componente principale che ha lo scopo di coordinare
 l’esecuzione delle richieste di servizio, richiamando componenti di
@@ -44,28 +56,34 @@ diversi canali.
 Comprende vari agenti software tra cui i principali sono quelli che
 permettono:
 
--  la gestione del “Giornale degli Eventi” dove sono registrati - per ogni operazione - tutti gli scambi necessari alla corretta esecuzione del processo;
+-  la gestione del “Giornale degli Eventi” dove sono registrati - per
+      ogni operazione - tutti gli scambi necessari alla corretta
+      esecuzione del processo;
 
--  la gestione del “Tavolo Operativo” dove sono monitorati tutti i componenti del sistema e lo stato di esecuzione delle operazioni;
+-  la gestione del “Tavolo Operativo” dove sono monitorati tutti i
+      componenti del sistema e lo stato di esecuzione delle operazioni;
 
--  l’indirizzamento ai singoli servizi e/o sotto-servizi in funzione delle richieste e delle risposte previste dai diversi modelli di funzionamento;
+-  l’indirizzamento ai singoli servizi e/o sotto-servizi in funzione
+      delle richieste e delle risposte previste dai diversi modelli di
+      funzionamento;
 
--  la memorizzazione e la gestione delle “richieste di servizio” per la tracciatura delle operazioni e la gestione delle eccezioni;
+-  la memorizzazione e la gestione delle “richieste di servizio” per la
+      tracciatura delle operazioni e la gestione delle eccezioni;
 
 -  la gestione degli errori;
 
 -  il mantenimento del sincronismo temporale.
 
-6.2 Gestore della Connessione
------------------------------
+Gestore della Connessione
+-------------------------
 
 La connessione al NodoSPC in applicazione al vigente modello di
 interoperabilità avviene nelle forme e nei metodi descritti nel
 documento collegato “Specifiche di Connessione al sistema pagoPA”,
 pubblicato sul sito istituzionale di AgID.
 
-6.3 Gestore della Porta di Dominio
-----------------------------------
+Gestore della Porta di Dominio
+------------------------------
 
 Questa componente, deprecata e mantenuta per retro compatibilità, si
 occupa dello scambio dei messaggi da e verso SPC per il colloquio con
@@ -78,24 +96,30 @@ territoriali, eventualmente per mezzo di soggetti intermediari.
 Tra le principali attività svolte dalla componente si richiamano, a
 titolo esemplificativo:
 
--  incapsulamento delle chiamate dei metodi *Web service*, rendendole disponibili in forma mediata verso la Porta di Dominio;
+-  incapsulamento delle chiamate dei metodi *Web service*, rendendole
+      disponibili in forma mediata verso la Porta di Dominio;
 
--  memorizzazione temporanea e trattamento, secondo la priorità indicata, dei messaggi verso la Porta di Dominio;
+-  memorizzazione temporanea e trattamento, secondo la priorità
+      indicata, dei messaggi verso la Porta di Dominio;
 
 -  tracciamento dei riferimenti univoci dei messaggi;
 
--  trattamento degli header dei messaggi scambiati via Porta di Dominio ai fini della correlazione applicativa attuata dalla Porta di Dominio stessa;
+-  trattamento degli header dei messaggi scambiati via Porta di Dominio
+      ai fini della correlazione applicativa attuata dalla Porta di
+      Dominio stessa;
 
 -  gestione degli errori e delle conferme di natura trasmissiva;
 
--  generazione e propagazione dei messaggi d’errore di natura applicativa;
+-  generazione e propagazione dei messaggi d’errore di natura
+      applicativa;
 
--  mantenimento di un proprio registro degli eventi finalizzato all’aggiornamento del Giornale degli Eventi;
+-  mantenimento di un proprio registro degli eventi finalizzato
+      all’aggiornamento del Giornale degli Eventi;
 
 -  mantenimento del sincronismo temporale.
 
-6.4 Interfaccia di Canale
--------------------------
+Interfaccia di Canale
+---------------------
 
 Le attività svolte da questa componente sono analoghe a quelle svolte
 dal gestore della Porta di Dominio per gli Enti Creditori, ma istanziate
@@ -115,22 +139,26 @@ titolarità del rapporto con il NodoSPC.
 
 Di seguito le principali attività svolte dalla componente:
 
--  incapsulamento delle chiamate al fine di renderle disponibili in forma mediata verso gli specifici canali;
+-  incapsulamento delle chiamate al fine di renderle disponibili in
+   forma mediata verso gli specifici canali;
 
 -  memorizzazione temporanea dei messaggi applicativi verso i canali;
 
--  tracciamento dei riferimenti univoci dei messaggi memorizzati/inviati;
+-  tracciamento dei riferimenti univoci dei messaggi
+   memorizzati/inviati;
 
 -  gestione degli errori e delle conferme di natura trasmissiva;
 
--  generazione e propagazione dei messaggi d’errore di natura applicativa;
+-  generazione e propagazione dei messaggi d’errore di natura
+   applicativa;
 
--  mantenimento di un proprio registro degli eventi finalizzato all’aggiornamento del Giornale degli Eventi;
+-  mantenimento di un proprio registro degli eventi finalizzato
+   all’aggiornamento del Giornale degli Eventi;
 
 -  mantenimento del sincronismo temporale.
 
-6.5 Repository ricevute telematiche
------------------------------------
+Repository ricevute telematiche
+-------------------------------
 
 Il *Repository* costituisce l’archivio in cui sono memorizzate tutte le
 ricevute telematiche processate dal NodoSPC e non ancora consegnate,
@@ -139,8 +167,8 @@ finalizzato al buon funzionamento del sistema.
 Il *Repository* consente una verifica in merito al corretto trattamento
 dei flussi di pagamento del NodoSPC.
 
-6.6 Componente Web-FESP
------------------------
+Componente Web-FESP
+-------------------
 
 La componente “Web-FESP” permette di effettuare il pagamento
 reindirizzando l’Utilizzatore finalee verso una *landing page* messa a
@@ -148,12 +176,17 @@ disposizione dal Prestatore di Servizi di Pagamento.
 
 In questo caso:
 
--  il Prestatore di Servizi di Pagamento consente all’Utilizzatore finale di eseguire il pagamento con i diversi strumenti di pagamento;
+-  il Prestatore di Servizi di Pagamento consente all’Utilizzatore
+      finale di eseguire il pagamento con i diversi strumenti di
+      pagamento;
 
--  la componente Web-FESP agisce da normalizzatore e provvede ad uniformare le informazioni ricevute, re-inviandole attraverso il NodoSPC all’Ente Creditore per consentire di completare l’operazione di pagamento.
+-  la componente Web-FESP agisce da normalizzatore e provvede ad
+      uniformare le informazioni ricevute, re-inviandole attraverso il
+      NodoSPC all’Ente Creditore per consentire di completare
+      l’operazione di pagamento.
 
-6.7 Componente WISP
--------------------
+Componente WISP
+---------------
 
 La componente “WISP” (*Wizard* Interattivo di Scelta del Prestatore di
 Servizi di Pagamento) consente all'utilizzatore finale di effettuare la
@@ -172,8 +205,8 @@ l’Utilizzatore finale potrà memorizzare gli strumenti di pagamento
 utilizzati, evitando di dover effettuare una nuova ricerca nelle
 occasioni successive.
 
-6.8 Componente Wrapper MyBank
------------------------------
+Componente Wrapper MyBank
+-------------------------
 
 Nell'ambito del collegamento tra il NodoSPC ed il circuito *e-commerce*
 MyBank, la componente "Wrapper MyBank" si occupa di effettuare le
@@ -186,26 +219,32 @@ In tale contesto, le *Seller Bank* aderenti al NodoSPC sono tenute ad
 utilizzare le specifiche di interfacciamento della componente “Wrapper
 MyBank”.
 
-6.9 Componente per la gestione dell'avvisatura digitale in modalità push
-------------------------------------------------------------------------
+Componente per la gestione dell'avvisatura digitale in modalità push
+--------------------------------------------------------------------
 
 La gestione dell'avvisatura digitale in modalità *push* avviene
 attraverso l'utilizzo di componenti del NodoSPC che consentono:
 
--  agli Enti Creditori l'invio degli avvisi sia in modalità SFTP (File transfer sicuro), sia attraverso l'utilizzo di appositi *web service*;
+-  agli Enti Creditori l'invio degli avvisi sia in modalità SFTP (File
+   transfer sicuro), sia attraverso l'utilizzo di appositi *web
+   service*;
 
--  ai Prestatore di Servizi di Pagamento di inviare via *web service* al NodoSPC le richieste di iscrizione al servizio;
+-  ai Prestatore di Servizi di Pagamento di inviare via *web service* al
+   NodoSPC le richieste di iscrizione al servizio;
 
 -  al NodoSPC di:
 
-   -  inviare gli avvisi digitali ai Prestatori di Servizi di Pagamento via *web service*;
+   -  inviare gli avvisi digitali ai Prestatori di Servizi di Pagamento
+      via *web service*;
 
-   -  inviare gli avvisi digitali agli Utilizzatori finali tramite e-mail (protocollo SMTP);
+   -  inviare gli avvisi digitali agli Utilizzatori finali tramite
+         e-mail (protocollo SMTP);
 
-   -  notificare ai servizi di Cittadinanza Digitale gli avvisi digitali (predisposizione per funzionalità future).
+   -  notificare ai servizi di Cittadinanza Digitale gli avvisi digitali
+         (predisposizione per funzionalità future).
 
-6.10 File Transfer sicuro
--------------------------
+File Transfer sicuro
+--------------------
 
 Il NodoSPC mette a disposizione dei soggetti aderenti una piattaforma
 *client-server* per il trasferimento sicuro dei dati in modalità *File
@@ -214,8 +253,8 @@ primitive oggi impiegate per lo scambio di informazioni in modalità
 massiva (ad esempio: i flussi di rendicontazione, i totali di traffico,
 ecc.).
 
-6.11 Giornale degli Eventi
---------------------------
+Giornale degli Eventi
+---------------------
 
 È la componente che raccoglie tutte le informazioni attinenti ad ogni
 singola operazione sintetizzando le registrazioni effettuate dalle
@@ -223,26 +262,29 @@ singole componenti del NodoSPC: FESP; Web FESP; *Repository*, ecc.
 
 Le principali attività svolte dalla componente riguardano:
 
--  la raccolta delle informazioni attinenti alle operazioni svolte dalle componenti del NodoSPC, come ad esempio:
+-  la raccolta delle informazioni attinenti alle operazioni svolte dalle
+      componenti del NodoSPC, come ad esempio:
 
--  tipo di operazione (RPT; RT; …),
+   -  tipo di operazione (RPT; RT; …),
 
--  identificativo univoco associato all’operazione,
+   -  identificativo univoco associato all’operazione,
 
--  *timestamp* dell’evento e della registrazione,
+   -  timestamp dell’evento e della registrazione, componente in cui si
+      verifica l’evento (FESP; Web-FESP; Repository);
 
--  componente in cui si verifica l’evento (FESP; Web-FESP; *Repository*);
+-  esposizione di un’interfaccia di interrogazione per l’accesso alle
+      registrazioni degli eventi che consente:
 
--  esposizione di un’interfaccia di interrogazione per l’accesso alle registrazioni degli eventi che consente:
+   -  la selezione degli eventi in base a criteri di ricerca (tipo di
+      operazione, id, ecc.),
 
--  la selezione degli eventi in base a criteri di ricerca (tipo di operazione, id, ecc.),
+   -  l’esame nel dettaglio di un evento selezionato;
 
--  l’esame nel dettaglio di un evento selezionato;
+   -  la disponibilità di dati di sintesi (totali di tipo di operazione
+      per stato, per intervallo temporale, ecc.).
 
--  la disponibilità di dati di sintesi (totali di tipo di operazione per stato, per intervallo temporale, ecc.).
-
-6.12 Componenti di utilità
---------------------------
+Componenti di utilità
+---------------------
 
 Le componenti di utilità rappresentano un insieme di componenti “di
 servizio” invocate, in base alle necessità, dal *Workflow* Applicativo
@@ -251,16 +293,18 @@ applicativi all'interno del NodoSPC:
 
 -  traduttore XML: struttura e assembla i messaggi XML dei servizi;
 
--  modulo crittografia: cifra/decifra informazioni e gestisce i certificati crittografici;
+-  modulo crittografia: cifra/decifra informazioni e gestisce i
+   certificati crittografici;
 
--  modulo diagnostico: effettua controlli di natura sintattica e alcuni controlli semantici.
+-  modulo diagnostico: effettua controlli di natura sintattica e alcuni
+   controlli semantici.
 
 Ognuna delle componenti di utilità, oltre ad attività specifiche alla
 propria funzione, svolge le attività di interfacciamento ed integrazione
 con il gestore del *Workflow* Applicativo.
 
-6.13 Sistema di monitoring
---------------------------
+Sistema di monitoring 
+----------------------
 
 Il sistema di *monitoring* svolge attività di controllo complessivo per
 quanto attiene alle tematiche di monitoraggio. Tale componente deve
@@ -279,8 +323,8 @@ regole di *throttling* sono indicate nel documento “\ *Indicatori di
 qualità per i Soggetti Aderenti*\ ” pubblicato sul sito istituzionale
 dell’Agenzia per l’Italia Digitale.
 
-6.14 Sistema di Gestione del Tavolo Operativo
----------------------------------------------
+Sistema di Gestione del Tavolo Operativo
+----------------------------------------
 
 Il sistema ha lo scopo di fornire il supporto necessario alle attività
 del Tavolo Operativo, monitorando le altre componenti applicative e
@@ -292,8 +336,8 @@ un sistema di *Interactive Voice Response* (IVR, Risposta Vocale
 Interattiva) per istradare le chiamate vocali, integrato a un sistema di
 *trouble-ticketing* per tracciare tutte le attività di assistenza.
 
-6.15 Controlli
---------------
+Controlli
+---------
 
 Tutti i flussi/dati scambiati e previsti dai Servizi di Nodo devono
 risultare conformi agli Standard di Servizio.
@@ -301,20 +345,22 @@ risultare conformi agli Standard di Servizio.
 Qualora fosse riscontrata una mancata conformità a detti Standard di
 Servizio, il soggetto ricevente ha l’obbligo:
 
--  di bloccare l’esecuzione del relativo flusso elaborativo e di trattamento dei dati;
+-  di bloccare l’esecuzione del relativo flusso elaborativo e di
+      trattamento dei dati;
 
--  rendere disponibile un’evidenza dello stato del flusso a fronte di una eventuale situazione di blocco del flusso stesso.
+-  rendere disponibile un’evidenza dello stato del flusso a fronte di
+      una eventuale situazione di blocco del flusso stesso.
 
-6.16 Servizi applicativi opzionali
-----------------------------------
+Servizi applicativi opzionali
+-----------------------------
 
 Rientrano in questa tipologia le funzioni che il Servizio mette a
 disposizione dei soggetti appartenenti al Dominio e che possono da
 questi essere utilizzate nell’ambito dello svolgimento delle proprie
 attività.
 
-6.16.1 Totali di traffico
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Totali di traffico
+~~~~~~~~~~~~~~~~~~
 
 Il servizio di quadratura dei flussi di traffico mette a disposizione
 dei soggetti appartenenti al Dominio che ne facciano richiesta, un

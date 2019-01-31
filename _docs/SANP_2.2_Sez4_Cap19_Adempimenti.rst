@@ -1,19 +1,19 @@
-19. Adempimenti durante l’erogazione del servizio
-=================================================
+Adempimenti durante l’erogazione del servizio
+=============================================
 
 Gli adempimenti che gli Enti Creditori, i Prestatori di Servizi di
 Pagamento e i Partner Tecnologici sono tenuti ad osservare durante
 l’erogazione del servizio, dipendono dalle modalità di collegamento
 degli stessi.
 
-19.1 Adempimenti dei soggetti direttamente collegati al Nodo-SPC
-----------------------------------------------------------------
+Adempimenti dei soggetti direttamente collegati al Nodo-SPC
+-----------------------------------------------------------
 
 Tutti i soggetti collegati direttamente al Nodo-SPC devono farsi carico
 degli obblighi e adempimenti di seguito descritti.
 
-19.1.1 Tavoli operativi
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Tavoli operativi
+~~~~~~~~~~~~~~~~
 
 Il processo di avvio in Esercizio sul Sistema pagoPA di tutti i soggetti
 collegati direttamente al Nodo-SPC obbliga tali soggetti a dotarsi di un
@@ -33,8 +33,8 @@ che il Tavolo Operativo possa far fronte sia alla operatività ordinaria
 (rilevazione e gestione di specifiche anomalie di funzionamento) che a
 procedure di emergenza da attivare in caso di gravi malfunzionamenti.
 
-19.1.2 Monitoraggio e controllo
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Monitoraggio e controllo
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 I soggetti direttamente collegati al Nodo-SPC devono:
 
@@ -48,8 +48,8 @@ I soggetti direttamente collegati al Nodo-SPC devono:
    Operativo al fine di favorire lo scambio di informazioni con
    l’Agenzia.
 
-19.1.3 Business continuity e Disaster Recovery
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   3. .. rubric:: Business continuity e Disaster Recovery
+         :name: business-continuity-e-disaster-recovery
 
 Ogni soggetto collegato direttamente al Nodo-SPC è tenuto a predisporre
 ed implementare soluzioni tecniche ed organizzative atte a garantire la
@@ -61,8 +61,8 @@ Qualora si verifichino eventi che pregiudichino la Business Continuity è
 fatto altresì obbligo al soggetto di darne tempestiva comunicazione
 all’Agenzia per l’Italia Digitale.
 
-19.1.4 Archiviazione dei dati
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Archiviazione dei dati
+~~~~~~~~~~~~~~~~~~~~~~
 
 Fatti salvi gli obblighi di legge in tema di tenuta e conservazione
 della documentazione attinente alle attività svolte per l’erogazione del
@@ -72,8 +72,8 @@ direttamente al Nodo-SPC (Ente Creditore o Prestatore di Servizi di
 Pagamento) è tenuto ad archiviare, senza alcuna modifica, i dati
 trasmessi e ricevuti tramite il Servizio.
 
-19.1.5 Ulteriori adempimenti
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ulteriori adempimenti
+~~~~~~~~~~~~~~~~~~~~~
 
 Gli Enti Creditori collegati direttamente al Nodo-SPC devono:
 
@@ -110,8 +110,9 @@ d) Comunicare e mantenere aggiornati i dati relativi ai canali di
    pagamento disponibili (es. sportello fisico, home banking, app
    mobile, ATM).
 
-19.2 Adempimenti dei soggetti non direttamente collegati al Nodo-SPC
---------------------------------------------------------------------
+   2. .. rubric:: Adempimenti dei soggetti non direttamente collegati al
+         Nodo-SPC
+         :name: adempimenti-dei-soggetti-non-direttamente-collegati-al-nodo-spc
 
 Tutti i soggetti non direttamente collegati al Nodo-SPC devono farsi
 carico degli adempimenti di seguito descritti.

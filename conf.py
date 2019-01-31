@@ -7,8 +7,8 @@ settings_copyright_copyleft = 'AgID - Team Digitale'
 settings_editor_name = 'AgID - Team Digitale'
 settings_doc_version = 'version: latest'
 settings_doc_release = 'version: latest'
-settings_basename = 'anteprima-sanp'
-settings_file_name = 'anteprima-sanp'
+settings_basename = 'sanp-test'
+settings_file_name = 'sanp-test'
 
 # -- No need to change below here
 

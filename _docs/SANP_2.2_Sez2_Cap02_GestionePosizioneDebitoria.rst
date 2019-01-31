@@ -1,7 +1,4 @@
-**SEZIONE II – REGOLE DI FUNZIONAMENTO DEL SISTEMA**
-
-Introduzione
-============
+SEZIONE II – REGOLE DI FUNZIONAMENTO DEL SISTEMA
 
 I due diversi *workflow* gestiti sul Sistema pagoPA si differenziano
 principalmente in base al soggetto che innesca il pagamento. Avremo
@@ -29,15 +26,15 @@ integrare servizi di Enti Creditori e Prestatori di Servizi di Pagamento
 con il NodoSPC sono descritti nella sezione III.
 
 La modellazione segue le notazioni dello standard *Business Process
-Model and Notation* (BPMN) versione 2.0, di cui si riporta, in Figura 3,
-i simboli utilizzati e il loro significato.
+Model and Notation* (BPMN) versione 2.0, di cui si riporta, in **Figura
+1**, i simboli utilizzati e il loro significato.
 
 |image0|
 
-**Figura 3 – Notazioni BPMN 2.0 utilizzate**
+**Figura** **1: Notazioni BPMN 2.0 utilizzate**
 
-2. Gestione della posizione debitoria
-=====================================
+Gestione della posizione debitoria
+==================================
 
 Come previsto dalle Linee guida, tutte le tipologie di pagamento gestite
 dal Sistema pagoPA prevedono che l’Ente Creditore, per rendere
@@ -117,7 +114,7 @@ momento della produzione di tale documento e quindi può essere soggetto
 a variazioni (in più o in meno) al momento in cui ne viene richiesto il
 pagamento da parte dell’utilizzatore finale, nel caso sia intervenuto un
 aggiornamento della posizione debitoria, purché tale possibilità sia
-stata effettivamente esplicitata in una avvertenza sull’avviso..
+stata effettivamente esplicitata in una avvertenza sull’avviso.
 
 La peculiarità di alcune postazioni messe a disposizione dai Prestatori
 di Servizi di Pagamento rende necessario automatizzare l’acquisizione
@@ -146,8 +143,8 @@ avvisatura digitale:
 I paragrafi che seguono descrivono i *workflow* gestiti da pagoPA nei
 due casi.
 
-2.1 Avvisatura digitale push (su iniziativa dell’Ente Creditore)
-----------------------------------------------------------------
+Avvisatura digitale push (su iniziativa dell’Ente Creditore)
+------------------------------------------------------------
 
 La funzione di avvisatura digitale in modalità *push* è un servizio
 messo a disposizione dal Sistema pagoPA attraverso il NodoSPC che
@@ -203,7 +200,7 @@ La revoca dell’iscrizione al servizio di avvisatura deve essere
 richiesta al Prestatore di Servizi di Pagamento, che ne stabilisce le
 modalità.
 
-Nel processo di avvisatura *push* (Figura 4) sono coinvolti quattro
+Nel processo di avvisatura *push* (**Figura 2**) sono coinvolti quattro
 soggetti:
 
 -  utilizzatore finale
@@ -216,7 +213,7 @@ soggetti:
 
 |image1|
 
-**Figura 4 – Il processo di gestione dell’avvisatura push**
+**Figura** **2: Il processo di gestione dell’avvisatura push**
 
 Il processo di avvisatura *push* è iniziato dall’Ente Creditore quando
 genera una posizione debitoria (*Task* T1.1.1). Una volta generata la
@@ -246,10 +243,10 @@ inviare al NodoSPC una nuova copia dell’avviso digitale con
 l’indicazione che si tratta di una cancellazione.
 
 Il processo di aggiornamento e annullamento dell’avviso digitale è
-analogo a quello della generazione (Figura 5).
+analogo a quello della generazione (**Figura 3**).
 
-2.2 Avvisatura digitale pull (verifica della posizione debitoria)
------------------------------------------------------------------
+Avvisatura digitale pull (verifica della posizione debitoria)
+-------------------------------------------------------------
 
 L’avvisatura *pull* è una funzionalità messa a disposizione
 dell'utilizzatore finale che consente allo stesso di accedere alla
@@ -266,7 +263,7 @@ digitale”, e avviene secondo uno schema sincrono, attivato
 dall'utilizzatore finale stesso attraverso le stesse modalità descritte
 nel paragrafo precedente.
 
-Nel processo in oggetto (Figura 5) sono coinvolti quattro soggetti:
+Nel processo in oggetto (**Figura 3**) sono coinvolti quattro soggetti:
 
 -  utilizzatore finale
 
@@ -278,7 +275,7 @@ Nel processo in oggetto (Figura 5) sono coinvolti quattro soggetti:
 
 |image2|
 
-**Figura 5 – Il processo di gestione dell’avvisatura pull**
+**Figura** **3: Il processo di gestione dell’avvisatura pull**
 
 Il processo segue i seguenti passi:
 
@@ -290,8 +287,8 @@ Il processo segue i seguenti passi:
    Creditore attraverso il NodoSPC (*Task* T1.3.2 e T1.3.3)
 
 -  L’Ente Creditore predispone la lista delle Posizione Debitorie
-   relative all’utilizzatore finale (Task T1.3.4) e le inoltra al
-   Prestatore di Servizi di Pagamento attraverso il NodoSPC (Task
+   relative all’utilizzatore finale (*Task* T1.3.4) e le inoltra al
+   Prestatore di Servizi di Pagamento attraverso il NodoSPC (*Task*
    T1.3.5).
 
 -  Il Prestatore di servizi di Pagamento riceve la posizione debitoria

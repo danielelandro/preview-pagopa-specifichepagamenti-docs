@@ -1,7 +1,7 @@
 **SEZIONE IV – PROCESSO DI ADESIONE ED ESERCIZIO**
 
-14. Adesione al sistema pagoPA
-==============================
+Adesione al sistema pagoPA
+==========================
 
 Le Pubbliche Amministrazioni sono tenute per legge ad aderire al sistema
 di pagamento pagoPA. Le PA che non hanno rapporti diretti con cittadini
@@ -71,8 +71,8 @@ La procedura di adesione:
    Pagamento dei dati necessari alla fruizione del servizio, come
    specificati nell’Accordo di servizio.
 
-14.1 Adesione di un Ente Creditore.
------------------------------------
+Adesione di un Ente Creditore.
+------------------------------
 
 Per aderire a pagoPA in qualità di Ente Creditore, le PA, i gestori di
 pubblici servizi e le società a controllo pubblico devono utilizzare
@@ -107,8 +107,8 @@ Prerequisito per l’adesione da parte degli Enti Creditori è
 l’accreditamento nell’archivio IPA (Indice delle Pubbliche
 Amministrazioni).
 
-14.2 Adesione di un Prestatore di Servizi di Pagamento
-------------------------------------------------------
+Adesione di un Prestatore di Servizi di Pagamento
+-------------------------------------------------
 
 I Prestatori di Servizi di Pagamento come le banche, le poste, gli
 istituti di pagamento e ogni altro soggetto abilitato da Banca d’Italia
@@ -169,8 +169,8 @@ Dominio dei soggetti aderenti. Il “Referente” per l’attuazione
 dell’accordo, ovvero la persona indicata nell’accordo di servizio, è
 l’unico interlocutore del PSP con l’Agenzia per l’Italia Digitale.
 
-14.3 Intermediari e Partner tecnologici nel sistema pagoPA
-----------------------------------------------------------
+Intermediari e Partner tecnologici nel sistema pagoPA
+-----------------------------------------------------
 
 Gli Enti Creditori e i PSP aderenti al Sistema pagoPA, si possono
 avvalere di uno o più soggetti terzi, intermediari tecnologici, che, in

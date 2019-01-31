@@ -1,8 +1,8 @@
-9. Pagamento presso l’Ente Creditore
-====================================
+Pagamento presso l’ente creditore
+=================================
 
-9.1 Attori e casi d’uso
------------------------
+Attori e casi d’uso
+-------------------
 
 All’interno di questo capitolo vengono descritti i casi d’uso per il
 pagamento innescato dall’Utilizzatore Finale attraverso l’interazione
@@ -34,14 +34,14 @@ Lo scenario di utilizzo è descritto dal seguente caso d’uso nominale:
    guidata tramite apposita interfaccia *web* resa disponibile dal
    NodoSPC.
 
-9.2 Pagamento online con guida interattiva di selezione del PSP (WISP)
-----------------------------------------------------------------------
+Pagamento online con guida interattiva di selezione del PSP (WISP)
+------------------------------------------------------------------
 
 +-----------------------------------+-----------------------------------+
 | Pre-Condizione                    | L’Utilizzatore finale innesca il  |
 |                                   | processo di pagamento riferito a  |
 |                                   | una Posizione Debitoria aperta.   |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Trigger                           | L’Utilizzatore finale esce dalla  |
 |                                   | pagina di *check-out* sul Portale |
 |                                   | dell’EC innescando il processo di |
@@ -82,14 +82,14 @@ Lo scenario di utilizzo è descritto dal seguente caso d’uso nominale:
 |                                   | RT-EC                             |
 +-----------------------------------+-----------------------------------+
 
-Tabella XX: Caso d'uso del processo di pagamento online con guida
-interattiva di selezione del PSP
+**Tabella** **1: Caso d'uso del processo di pagamento online con guida
+interattiva di selezione del PSP**
 
 L’evoluzione nel tempo del processo di pagamento è la seguente:
 
 |SD_PAGAMENTO_PRESSO_EC|
 
-**Figura XX: Diagramma di sequenza del processo di pagamento iniziato
+**Figura** **1: Diagramma di sequenza del processo di pagamento iniziato
 presso l'EC**
 
 1. L’Utilizzatore finale, dopo aver eseguito le operazioni di
@@ -133,12 +133,13 @@ c. *ibanAppoggio*: deve risultare inserito nella lista dei conti
    modificando lo stato del pagamento in RPT Inviata e restituendo come
    parametri di output:
 
-a. *URL di re-direzione:* risorsa a cui re-indirizzare il browser
-   dell’Utilizzatore finale, contenente anche una query string
-   “idSession=<idSession>” che identifica univocamente la sessione\ *;*
+   a. *URL di re-direzione:* risorsa a cui re-indirizzare il browser
+      dell’Utilizzatore finale, contenente anche una query string
+      “idSession=<idSession>” che identifica univocamente la
+      sessione\ *;*
 
-b. *esitoComplessivoOperazione*: rappresenta l’esito complessivo
-   dell’operazione di invocazione che può assumere i valori OK e KO.
+   b. *esitoComplessivoOperazione*: rappresenta l’esito complessivo
+      dell’operazione di invocazione che può assumere i valori OK e KO.
 
 5. l’EC predispone l’\ *http REDIRECT* verso la URL fornita nella
    *response* alla primitiva di cui al precedente punto 2.
@@ -148,7 +149,7 @@ b. *esitoComplessivoOperazione*: rappresenta l’esito complessivo
    pagamento.
 
 A seconda delle scelte operate dall’Utilizzatore finale, sono possibili
-due differenti scenari alternativi.
+due differenti scenari alternativi:
 
 -  Pagamento con carta;
 
@@ -267,9 +268,8 @@ finale visualizza l’esito del pagamento.
 
 31. Il NodoSPC inoltra la *response* fornita dall’EC al PSP.
 
-    1. .. rubric:: Caso acquisto Marca da bollo digitale
-          :name: caso-acquisto-marca-da-bollo-digitale
-          :class: Titolo4n
+Caso acquisto Marca da bollo digitale
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Il pagamento di una Marca da Bollo Digitale avviene attraverso il
 medesimo *workflow* applicativo decritto nel paragrafo precedente. Si fa
@@ -311,8 +311,8 @@ effettuata tramite il parametro *ibanAddebito* valorizzato dall’EC,
 all’interno della RPT, con il codice IBAN del conto corrente del
 soggetto versante.
 
-9.3 Prenotazione Rifiutata
---------------------------
+Prenotazione Rifiutata
+----------------------
 
 Si descrive nel seguito lo scenario secondario che si verifica quando
 l’\ *Acquirer* non autorizza il pagamento con carta.
@@ -332,7 +332,7 @@ l’\ *Acquirer* non autorizza il pagamento con carta.
 
 |SD_PRENOTAZIONE_RIFIUTATA|
 
-Figura XX: Diagramma di sequenza della prenotazione rifiutata
+**Figura** **2: Diagramma di sequenza della prenotazione rifiutata**
 
 L’evoluzione temporale è la seguente:
 
@@ -368,8 +368,8 @@ Il pagamento transisce a *PAGAMENTO_RIFIUTATO.*
 Il *workflow* si conclude riprendendo dal punto 28 dello scenario
 nominale.
 
-9.4 Gestione degli errori
--------------------------
+Gestione degli errori
+---------------------
 
 Il paragrafo descrive la gestione degli errori nel processo di Pagamento
 attivato presso l’Ente Creditore secondo le possibili eccezioni
@@ -387,7 +387,7 @@ riportate nel Paragrafo precedente.
 
 |image2|
 
-Figura XX: Scenario RPT rifiutata dal Nodo
+**Figura** **3: Scenario RPT rifiutata dal Nodo**
 
 1. l’Utilizzatore finale esegue il *check-out* sul portale dell’EC.
 
@@ -465,8 +465,8 @@ Le possibili azioni di controllo sono riportate nella tabella seguente.
 |                       |                       | dell’utilizzo         |
 +-----------------------+-----------------------+-----------------------+
 
-Tabella XX: Strategie di risoluzione per lo scenario carrello RPT
-rifiutato dal Nodo
+**Tabella** **2: Strategie di risoluzione per lo scenario carrello RPT
+rifiutato dal Nodo**
 
 **Pagamento non Contabilizzato**
 
@@ -480,7 +480,7 @@ rifiutato dal Nodo
 
 |SD_ERR_PAGAMENTO_NON_CONTABILIZZATO|
 
-Figura XX: Diagramma di sequenza del pagamento non contabilizzato
+**Figura** **4: Diagramma di sequenza del pagamento non contabilizzato**
 
 L’evoluzione temporale è la seguente:
 
@@ -572,7 +572,7 @@ Lo stato del pagamento transisce a *RT PSP.*
 
 |SD_RT_RIFIUTATA_NODO|
 
-Figura XX: Scenario RT rifiutata Nodo
+**Figura** **5: Scenario RT rifiutata Nodo**
 
 L’evoluzione temporale è la seguente:
 
@@ -583,11 +583,11 @@ L’evoluzione temporale è la seguente:
    emanando un *faultBean* il cui *faultBean.faultCode* è valorizzato al
    variare dell’errore riscontrato; in particolare:
 
--  PPT_RT_DUPLICATA nel caso in cui il PSP sottometta nuovamente una RT
-   già invita in precedenza;
+   -  PPT_RT_DUPLICATA nel caso in cui il PSP sottometta nuovamente una
+      RT già invita in precedenza;
 
--  PPT_SEMANTICA nel caso in cui il NodoSPC riscontri errori di
-   significato nei dati contenuti nella RT.
+   -  PPT_SEMANTICA nel caso in cui il NodoSPC riscontri errori di
+      significato nei dati contenuti nella RT.
 
 +-----------------------+-----------------------+-----------------------+
 | Strategia di          | Tipologia Errore      | Azione di Controllo   |
@@ -623,7 +623,8 @@ L’evoluzione temporale è la seguente:
 |                       |                       | DE*)                  |
 +-----------------------+-----------------------+-----------------------+
 
-Tabella XX: Strategia di risoluzione del caso RT rifiutata dal Nodo
+**Tabella** **3: Strategia di risoluzione del caso RT rifiutata dal
+Nodo**
 
 **RT rifiutata dall’EC**
 
@@ -642,7 +643,7 @@ Tabella XX: Strategia di risoluzione del caso RT rifiutata dal Nodo
 
 |sd_RT_RIUTATA_EC|
 
-Figura XX:Scenario RT rifiutata dall'EC
+**Figura** **6: Scenario RT rifiutata dall'EC**
 
 L’evoluzione temporale è la seguente:
 
@@ -656,14 +657,14 @@ L’evoluzione temporale è la seguente:
    un *faultBean* dove il valore del campo *faultBean.faultCode* è
    rappresentativo dell’errore riscontrato; in particolare:
 
--  PAA_RT_DUPLICATA nel caso in cui il NodoSPC abbia sottomesso una RT
-   precedentemente inviata;
+   -  PAA_RT_DUPLICATA nel caso in cui il NodoSPC abbia sottomesso una
+      RT precedentemente inviata;
 
--  PAA_RPT_SCONOSCIUTA nel caso in cui alla RT consegnata non risulti
-   associata alcuna RPT;
+   -  PAA_RPT_SCONOSCIUTA nel caso in cui alla RT consegnata non risulti
+      associata alcuna RPT;
 
--  PAA_SEMANTICA nel caso in cui si riscontrano errori nel tracciato XML
-   della RT;
+   -  PAA_SEMANTICA nel caso in cui si riscontrano errori nel tracciato
+      XML della RT;
 
 4. il NodoSPC propaga l’errore riscontrato dall’EC emanando un
    *faultBean* il cui *faultBean.faultCode* è pari a
@@ -707,7 +708,7 @@ L’evoluzione temporale è la seguente:
 
 |SD_RT_TIMEOUT_CONTROPARTIpng|
 
-Figura XX: Scenario RT mancante per *timeout* controparti
+**Figura** **7: Scenario RT mancante per timeout controparti**
 
 1. il PSP invia la RT al NodoSPC mediante la primitiva *nodoInviaRT;*
 

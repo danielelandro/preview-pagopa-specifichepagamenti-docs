@@ -1,5 +1,5 @@
-15. Attivazione sul sistema pagoPA
-==================================
+Attivazione sul sistema pagoPA
+==============================
 
 Gli Enti Creditori, nel processo di attivazione sul Sistema pagoPA, sono
 supportati dal Portale delle Adesioni messo a disposizione di tutti i

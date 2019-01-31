@@ -1,5 +1,5 @@
-4. Processo di pagamento attivato presso il Prestatore di Servizi di Pagamento
-==============================================================================
+Processo di pagamento attivato presso il Prestatore di Servizi di Pagamento
+===========================================================================
 
 Questo processo prevede che l’esecuzione del pagamento avvenga presso le
 infrastrutture messe a disposizione dal Prestatore di Servizi di
@@ -50,14 +50,14 @@ ecc.), ovvero, da ultimo, comunicato tramite avviso digitale.
 Il diagramma di Figura 10 descrive il processo pagamento operato presso
 il Prestatore di Servizi di Pagamento. Al fine di rendere tale diagramma
 immediatamente leggibile la descrizione del *workflow* è stata aggregata
-in paragrafi secondo lo schema logico che segue (Figura 8).
+in paragrafi secondo lo schema logico che segue (**Figura 1**).
 
 |image0|
 
 **Figura** **1 Schema logico del processo di business del pagamento
 presso il Prestatore di Servizi di Pagamento**
 
-Nel processo in oggetto (Figura 9) sono coinvolti quattro soggetti:
+Nel processo in oggetto (**Figura 2**) sono coinvolti quattro soggetti:
 
 -  Utilizzatore finale
 
@@ -72,16 +72,16 @@ Nel processo in oggetto (Figura 9) sono coinvolti quattro soggetti:
 **Figura** **2 Il processo del pagamento attivato presso il Prestatore
 di Servizi di Pagamento**
 
-4.1 Avvio del pagamento
------------------------
+Avvio del pagamento
+-------------------
 
 Come descritto nei paragrafi precedenti, l’Utilizzatore finale può
 eseguire un pagamento per ragioni diverse, che generano due diramazioni
 distinte (gateway G2.2.1), nel caso che abbia disponibile o meno un
 avviso di pagamento (digitale e analogico).
 
-4.2 Generazione posizione debitoria
------------------------------------
+Generazione posizione debitoria
+-------------------------------
 
 La generazione della posizione debitoria è l’evento che costituisce la
 premessa al pagamento sul Sistema pagoPA.
@@ -107,8 +107,8 @@ Prestatore Servizi di Pagamento di un numero avviso (*Task* T2.2.2) che
 può essere consegnato all’Utilizzatore (Task T2.2.3) che dunque può
 decidere se autorizzare (*Task* T2.2.8).
 
-4.3 Verifica posizione debitoria e attivazione richiesta di pagamento telematica
---------------------------------------------------------------------------------
+Verifica posizione debitoria e attivazione richiesta di pagamento telematica
+----------------------------------------------------------------------------
 
 Nel caso in cui l’Utilizzatore finale abbia ricevuto un avviso di
 pagamento e abbia deciso di pagare tramite un Prestatore Servizi di
@@ -183,8 +183,8 @@ dell’Utilizzatore finale una ricevuta (*Task* T2.2.13).
 L’Utilizzatore finale a questo punto può ottenere la ricevuta (Task
 T2.2.14) e terminare il processo.
 
-4.4 Trasmissione dati di accredito e rendicontazione
-----------------------------------------------------
+Trasmissione dati di accredito e rendicontazione
+------------------------------------------------
 
 Dopo aver effettuato il pagamento, il Prestatore Servizi di Pagamento
 accredita il conto dell’Ente Creditore specificato dalla richiesta di
@@ -199,8 +199,8 @@ Il NodoSPC mette a disposizione i dati di rendicontazione per l’Ente
 Creditore (*Task* T2.2.17). Quando l’Ente Creditore scarica i dati di
 rendicontazione (*Task* T2.2.18).
 
-4.5 Attivazione della richiesta di pagamento
---------------------------------------------
+Attivazione della richiesta di pagamento 
+-----------------------------------------
 
 Il NodoSPC non controlla l’effettiva sequenza operativa scelta dal
 Prestatore di Servizi di Pagamento, relativa alle fasi del processo

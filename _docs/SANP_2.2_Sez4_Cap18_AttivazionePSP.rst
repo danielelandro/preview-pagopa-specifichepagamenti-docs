@@ -1,5 +1,5 @@
-18. Attivazione di un PSP sul sistema pagoPA
-============================================
+Attivazione di un PSP sul sistema pagoPA
+========================================
 
 Ciascun PSP deve sottoscrivere con AgID un atto formale, l’\ **Accordo
 di servizio**, indispensabile per utilizzare l’infrastruttura del
@@ -41,8 +41,8 @@ caso in cui un PSP aderente intenda svolgere il ruolo di Acquirer sul
 sistema pagoPA non è necessario che si colleghi direttamente al
 Nodo-SPC.
 
-18.1 Attivazione di un PSP che si collega direttamente al Nodo
---------------------------------------------------------------
+Attivazione di un PSP che si collega direttamente al Nodo
+---------------------------------------------------------
 
 Il Referente dei Servizi di un PSP che debba attivarsi su pagoPA
 collegandosi direttamente all’infrastruttura del Nodo-SPC, deve
@@ -120,8 +120,8 @@ il processo operando come segue:
 8. Al fine di completare il processo, il RS deve fornire ad AgID tutte
    le informazioni riguardanti il “Tavolo operativo”.
 
-18.2 Attivazione di un PSP che svolge il ruolo di Acquirer
-----------------------------------------------------------
+   2. .. rubric:: Attivazione di un PSP che svolge il ruolo di Acquirer
+         :name: attivazione-di-un-psp-che-svolge-il-ruolo-di-acquirer
 
 Il processo di configurazione che devono eseguire i PSP che intendono
 svolgere il ruolo di acquirer nel sistema pagoPA tramite il POS virtuale
@@ -129,8 +129,8 @@ AgID è descritto nell’apposita **monografia,** intitolata "Transazioni
 attraverso il POS Virtuale AgID del Nodo dei Pagamenti-SPC" e pubblicata
 sul sito istituzionale dell’Agenzia.
 
-18.3 Attivazione di un PSP che offre il servizio MyBank
--------------------------------------------------------
+Attivazione di un PSP che offre il servizio MyBank
+--------------------------------------------------
 
 Il servizio MyBank consente di ottenere, in tempo reale,
 un’autorizzazione per il trasferimento di fondi dal conto bancario del
@@ -144,8 +144,8 @@ indispensabile per poter utilizzare il servizio MyBank. I PSP possono
 svolgere sul Nodo-SPC sia il ruolo di banca del debitore (c.d. *Buyer
 Bank*) sia il ruolo di banca dell'esercente (c.d. *Seller Bank*).
 
-18.3.1 PSP che intendono svolgere il ruolo di Banca Buyer
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PSP che intendono svolgere il ruolo di Banca Buyer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 I PSP che intendono svolgere il ruolo di Banca Buyer devono inviare ad
 AgID tutte le informazioni necessarie sul loro Catalogo Dati
@@ -160,8 +160,8 @@ I dettagli del CDI per PSP di Buyer Bank sono riportati nella
 **monografia** intitolata “Erogazione del servizio MyBank attraverso il
 Nodo del Pagamenti-SPC” disponibile sul sito istituzionale dell’Agenzia.
 
-18.3.2 PSP che intendono svolgere il ruolo di Banca Seller
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PSP che intendono svolgere il ruolo di Banca Seller
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 I PSP che intendono offrire servizi sul Nodo-SPC attraverso il servizio
 MyBank in qualità di **Seller** Bank per le operazioni di pagamenti
@@ -186,8 +186,8 @@ finali in favore di Singoli Enti Creditori mediante il Nodo-SPC,
 assicurando il rispetto della normativa di riferimento pro tempore
 vigente.
 
-18.4 Attivazione di un PSP che offre il servizio CBILL
-------------------------------------------------------
+Attivazione di un PSP che offre il servizio CBILL
+-------------------------------------------------
 
 In questo paragrafo sono descritte le attività che devono essere
 effettuate dai Prestatori di Servizi di Pagamento che intendono
@@ -214,8 +214,8 @@ vogliono erogare i servizi di pagamento in argomento, devono fare
 riferimento alle sole attività previste per l’invio delle informazioni
 relative al “Catalogo Dati Informativi”.
 
-18.5 Attivazione di un PSP intermediato
----------------------------------------
+ Attivazione di un PSP intermediato
+-----------------------------------
 
 I PSP aderenti che intendono utilizzare il Sistema pagoPA
 indirettamente, possono servirsi di Intermediari a cui delegano lo

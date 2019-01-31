@@ -1,11 +1,11 @@
-23. Responsabilità dei soggetti aderenti
-========================================
+Responsabilità dei soggetti aderenti
+====================================
 
 Di seguito sono indicati gli oneri in capo ai soggetti aderenti al
 Nodo-SPC.
 
-23.1 Responsabilità dell’Ente Creditore
----------------------------------------
+Responsabilità dell’Ente Creditore 
+-----------------------------------
 
 L’Ente Creditore è responsabile anche sotto il profilo giuridico:
 
@@ -38,8 +38,8 @@ e/o suoi aventi causa, a monitorare l’erogazione dei servizi offerti
 oggetto delle presenti specifiche tecniche, nonché alla pubblicazione
 dei dati rivenienti dal relativo monitoraggio.
 
-23.2 Responsabilità del Prestatore di Servizi di Pagamento
-----------------------------------------------------------
+Responsabilità del Prestatore di Servizi di Pagamento
+-----------------------------------------------------
 
 Il Prestatore di Servizi di Pagamento è tenuto a eseguire l’operazione
 di pagamento richiesta dall’utilizzatore finale secondo le modalità e le

@@ -1,8 +1,8 @@
-5. Funzioni accessorie
-=======================
+Funzioni accessorie
+===================
 
-5.1 Revoca della Ricevuta Telematica
-------------------------------------
+Revoca della Ricevuta Telematica
+--------------------------------
 
 Qualora l’utilizzatore finale - ai sensi degli articoli 13 e 14 del
 decreto legislativo 27 gennaio 2010, n. 11, ovvero per richieste
@@ -15,7 +15,7 @@ pagamento già completato, il Sistema pagoPA mette a disposizione di
 Prestatori di Servizi di Pagamento e Enti Creditori idonee funzionalità
 per gestire la revoca della ricevuta telematica inviata in precedenza.
 
-Come indicato in Figura 10, la revoca della ricevuta telematica si
+Come indicato in **Figura 1**, la revoca della ricevuta telematica si
 esplica nell’invio di una richiesta di revoca (RR) da parte del
 Prestatore di Servizi di Pagamento, contenente i riferimenti della
 ricevuta telematica oggetto della revoca e nella risposta da parte
@@ -23,7 +23,7 @@ dell’Ente Creditore contenente l’esito della revoca (ER).
 
 |image0|
 
-**Figura 10 – Il processo di revoca**
+**Figura** **1: Il processo di revoca**
 
 Il processo è iniziato dall’Utilizzatore finale, che richiede la revoca
 al proprio Prestatore di Servizi di Pagamento (*Task* T3.1), a seguito
@@ -61,8 +61,8 @@ procedure amministrative di back-office al fine di gestire, nel rispetto
 della normativa vigente, i flussi relativi a reclami, rimborsi e revoche
 sia dal punto di vista amministrativo, sia dal punto di vista contabile.
 
-5.2 Annullo tecnico
--------------------
+Annullo tecnico
+---------------
 
 L’annullo tecnico è una casistica dell’invio di una richiesta di revoca
 che indica che la RT inviata è tecnicamente errata, dunque il Prestatore
@@ -70,23 +70,25 @@ di Servizi di Pagamento può invocarla unicamente ricorra uno dei
 seguenti casi di errori procedurali:
 
 a) Invio di una Ricevuta Telematica (RT) con esito **positivo**,
-      tuttavia l’utilizzatore finale non ha ricevuto nessun addebito né
-      il Prestatore di Servizi di Pagamento ha emesso alcuna
-      attestazione di pagamento (scontrino, ricevuta, e-mail, ecc.);
+   tuttavia l’utilizzatore finale non ha ricevuto nessun addebito né il
+   Prestatore di Servizi di Pagamento ha emesso alcuna attestazione di
+   pagamento (scontrino, ricevuta, e-mail, ecc.);
 
 b) Invio di una Ricevuta Telematica (RT) con esito **negativo**,
-      tuttavia l’utilizzatore finale ha ricevuto un addebito e il
-      Prestatore di Servizi di Pagamento ha emesso un’attestazione di
-      pagamento (scontrino, ricevuta, e-mail, ecc.)
+   tuttavia l’utilizzatore finale ha ricevuto un addebito e il
+   Prestatore di Servizi di Pagamento ha emesso un’attestazione di
+   pagamento (scontrino, ricevuta, e-mail, ecc.).
 
-Al di fuori delle circostanze sopra descritte l’utilizzo dell’annullo
-tecnico non è ammesso.
+..
 
-Il processo di annullo tecnico, descritto in Figura 11, è il seguente
+   Al di fuori delle circostanze sopra descritte l’utilizzo dell’annullo
+   tecnico non è ammesso.
+
+Il processo di annullo tecnico, descritto in **Figura 2**, è il seguente
 
 |image1|
 
-**Figura 11 – Processo di annullo tecnico**
+**Figura** **2: Processo di annullo tecnico**
 
 Il Prestatore di servizi di Pagamento invia la richiesta di annullo
 tecnico al NodoSPC (*Task* T4.1), che verifica la casistica del caso
@@ -108,8 +110,8 @@ tecnico al NodoSPC (*Task* T4.1), che verifica la casistica del caso
    dall’Ente Creditore (*Task* T4.11) attraverso il NodoSPC (*Task*
    T4.10)
 
-5.3 Storno del pagamento
-------------------------
+Storno del pagamento
+--------------------
 
 Qualora l’Utilizzatore finale chieda a vario titolo l’annullamento
 (storno) di un pagamento all’Ente Creditore presso il quale questo è
@@ -121,11 +123,11 @@ L’Ente Creditore deve predisporre - e darne evidenza sul proprio sito
 attraverso il quale sono effettuati i pagamenti - apposite procedure
 amministrative di back-office al fine di gestire, nel rispetto della
 normativa vigente, le richieste di storno del pagamento ed i relativi
-flussi economici.
+flussi economici (**Figura 3**).
 
 |image2|
 
-**Figura 12 – Processo di storno di un pagamento**
+**Figura** **3: Processo di storno di un pagamento**
 
 Il processo di storno viene iniziato dall’Utilizzatore finale che lo
 richiede all’Ente Creditore (*Task* T5.1)
@@ -148,10 +150,10 @@ L’Ente Creditore esamina la richiesta (*Gateway* G5.1):
    verso l’Ente Creditore ed espone la cifra (negativa) sul successivo
    rendiconto (*Task* T5.8) che viene trasmesso all’Ente Creditore
    attraverso il NodoSPC (*Task* T5.8). A questo punto l’Ente Creditore
-   è in grado di riconciliare correttamente gli importi (*Task* T5.10)
+   è in grado di riconciliare correttamente gli importi (*Task* T5.10).
 
-5.4 Attestazione del pagamento
-------------------------------
+Attestazione del pagamento
+--------------------------
 
 L’attestazione di avvenuto pagamento è rappresentata dal documento
 informatico (Ricevuta Telematica) che l’Ente Creditore riceve dal
@@ -211,8 +213,8 @@ Sistema pagoPA, almeno le seguenti informazioni:
 -  Causale del versamento indicata nella richiesta di pagamento
    telematico.
 
-5.5 Riconciliazione dei pagamenti
----------------------------------
+Riconciliazione dei pagamenti
+-----------------------------
 
 Con rifermento alle macro-fasi del processo, una volta effettuata la
 fase di “Regolamento contabile” da parte del Prestatore di Servizi di
@@ -283,13 +285,14 @@ La riconciliazione in questo caso deve essere effettuata in due fasi:
    presenti nelle ricevute telematiche (RT) memorizzate presso di sé
    sulla base della seguente coppia di informazioni:
 
-a. Identificativo univoco versamento presente sulla ricevuta telematica
-   inviata all’Ente Creditore che deve coincidere con lo stesso dato
-   presente nella struttura dati del Flusso di rendicontazione;
+   a. Identificativo univoco versamento presente sulla ricevuta
+      telematica inviata all’Ente Creditore che deve coincidere con lo
+      stesso dato presente nella struttura dati del Flusso di
+      rendicontazione;
 
-b. importo presente sulla ricevuta telematica inviata all’Ente Creditore
-   che deve coincidere con il dato omonimo presente nella struttura dati
-   del Flusso di rendicontazione.
+   b. importo presente sulla ricevuta telematica inviata all’Ente
+      Creditore che deve coincidere con il dato omonimo presente nella
+      struttura dati del Flusso di rendicontazione.
 
 Il NodoSPC fornisce apposite funzioni centralizzate a disposizione dei
 Prestatori di Servizi di Pagamento e degli Enti Creditori, con le quali
@@ -308,8 +311,8 @@ identificativo univoco di riscossione: pertanto l’Ente Creditore dovrà
 opportunamente tenerne conto nelle proprie procedure applicative di
 riconciliazione.
 
-5.6 Altre funzioni accessorie
------------------------------
+Altre funzioni accessorie
+-------------------------
 
 Seppur meno utilizzate nella pratica comune, si citano di seguito alcune
 ulteriori funzione accessorie messe a disposizione dal Sistema pagoPA:
@@ -325,8 +328,8 @@ I dettagli relativi alle suddette funzioni sono riportati nella sezione
 III
 
 .. |image0| image:: media_FunzioniAccessorie/media/image1.png
-   :width: 5.28056in
-   :height: 5.63403in
+   :width: 5.14583in
+   :height: 5.49029in
 .. |image1| image:: media_FunzioniAccessorie/media/image2.png
    :width: 4.95415in
    :height: 4.36631in

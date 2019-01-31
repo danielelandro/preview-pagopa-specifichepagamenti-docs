@@ -1,5 +1,5 @@
-3. Il Processo di pagamento attivato presso l’Ente Creditore
-============================================================
+Il Processo di pagamento attivato presso l’Ente Creditore
+=========================================================
 
 Rientrano in questa categoria di pagamenti quelli richiesti
 dall’utilizzatore finale attraverso i siti web o *mobile app* o altri
@@ -15,17 +15,17 @@ termini organizzativi, che informatici); le procedure di pagamento
 potranno essere più o meno strettamente integrate con i servizi cui
 fanno riferimento.
 
-Il diagramma di Figura 8 descrive il processo di pagamento attraverso
-l’Ente Creditore. Al fine di rendere tale diagramma immediatamente
-leggibile la descrizione del *workflow* è stata aggregata in
-sottoparagrafi secondo lo schema logico che segue (Figura 6).
+Il diagramma di **Figura 1** descrive il processo di pagamento
+attraverso l’Ente Creditore. Al fine di rendere tale diagramma
+immediatamente leggibile la descrizione del *workflow* è stata aggregata
+in sottoparagrafi secondo lo schema logico che segue.
 
 |image0|
 
-**Figura** **1 Schema logico del processo di business del pagamento
+**Figura** **1** **Schema logico del processo di business del pagamento
 presso l’Ente Creditore**
 
-Nel processo in oggetto (Figura 7) sono coinvolti quattro soggetti:
+Nel processo in oggetto (**Figura 2**) sono coinvolti quattro soggetti:
 
 -  utilizzatore finale
 
@@ -39,16 +39,16 @@ Nel processo in oggetto (Figura 7) sono coinvolti quattro soggetti:
 
 **Figura** **2 Il processo del pagamento da Ente Creditore**
 
-3.1 Avvio del pagamento
------------------------
+Avvio del pagamento
+-------------------
 
 Come descritto nei paragrafi precedenti, l’utilizzatore finale può
 eseguire un pagamento per ragioni diverse che generano due diramazioni
 distinte (gateway G2.1.1) nel caso abbia disponibile o meno un avviso di
 pagamento (digitale e analogico).
 
-3.2 Generazione posizione debitoria
------------------------------------
+Generazione posizione debitoria
+-------------------------------
 
 La generazione della posizione debitoria è l’evento che costituisce la
 premessa al pagamento sul Sistema pagoPA.
@@ -74,8 +74,8 @@ alla stampa di un avviso analogico, da utilizzare per disporre il
 pagamento presso i Prestatori di Servizi di Pagamento che offrono tale
 opzione.
 
-3.3 Scelta canale di pagamento
-------------------------------
+Scelta canale di pagamento 
+---------------------------
 
 L’utilizzatore finale accede ai sistemi dell’EC per pagare uno o più
 avvisi che gli sono stati recapitati e/o uno o più pagamenti spontanei e
@@ -109,8 +109,8 @@ per tali finalità è dunque obbligatorio e non richiede un esplicito
 consenso, pena l’impossibilità per l’AgID di erogare i servizi sopra
 citati.
 
-3.4 Autorizzazione del pagamento
---------------------------------
+Autorizzazione del pagamento 
+-----------------------------
 
 L’autorizzazione del pagamento viene effettuata in maniera differente a
 seconda del servizio scelto dall’utilizzatore finale:
@@ -175,23 +175,23 @@ seconda del servizio scelto dall’utilizzatore finale:
       modalità di autorizzazione del pagamento adottate dal Prestatore
       di Servizi di Pagamento. Si distingue quindi l’autorizzazione:
 
-   -  contestuale alla richiesta effettuata, in funzione dei livelli di
-      servizio pattuiti con il Prestatore di Servizi di Pagamento, se
-      l’utilizzatore finale ha pre-autorizzato il pagamento (ad esempio:
-      lettera di manleva o altro strumento contrattuale);
+      -  contestuale alla richiesta effettuata, in funzione dei livelli
+         di servizio pattuiti con il Prestatore di Servizi di Pagamento,
+         se l’utilizzatore finale ha pre-autorizzato il pagamento (ad
+         esempio: lettera di manleva o altro strumento contrattuale);
 
-   -  non contestuale, se l’autorizzazione viene rilasciata
-      successivamente alla ricezione della richiesta di pagamento
-      telematico da parte del Prestatore di Servizi di Pagamento,
-      attraverso canali da questo messi a disposizione (ad esempio: home
-      banking, notifica su app per smartphone o tablet, ecc.).
+      -  non contestuale, se l’autorizzazione viene rilasciata
+         successivamente alla ricezione della richiesta di pagamento
+         telematico da parte del Prestatore di Servizi di Pagamento,
+         attraverso canali da questo messi a disposizione (ad esempio:
+         home banking, notifica su app per smartphone o tablet, ecc.).
 
-      -  In ogni caso il Prestatore di Servizi di Pagamento deve
-         restituire la ricevuta telematica nei tempi stabiliti secondo
-         quanto previsto nel documento “Indicatori di qualità per i
-         soggetti aderenti” pubblicato sul sito istituzionale dell’AgID,
-         in modo da consentire all’utilizzatore finale di usufruire dei
-         servizi per cui ha pagato.
+         -  In ogni caso il Prestatore di Servizi di Pagamento deve
+            restituire la ricevuta telematica nei tempi stabiliti
+            secondo quanto previsto nel documento “Indicatori di qualità
+            per i soggetti aderenti” pubblicato sul sito istituzionale
+            dell’AgID, in modo da consentire all’utilizzatore finale di
+            usufruire dei servizi per cui ha pagato.
 
    -  Nel caso di pre-autorizzazione del pagamento, resta salva la
       possibilità per l’utilizzatore finale di revocare il consenso
@@ -227,8 +227,8 @@ dell’Utilizzatore finale una ricevuta (*Task* T2.18).
 L’Utilizzatore finale a questo punto può ottenere la ricevuta (Task
 T2.1.19) e terminare il processo.
 
-3.5 Accredito e rendiconto
---------------------------
+Accredito e rendiconto
+----------------------
 
 Dopo aver effettuato il pagamento, il Prestatore Servizi di Pagamento lo
 accredita sul conto dell’Ente Creditore (*Task* T2.1.20).

@@ -1,8 +1,8 @@
-10. Pagamento presso il PSP
-============================
+Pagamento presso il PSP
+=======================
 
-10.1 Attori e casi d’uso
-------------------------
+Attori e casi d’uso
+-------------------
 
 All’interno di questo capitolo vengono descritti i casi d’uso relativi
 ai possibili processi di pagamento da parte di un Utilizzatore finale,
@@ -58,14 +58,14 @@ Gli scenari di utilizzo sono descritti dai seguenti casi d’uso nominali:
    Pagamento della Tassa Automobilistica presso i PSP” pubblicato sul
    sito istituzionale dell’Agenzia.
 
-10.2 Pagamento mediante Avviso (scenario principale)
-----------------------------------------------------
+Pagamento mediante Avviso (scenario principale) 
+------------------------------------------------
 
 +-----------------------------------+-----------------------------------+
 | Pre-condizioni                    | L’Utilizzatore finale è in        |
 |                                   | possesso di un Avviso di          |
 |                                   | Pagamento notificato dall’EC.     |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Trigger                           | L’Utilizzatore finale si presenta |
 |                                   | presso uno dei canali messi a     |
 |                                   | disposizione dal PSP (ad esempio  |
@@ -124,7 +124,7 @@ Gli scenari di utilizzo sono descritti dai seguenti casi d’uso nominali:
 
 |image0|
 
-**Fig. XX - XX**
+**Figura** **1: Pagamento mediante Avviso**
 
 1. l’Utilizzatore finale presenta un avviso di pagamento presso uno dei
    canali messi a disposizione dal PSP;
@@ -142,17 +142,17 @@ Gli scenari di utilizzo sono descritti dai seguenti casi d’uso nominali:
 
 +-----------------------------------+-----------------------------------+
 | Dato                              | Contenuto                         |
-+===================================+===================================+
-| Numero Avviso                     | Contiene il Numero Avviso la cui  |
++-----------------------------------+-----------------------------------+
+| **Numero Avviso**                 | Contiene il Numero Avviso la cui  |
 |                                   | formattazione è descritta         |
 |                                   | nell’Allegato A alle Linee Guida  |
 +-----------------------------------+-----------------------------------+
-| Identificativo Ente               | Contiene l’\ *idDominio*          |
+| **Identificativo Ente**           | Contiene l’\ *idDominio*          |
 |                                   | dell’Ente Creditore che           |
 |                                   | corrisponde al Codice fiscale     |
 |                                   | dell’Ente Creditore               |
 +-----------------------------------+-----------------------------------+
-| Importo                           | Importo del pagamento espresso in |
+| **Importo**                       | Importo del pagamento espresso in |
 |                                   | centesimi di euro                 |
 +-----------------------------------+-----------------------------------+
 
@@ -169,7 +169,7 @@ interface* messe a disposizione dal PSP.
 
 +-----------------------------------+-----------------------------------+
 | codificaInfrastrutturaPSP         | Assume il valore fisso: “QR-CODE” |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | codIdRPT                          | Struttura dati composta da:       |
 +-----------------------------------+-----------------------------------+
 | CF                                |    Codice Fiscale dell’Ente       |
@@ -268,14 +268,14 @@ interface* messe a disposizione dal PSP.
 
 23. il NodoSPC notifica al PSP la ricezione dell’RT da parte dell’EC.
 
-10.3 Pagamento mediante Avviso (scenario alternativo) DEPRECATO
----------------------------------------------------------------
+Pagamento mediante Avviso (scenario alternativo) DEPRECATO
+----------------------------------------------------------
 
 +-----------------------------------+-----------------------------------+
 | Pre-condizioni                    | L’Utilizzatore finale è in        |
 |                                   | possesso di un Avviso di          |
 |                                   | Pagamento.                        |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Trigger                           | L’Utilizzatore finale si presenta |
 |                                   | presso uno dei canali messi a     |
 |                                   | disposizione del PSP (ad esempio  |
@@ -339,8 +339,8 @@ interface* messe a disposizione dal PSP.
 
 |image1|
 
-   **Figura XX – Diagramma di sequenza del pagamento con avviso di
-   pagamento ( scenario alternativo)**
+**Figura** **2: Diagramma di sequenza del pagamento con avviso di
+pagamento ( scenario alternativo)**
 
 1. l’Utilizzatore finale presenta un avviso di pagamento (di cui al
    documento “L’avviso di Pagamento Analogico nel Sistema pagoPA”,
@@ -359,7 +359,7 @@ interface* messe a disposizione dal PSP.
    dove:
 
 +-----------------------------------+-----------------------------------+
-| Dato                              | Contenuto                         |
+| **Dato**                          | **Contenuto**                     |
 +===================================+===================================+
 | Numero Avviso                     | Contiene il Numero Avviso la cui  |
 |                                   | formattazione è descritta         |
@@ -388,7 +388,7 @@ interface* messe a disposizione dal PSP.
 +-----------------------------------+-----------------------------------+
 |    codificaInfrastrutturaPSP      | Assume il valore fisso:           |
 |                                   | “QR-CODE”.                        |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 |    codIdRPT                       | Struttura dati composta da        |
 +-----------------------------------+-----------------------------------+
 |    CF                             | Codice Fiscale dell’Ente          |
@@ -410,32 +410,32 @@ interface* messe a disposizione dal PSP.
 |                                   | estratto dal Numero di Avviso     |
 +-----------------------------------+-----------------------------------+
 
-4. il Nodo effettua i controlli semantici e sintattici;
+4.  il Nodo effettua i controlli semantici e sintattici;
 
-5. superati i controlli, il NodoSPC provvede ad instradare la richiesta
-   all’EC che ha emesso l’avviso tramite la chiamata *paaVerificaRPT*
-   riempita con le informazioni contenute nella *nodoVerificaRPT*.
+5.  superati i controlli, il NodoSPC provvede ad instradare la richiesta
+    all’EC che ha emesso l’avviso tramite la chiamata *paaVerificaRPT*
+    riempita con le informazioni contenute nella *nodoVerificaRPT*.
 
-6. alla ricezione della chiamata *paaVerificaRPT*, l’EC ricerca
-   all’interno del proprio Archivio dei Pagamenti in Attesa (APA) la
-   posizione debitoria utilizzando come chiave di ricerca lo IUV ed il
-   CCP contenuto all’interno dei parametri della primitiva e
-   verificandone le informazioni e lo stato del pagamento.
+6.  alla ricezione della chiamata *paaVerificaRPT*, l’EC ricerca
+    all’interno del proprio Archivio dei Pagamenti in Attesa (APA) la
+    posizione debitoria utilizzando come chiave di ricerca lo IUV ed il
+    CCP contenuto all’interno dei parametri della primitiva e
+    verificandone le informazioni e lo stato del pagamento.
 
-7. l’EC fornisce al NodoSPC l’esito della ricerca aggiornando le
-   informazioni relative all’avviso di pagamento, specificando:
+7.  l’EC fornisce al NodoSPC l’esito della ricerca aggiornando le
+    informazioni relative all’avviso di pagamento, specificando:
 
--  Importo del versamento (*ImportoSingoloVersamento*)
+    -  Importo del versamento (*ImportoSingoloVersamento*)
 
--  IBAN del conto corrente (*IBANAccredito*)
+    -  IBAN del conto corrente (*IBANAccredito*)
 
--  identificativo della banca (opzionale, *bicAccredito*)
+    -  identificativo della banca (opzionale, *bicAccredito*)
 
--  Ente Creditore (*enteBeneficiario*)
+    -  Ente Creditore (*enteBeneficiario*)
 
--  Dettagli del soggetto pagatore (*credenzialiPagatore*)
+    -  Dettagli del soggetto pagatore (*credenzialiPagatore*)
 
--  Descrizione del versamento (*causaleVersamento*)
+    -  Descrizione del versamento (*causaleVersamento*)
 
 8.  il NodoSPC inoltra la risposta al PSP che ha effettuato la
     richiesta.
@@ -494,7 +494,9 @@ interface* messe a disposizione dal PSP.
     indicato all’interno della RPT;
 
 23. alla ricezione della *pspInviaRPT*, il PSP notifica l’univocità e la
-    correttezza formale della RPT;
+    correttezza formale della RPT; In tale scenario, avendo il PSP già
+    incassato, non è consensito rifiutare la ricezione della RPT
+    consegnata dal nodo.
 
 24. a fronte del pagamento avvenuto precedentemente, il PSP compone la
     RT.
@@ -515,8 +517,8 @@ interface* messe a disposizione dal PSP.
 
 31. il PSP può concludere il pagamento.
 
-10.4 Pagamento spontaneo
-------------------------
+Pagamento spontaneo
+-------------------
 
 +----------+-----------------------------------------------+
 | |image2| | **Paragrafo soggetto a proposta di modifica** |
@@ -531,7 +533,7 @@ interface* messe a disposizione dal PSP.
 |                                   | finale è già in possesso di tutti |
 |                                   | i dati necessari per avviare il   |
 |                                   | pagamento.                        |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Trigger                           | L’Utilizzatore finale si presenta |
 |                                   | presso uno dei canali messi a     |
 |                                   | disposizione dal PSP in possesso  |
@@ -611,8 +613,8 @@ interface* messe a disposizione dal PSP.
 
 Il sequence di tale processo è ancora in fase di definizione.
 
-10.5 Gestione degli errori
---------------------------
+Gestione degli errori
+---------------------
 
 Il paragrafo descrive la gestione degli errori nel processo di Pagamento
 attivato presso il PSP secondo le possibili eccezioni riportate nel
@@ -624,7 +626,7 @@ Paragrafo precedente.
 | Pre-condizioni                    | Il PSP compone e sottomette una   |
 |                                   | richiesta di attivazione o        |
 |                                   | verifica di una RPT.              |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Descrizione                       | Il NodoSPC rifiuta l’attivazione  |
 |                                   | o la verifica della RPT.          |
 |                                   |                                   |
@@ -642,7 +644,7 @@ Paragrafo precedente.
 
 |image3|
 
-**Figura XX - XX**
+**Figura** **3: Errore di Attivazione/Verifica**
 
 1. il PSP richiede l’attivazione di un pagamento mediante la primitiva
    *nodoAttivaRPT*;
@@ -664,8 +666,8 @@ Paragrafo precedente.
 Le possibili azioni di controllo sono riportate nella Tabella seguente:
 
 +-----------------------+-----------------------+-----------------------+
-| Strategia di          | Tipologia Errore      | Azione di Controllo   |
-| risoluzione           |                       | Suggerita             |
+| **Strategia di        | **Tipologia Errore**  | **Azione di Controllo |
+| risoluzione**         |                       | Suggerita**           |
 +=======================+=======================+=======================+
 |                       | PPT_SINTASSI_XSD      | Verificare la         |
 |                       |                       | composizione della    |
@@ -689,7 +691,7 @@ Le possibili azioni di controllo sono riportate nella Tabella seguente:
 |                       |                       | presenti nelle RPT    |
 +-----------------------+-----------------------+-----------------------+
 
-**Tabella XX – XX**
+**Tabella** **1: Possibili azioni di controllo**
 
 **Pagamento non eseguibile**
 
@@ -697,7 +699,7 @@ Le possibili azioni di controllo sono riportate nella Tabella seguente:
 | Pre-condizioni                    | Il PSP è in possesso dei dati di  |
 |                                   | pagamento ottenuti mediante       |
 |                                   | lettura dell’avviso di pagamento. |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Descrizione                       | L’EC, a seguito della ricezione   |
 |                                   | di una primitiva *paaAttivaRPT* o |
 |                                   | *paaVerificaRPT*, verifica lo     |
@@ -755,7 +757,7 @@ Le possibili azioni di controllo sono riportate nella Tabella seguente:
 
 |image4|
 
-**Figura XX - XX**
+**Figura** **4: Pagamento non eseguibile**
 
 1. il PSP richiede l’attivazione di un pagamento mediante la primitiva
    *nodoAttivaRPT*;
@@ -769,17 +771,17 @@ Le possibili azioni di controllo sono riportate nella Tabella seguente:
 
 4. L’EC notifica uno dei possibili *fault_code:*
 
--  PAA_PAGAMENTO_DUPLICATO
+   -  PAA_PAGAMENTO_DUPLICATO
 
--  PAA_PAGAMENTO_IN_CORSO
+   -  PAA_PAGAMENTO_IN_CORSO
 
--  PAA_PAGAMENTO_ANNULLATO
+   -  PAA_PAGAMENTO_ANNULLATO
 
--  PAA_PAGAMENTO_SCADUTO
+   -  PAA_PAGAMENTO_SCADUTO
 
--  PAA_PAGAMENTO_SCONOSCIUTO
+   -  PAA_PAGAMENTO_SCONOSCIUTO
 
--  PAA_ATTIVA_RPT_IMPORTO_NON_VALIDO (solo in caso di attivazione)
+   -  PAA_ATTIVA_RPT_IMPORTO_NON_VALIDO (solo in caso di attivazione)
 
 5. Il NodoSPC inoltra l’errore al PSP tramite la *response* alla
    primitiva *nodoAttivaRPT* con *fault_code* PPT_ERRORE_EMESSO_DA_PAA.
@@ -787,8 +789,8 @@ Le possibili azioni di controllo sono riportate nella Tabella seguente:
 Le possibili azioni di controllo sono riportate nella Tabella seguente.
 
 +-----------------------+-----------------------+-----------------------+
-| Strategia di          | Tipologia Errore      | Azione di Controllo   |
-| risoluzione           |                       | Suggerita             |
+| **Strategia di        | **Tipologia Errore**  | **Azione di Controllo |
+| risoluzione**         |                       | Suggerita**           |
 +=======================+=======================+=======================+
 |                       | PAA_PAGAMENTO_DUPLICA | Il pagamento deve     |
 |                       | TO                    | essere interrotto in  |
@@ -824,7 +826,156 @@ Le possibili azioni di controllo sono riportate nella Tabella seguente.
 |                       |                       | della risposta.       |
 +-----------------------+-----------------------+-----------------------+
 
-**Tabella XX - XX**
+**Tabella** **2: possibili azioni di controllo**
+
+**Pagamento eseguito in assenza di RPT**
+
++-----------------------------------+-----------------------------------+
+| Pre-condizioni                    | Il PSP ha richiesto, con esito    |
+|                                   | positivo, l’attivazione di un     |
+|                                   | pagamento tramite la primitiva    |
+|                                   | *nodoAttivaRPT*.                  |
+|                                   |                                   |
+|                                   | .                                 |
++-----------------------------------+-----------------------------------+
+| Descrizione                       | Sono possibili due scenari:       |
+|                                   |                                   |
+|                                   | 1. Il PSP non riceve in tempi     |
+|                                   |    utili la RPT attesa:           |
+|                                   |                                   |
+|                                   |    a. Qualora non abbia già       |
+|                                   |       proceduto all’incasso nella |
+|                                   |       fase di verifica, sulla     |
+|                                   |       base delle informazioni     |
+|                                   |       ottenute tramite la         |
+|                                   |       primitiva *nodoAttivaRPT* , |
+|                                   |       il PSP procede al pagamento |
+|                                   |       nonostante l’assenza        |
+|                                   |       dell’RPT.                   |
+|                                   |                                   |
+|                                   |    b. Non avendo i dati della     |
+|                                   |       RPT, il PSP non può         |
+|                                   |       procedere con la            |
+|                                   |       generazione della RT e      |
+|                                   |       dovrà rendicontare          |
+|                                   |       l’avvenuto pagamento        |
+|                                   |       attraverso la               |
+|                                   |       predisposizione di un       |
+|                                   |       flusso di rendicontazione   |
+|                                   |       con *codiceEsitoPagamento*  |
+|                                   |       con valore 9.               |
+|                                   |                                   |
+|                                   |    c. Al fine di notificare l’EC  |
+|                                   |       e risolvere eventuali       |
+|                                   |       segnalazioni, il PSP attiva |
+|                                   |       un TAVOLO OPERATIVO         |
+|                                   |       indicando i pagamenti       |
+|                                   |       incassati per i quali non è |
+|                                   |       stata disponibile alcuna    |
+|                                   |       RPT. Per ogni IUV, sarà     |
+|                                   |       necessario specificare      |
+|                                   |       l’esito delle chiamate      |
+|                                   |       *nodoVerificaRPT* (OK, NOT  |
+|                                   |       OK,TimeOut) e               |
+|                                   |       *nodoAttivaRPT* (OK,NOT OK, |
+|                                   |       TimeOut).                   |
+|                                   |                                   |
+|                                   | 2. Il PSP riceve la RPT, ma a     |
+|                                   |    valle di controlli di validità |
+|                                   |    notifica al nodo               |
+|                                   |    l’impossibilità di             |
+|                                   |    accettazione della richiesta   |
+|                                   |    di pagamento (tale scenario    |
+|                                   |    non è consentito nel caso di   |
+|                                   |    scenario Alternativo,dove il   |
+|                                   |    PSP ha già effettuato          |
+|                                   |    l’incasso):                    |
+|                                   |                                   |
+|                                   |    d. Il PSP invia una *response* |
+|                                   |       negativa al nodo alla       |
+|                                   |       primitiva pspInviaRPT       |
+|                                   |                                   |
+|                                   |    e. Estrapolando i codici       |
+|                                   |       identificativi della RPT,   |
+|                                   |       il PSP genera una RT        |
+|                                   |       negativa                    |
+|                                   |                                   |
+|                                   |    f. Il PSP invia la RT- al      |
+|                                   |       NodoSPC                     |
++-----------------------------------+-----------------------------------+
+| Post-Condizione                   | N/A                               |
++-----------------------------------+-----------------------------------+
+
+|image5|
+
+**Figura** **5: Pagamento eseguito in assenza di RPT**
+
+   L’evoluzione temporale è la seguente:
+
+1. Il PSP richiede l’attivazione del pagamento tramite la primitiva
+   *nodoAttivaRPT*
+
+2. Il NodoSPC, dove aver contattato l’EC, risponde positivamente alla
+   primitiva *nodoAttivaRPT*
+
+..
+
+   Sono possibili due scenari alternativi
+
+3.  Il PSP non riceve in tempi utili alcuna RPT relativa al pagamento
+    attivato precedentemente
+
+4.  Qualora non abbia già proceduto all’incasso nella fase di verifica,
+    sulla base delle informazioni ottenute tramite la primitiva
+    *nodoAttivaRPT* , il PSP procede al pagamento nonostante l’assenza
+    dell’RPT.
+
+5.  Il PSP predispone, per il pagamento in oggetto, un flusso di
+    rendicontazione 9. Contestualmente notifica al tavolo operativo
+    l’avvenuto incasso dello IUV in oggetto.
+
+6.  Il PSP riceve da parte del nodo la RPT richiesta, tramite la
+    primitiva *pspInviaRPT*
+
+7.  Il PSP valida la RPT ricevuta rilevando delle anomalie
+
+8.  Nel caso l’anomalia riscontrata sia riconducibile ad una
+    duplicazione di RPT, il PSP notifica la *response* negativa con
+    fault bean CANALE_RPT:DUPLICATA e nessuna altra azione è necessaria.
+
+9.  Nel caso di errore semantico, il PSP notifica una *response*
+    negativa al NodoSPC con un codice faultBean descrittivo dell’errore
+    rilevato.
+
+10. A seguito del rifiuto dell’RPT in arrivo, il PSP genera una RT
+    negativa
+
+11. Il PSP invia la RT generata al punto precedente tramite la primitiva
+    *nodoInviaRT*
+
+Nota Bene: Il secondo scenario (punti dal 6 al 10 ) non può avvenire se
+il PSP ha già incassato a seguito della fase di verifica ( pagamento
+presso PSP , scenario alternativo)
+
+Le possibili azioni di controllo sono riportate nella Tabella seguente.
+
++-----------------------+-----------------------+-----------------------+
+| **Strategia di        | **Tipologia Errore**  | **Azione di Controllo |
+| risoluzione**         |                       | Suggerita**           |
++=======================+=======================+=======================+
+|                       | CANALE_RPT_DUPLICATA  | Il pagamento è stato  |
+|                       |                       | già processo, non     |
+|                       |                       | sono necessarie       |
+|                       |                       | ulteriori azioni.     |
++-----------------------+-----------------------+-----------------------+
+|                       | CANALE_SEMANTICA      | Il pagamento deve     |
+|                       |                       | essere interrotto in  |
+|                       | CANALE_SINTASSI_XSD   | quanto il PSP non     |
+|                       |                       | ritiene valida la RPT |
+|                       | CANALE_SINTASSI_EXTRA | consegnata. E’        |
+|                       | XSD                   | necessario generare   |
+|                       |                       | una RT negativa.      |
++-----------------------+-----------------------+-----------------------+
 
 **RT respinta dal NodoSPC**
 
@@ -833,7 +984,7 @@ Le possibili azioni di controllo sono riportate nella Tabella seguente.
 |                                   | ed ha generato la RT da inviare   |
 |                                   | all’EC. Lo stato del pagamento    |
 |                                   | risulta RT presso PSP.            |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Descrizione                       | Il NodoSPC non prende in carico   |
 |                                   | la RT inviata dal PSP in seguito  |
 |                                   | al verificarsi di uno dei         |
@@ -858,9 +1009,9 @@ Le possibili azioni di controllo sono riportate nella Tabella seguente.
 |                                   | variato.                          |
 +-----------------------------------+-----------------------------------+
 
-|image5|
+|image6|
 
-**Figura XX - XX**
+**Figura** **6: RT respinta dal NodoSPC**
 
    L’evoluzione temporale è la seguente:
 
@@ -891,8 +1042,8 @@ Le possibili azioni di controllo sono riportate nella Tabella seguente.
 Le possibili azioni di controllo sono riportate nella Tabella seguente.
 
 +-----------------------+-----------------------+-----------------------+
-| Strategia di          | Tipologia Errore      | Azione di Controllo   |
-| risoluzione           |                       | Suggerita             |
+| **Strategia di        | **Tipologia Errore**  | **Azione di Controllo |
+| risoluzione**         |                       | Suggerita**           |
 +=======================+=======================+=======================+
 |                       | PPT_RT_DUPLICATA      | L’errore riscontrato  |
 |                       |                       | non comporta alcuna   |
@@ -916,7 +1067,7 @@ Le possibili azioni di controllo sono riportate nella Tabella seguente.
 | Pre-condizioni                    | Il PSP ha effettuato il pagamento |
 |                                   | ed ha generato la RT, accettata   |
 |                                   | dal NodoSPC e da inviare all’EC   |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Descrizione                       | L’EC non riceve la RT, a causa    |
 |                                   | dell’impossibilità da parte del   |
 |                                   | NodoSPC a recapitare la RT        |
@@ -946,9 +1097,9 @@ Le possibili azioni di controllo sono riportate nella Tabella seguente.
 |                                   | la modalità PULL                  |
 +-----------------------------------+-----------------------------------+
 
-|image6|
+|image7|
 
-**Figura XX - XX**
+**Figura** **7: RT non consegnata all’EC**
 
    L’evoluzione temporale è la seguente:
 
@@ -992,8 +1143,8 @@ Le possibili azioni di controllo sono riportate nella Tabella seguente.
 Le possibili azioni di controllo sono riportate nella Tabella seguente.
 
 +-----------------------+-----------------------+-----------------------+
-| Strategia di          | Tipologia Errore      | Azione di Controllo   |
-| risoluzione           |                       | Suggerita             |
+| **Strategia di        | **Tipologia Errore**  | **Azione di Controllo |
+| risoluzione**         |                       | Suggerita**           |
 +=======================+=======================+=======================+
 |                       | PAA_RT_DUPLICATA      | Nessuna azione,       |
 |                       |                       | l’errore riscontrato  |
@@ -1017,14 +1168,64 @@ Le possibili azioni di controllo sono riportate nella Tabella seguente.
 |                       |                       | successivamente       |
 +-----------------------+-----------------------+-----------------------+
 
-**Tabella XX - XX**
+**Tabella** **3: possibili azioni di controllo**
+
+**RT non generata**
+
++-----------------------------------+-----------------------------------+
+| Pre-condizioni                    | L’EC (nel giorno D) ha prodotto   |
+|                                   | ed inviato senza alcun errore una |
+|                                   | RPT. Alla scadenza della data     |
+|                                   | indicata all’interno del campo    |
+|                                   | *dataEsecuzionePagamento*         |
+|                                   | contenuto nell’RPT inviata (D+1), |
+|                                   | l’EC non riceve alcuna RT         |
+|                                   | associata al pagamento richiesto. |
+|                                   |                                   |
+|                                   | Lo stato della posizione          |
+|                                   | debitoria associata alla RPT è    |
+|                                   | nello stato IN PAGAMENTO.         |
++-----------------------------------+-----------------------------------+
+| Descrizione                       | l’EC identifica lo IUV associato  |
+|                                   | alla RPT alfine di ricercarlo     |
+|                                   | attraverso il motore di           |
+|                                   | riconciliazione all’interno dei   |
+|                                   | flussi di rendicontazione del     |
+|                                   | giorno D.                         |
+|                                   |                                   |
+|                                   | Sono possibili due scenari        |
+|                                   | alternativi:                      |
+|                                   |                                   |
+|                                   | -  Qualora sia stato              |
+|                                   |    effettivamente eseguito il     |
+|                                   |    pagamento il flusso di         |
+|                                   |    rendicontazione conterrà lo    |
+|                                   |    IUV indicato all’interno della |
+|                                   |    RPT con un                     |
+|                                   |    *codiceEsitoPagamento* pari a  |
+|                                   |    9 e L’EC provvederà a          |
+|                                   |    modificare lo stato del        |
+|                                   |    pagamento in PAGATO e          |
+|                                   |    procedere con le operazioni di |
+|                                   |    riconciliazione.               |
+|                                   |                                   |
+|                                   | -  Qualora all’interno del flusso |
+|                                   |    di rendicontazione non venga   |
+|                                   |    ritrovato lo IUV atteso, l’EC  |
+|                                   |    attiva un TAVOLO OPERATIVO     |
+|                                   |    coinvolgendo il PSP indicato   |
+|                                   |    all’interno della RPT          |
++-----------------------------------+-----------------------------------+
+| Post-Condizione                   | Al termine di tale scenario, lo   |
+|                                   | stato del pagamento è PAGATO      |
++-----------------------------------+-----------------------------------+
 
 .. |image0| image:: media_PagamentoPressoPSP/media/image1.png
    :width: 6.69306in
    :height: 8.28403in
 .. |image1| image:: media_PagamentoPressoPSP/media/image2.png
-   :width: 6.19514in
-   :height: 9.92153in
+   :width: 5.68043in
+   :height: 9.09722in
 .. |image2| image:: media_PagamentoPressoPSP/media/image3.png
    :width: 0.81568in
    :height: 0.4403in
@@ -1035,8 +1236,11 @@ Le possibili azioni di controllo sono riportate nella Tabella seguente.
    :width: 6.69306in
    :height: 4.37917in
 .. |image5| image:: media_PagamentoPressoPSP/media/image6.png
+   :width: 5.78125in
+   :height: 8.19792in
+.. |image6| image:: media_PagamentoPressoPSP/media/image7.png
    :width: 4.07292in
    :height: 4.47917in
-.. |image6| image:: media_PagamentoPressoPSP/media/image7.png
+.. |image7| image:: media_PagamentoPressoPSP/media/image8.png
    :width: 6.125in
    :height: 7.71875in

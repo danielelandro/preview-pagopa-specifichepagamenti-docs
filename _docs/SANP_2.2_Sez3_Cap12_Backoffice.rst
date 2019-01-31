@@ -1,8 +1,8 @@
-12. Back-office
-===============
+Back-office
+===========
 
-12.1 Revoca e storno
---------------------
+Revoca e storno
+---------------
 
 Il NodoSPC mette a disposizione degli EC e dei PSP aderenti,
 rispettivamente, i processi di storno e revoca di pagamento, da
@@ -16,28 +16,28 @@ del soggetto istanziante e delle motivazioni che innescano l’esecuzione
 del processo, possono verificarsi le situazioni mostrate nella figura
 seguente.
 
-|info|
+|image0|
 
-Figura XX: Attori coinvolti nell'innesco dei processi di revoca e storno
-di una RT
+**Figura** **1: Attori coinvolti nell'innesco dei processi di revoca e
+storno di una RT**
 
-+----------+-----------------+
-| Processo | Innesco         |
-+==========+=================+
-| RevocaRT | Avviato dal PSP |
-+----------+-----------------+
-| Storno   | Avviato dall’EC |
-+----------+-----------------+
++--------------+-----------------+
+| **Processo** | **Innesco**     |
++==============+=================+
+| RevocaRT     | Avviato dal PSP |
++--------------+-----------------+
+| Storno       | Avviato dall’EC |
++--------------+-----------------+
 
-Tabella XX: Soggetti che istanziano i processi di Revoca e Storno di un
-pagamento
+**Tabella** **1: Soggetti che istanziano i processi di Revoca e Storno
+di un pagamento**
 
 Il processo di revoca può essere a sua volta diversificato sulla base
 delle motivazioni che ne determinano l’innesco, come da tabella
 successiva:
 
 +-----------------------+-----------------------+-----------------------+
-| Processo              | Tipologia             | Descrizione           |
+| **Processo**          | **Tipologia**         | **Descrizione**       |
 +=======================+=======================+=======================+
 | RevocaRT              | Annullo Tecnico       | Innescato dal PSP     |
 |                       |                       | quando, in casi       |
@@ -103,11 +103,11 @@ successiva:
 |                       |                       | tale funzionalità     |
 +-----------------------+-----------------------+-----------------------+
 
-Tabella XX: Descrizione sintetica delle motivazioni per l'innesco dei
-processi di revoca e storno
+**Tabella** **2: Descrizione sintetica delle motivazioni per l'innesco
+dei processi di revoca e storno**
 
-12.1.1 Processo di Revoca per Annullo Tecnico
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Processo di Revoca per Annullo Tecnico
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Il processo di revoca di una ricevuta telematica per Annullo Tecnico
 consente il rientro da situazioni anomale o di incoerenza nello stato di
@@ -130,7 +130,7 @@ nella tabella successiva.
 |                                   |    successivo a quello di         |
 |                                   |    creazione della RT             |
 |                                   |    (*dataOraMessaggioRicevuta*)   |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Trigger                           | Il PSP ha evidenza di una         |
 |                                   | squadratura puntuale fra incasso  |
 |                                   | e relativa RT .                   |
@@ -162,14 +162,14 @@ nella tabella successiva.
 |                                   |    stato *Pagamento_revocato*     |
 +-----------------------------------+-----------------------------------+
 
-Tabella XX: Caso d'uso del processo di revoca per annullo tecnico
+**Tabella** **3: Caso d'uso del processo di revoca per annullo tecnico**
 
 L’evoluzione temporale del processo di revoca è il seguente:
 
-|C:\Users\mogi\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\2QI8WBLX\SD_Annullo_Tecnico.png|
+|image1|
 
-**Figura XX: Diagramma di sequenza del processo di revoca di una RT per
-Annullo Tecnico**
+**Figura** **2: Diagramma di sequenza del processo di revoca di una RT
+per Annullo Tecnico**
 
 1.  il PSP compone il documento XML per la richiesta di revoca e lo
     sottomette all’EC attraverso il NodoSPC mediante la primitiva
@@ -213,8 +213,8 @@ andrà a sovrascrivere quella revocata. In questo caso il parametro
 *Forzacontrollosegno* nella SOAP *request* *nodoInviaRT* deve essere
 impostato a 1.
 
-12.1.2 Processo di Revoca di una Ricevuta Telematica per *charge-back*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Processo di Revoca di una Ricevuta Telematica per charge-back
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Il processo di revoca per *charge-back* di una RT è innescato dal PSP
 solo verso l’EC che aderisce al servizio e sarà realizzabile solo per i
@@ -233,7 +233,7 @@ risulti pagata. Il caso d’uso nominale è così descritto:
 |                                   |                                   |
 |                                   | -  Il pagamento è rimborsabile    |
 |                                   |    dall’EC                        |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Trigger                           | L’Utilizzatore finale avanza la   |
 |                                   | richiesta di revoca al PSP con    |
 |                                   | cui ha effettuato il pagamento    |
@@ -264,8 +264,8 @@ risulti pagata. Il caso d’uso nominale è così descritto:
 |                                   |    stato *Pagamento Revocato*     |
 +-----------------------------------+-----------------------------------+
 
-Tabella XX: Scenario d'uso del processo di revoca di una RT per
-*charge-back*
+**Tabella** **4: Scenario d'uso del processo di revoca di una RT per
+charge-back**
 
 Al pari dei casi d’uso riportati nei capitoli precedenti, l’evoluzione
 temporale e le primitive coinvolte nel processo di revoca sono riportate
@@ -273,10 +273,10 @@ nella figura successiva, avendo cura di notare che il caso d’uso
 rappresenta lo scenario in cui le cui invocazioni SOAP si concludono con
 esito positivo (esito: OK come parametro di *output*).
 
-|C:\Users\mogi\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\2QI8WBLX\SD_ChargeBack.png|
+|image2|
 
-Figura XX: Diagramma di sequenza del processo di revoca per
-*charge-back*
+**Figura** **3: Diagramma di sequenza del processo di revoca per
+charge-back**
 
 1.  l’Utilizzatore finale richiede al PSP attestante il pagamento la
     revoca della RT per *charge-back*;
@@ -319,8 +319,8 @@ Figura XX: Diagramma di sequenza del processo di revoca per
 13. il PSP notifica l’Utilizzatore finale circa l’esito positivo della
     procedura di revoca della ricevuta telematica.
 
-12.1.3 Processo di Storno di un pagamento
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    3. .. rubric:: Processo di Storno di un pagamento
+          :name: processo-di-storno-di-un-pagamento
 
 Il processo di storno di un pagamento, attivato dall’EC, è innescato
 quando l’Utilizzatore finale richieda a vario titolo la cancellazione di
@@ -334,7 +334,7 @@ l’evoluzione temporale sono mostrate nella figura successiva.
 |                                   |                                   |
 |                                   | -  Il pagamento si trova nello    |
 |                                   |    stato RT EC                    |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Trigger                           | L’utilizzatore richiede lo storno |
 |                                   | di un pagamento precedentemente   |
 |                                   | avvenuto                          |
@@ -354,11 +354,12 @@ l’evoluzione temporale sono mostrate nella figura successiva.
 |                                   |    stato RT Stornata              |
 +-----------------------------------+-----------------------------------+
 
-Tabella XX: Caso d'uso del processo di storno di un pagamento
+**Tabella** **5: Caso d'uso del processo di storno di un pagamento**
 
 |image3|
 
-Tabella XX: Evoluzione temporale del processo di storno di un pagamento
+**Figura** **4: Evoluzione temporale del processo di storno di un
+pagamento**
 
 1.  l’Utilizzatore finale richiede lo storno di un pagamento effettuato
     all’EC;
@@ -398,15 +399,15 @@ Tabella XX: Evoluzione temporale del processo di storno di un pagamento
 14. l’EC informa l’Utilizzatore finale in merito all’esito delle
     operazioni di storno.
 
-12.2 Riconciliazione
---------------------
+    2. .. rubric:: Riconciliazione
+          :name: riconciliazione
 
 All’interno di questo paragrafo vengono descritti i casi d’uso che
 descrivono il processo contabile operato dall’Ente Creditore al fine di
 riconciliare i pagamenti effettuati dall’Utilizzatore finale.
 
-12.2.1 Attori del processo di Riconciliazione Contabile e casi d’uso
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Attori del processo di Riconciliazione Contabile e casi d’uso
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Gli attori coinvolti nel processo di riconciliazione sono i seguenti:
 
@@ -421,10 +422,10 @@ Gli attori coinvolti nel processo di riconciliazione sono i seguenti:
 -  **Banca Tesoriera/ Cassiera:** rappresenta il Prestatore di Servizi
    di Pagamento che gestisce il conto di incasso di un EC. E’ il
    destinatario del flusso di riversamento SCT e notifica all’EC
-   l’avvenuto incasso su sistemi esterni a pagoPA
+   l’avvenuto incasso su sistemi esterni a pagoPA.
 
-12.2.2 *Worflow* di Riconciliazione
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   5. .. rubric:: Worflow di Riconciliazione
+         :name: worflow-di-riconciliazione
 
 Il processo di riconciliazione comporta il seguente *workflow* dove
 saranno utilizzati i seguenti termini:
@@ -467,7 +468,7 @@ saranno utilizzati i seguenti termini:
 |                                   | -  Il Nodo valida la richiesta e  |
 |                                   |    archivia il flusso rendendolo  |
 |                                   |    disponibile per l’EC.          |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Trigger                           | L’EC riconcilia gli accrediti SCT |
 |                                   | ricevuti sul conto indicato nelle |
 |                                   | RPT                               |
@@ -486,12 +487,14 @@ saranno utilizzati i seguenti termini:
 |                                   | *Pagamento Rendicontato*          |
 +-----------------------------------+-----------------------------------+
 
+**Tabella** **7: Worflow di Riconciliazione**
+
 L’evoluzione temporale è la seguente:
 
 |image4|
 
-Figura XX: Diagramma di sequenza del processo di riconciliazione
-contabile
+**Figura** **5: Diagramma di sequenza del processo di riconciliazione
+contabile**
 
 1. il PSP accredita con SCT il conto di un EC. L’importo dello SCT può
    essere pari all’importo di un singolo pagamento ovvero pari
@@ -626,13 +629,16 @@ Sono possibili i seguenti scenari:
     rendicontazione e delle RT archiviate, effettua la riconciliazione
     contabile.
 
-12.2.3 *Motore di Riconciliazione*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    6. .. rubric:: Motore di Riconciliazione
+          :name: motore-di-riconciliazione
 
-L’obiettivo del presente paragrafo è quello di tratteggiare per termini
-essenziali il modello concettuale di un algoritmo che consenta all’EC di
-riconciliare i flussi informativi degli incassi messi a disposizioni da
-pagoPA con quelli finanziari.
+L’obiettivo del presente paragrafo è quello di tratteggiare in termini
+essenziali il modello concettuale di un algoritmo (il Motore di
+riconciliazione) che consenta al singolo EC di riconciliare i flussi
+informativi degli incassi messi a disposizioni da pagoPA con quelli
+finanziari. Nel flusso sono altresì riportate, sempre in ottica del
+singolo EC, le attività che ci si attende siano compiute dalla singola
+controparte PSP.
 
 Nell’ipotesi semplificativa in cui la data richiesta per il pagamento
 coincida con la data di invio della richiesta di pagamento, il processo
@@ -640,98 +646,350 @@ di riconciliazione opera riproducendo ricorsivamente un ciclo di quattro
 passi da compiersi nella successione riportata di seguito per ogni PSP
 aderente al NodoSPC:
 
-1. a chiusura del giorno lavorativo (D), il motore individua le RPT
-   inviate prima del *cut-off*. Per ognuna di tali RPT il motore
-   seleziona le corrispondenti RT, ne controlla la quadratura e
-   distingue, accantonandole, quelle relative a un incasso (RT+);
++-----------------+-----------------+-----------------+-----------------+
+| **Passo**       | **Descrizione** | **Attività EC** | **Attività      |
+|                 |                 |                 | PSP**           |
++=================+=================+=================+=================+
+| 1.              | Quadratura      | A chiusura del  | A chiusura      |
+|                 | degli incassi   | giorno          | della giornata  |
+|                 |                 | lavorativo (D), | operativa il    |
+|                 |                 | il motore       | PSP, controlla  |
+|                 |                 | individua le    | la quadratura   |
+|                 |                 | RPT inviate     | degli incassi   |
+|                 |                 | prima del       | eseguiti per    |
+|                 |                 | cut-off. Per    | l’EC            |
+|                 |                 | ognuna di tali  | determinando:   |
+|                 |                 | RPT il motore   |                 |
+|                 |                 | seleziona le    | -  Gli IUV per  |
+|                 |                 | corrispondenti  |    cui ha       |
+|                 |                 | RT, ne          |    emesso RT+   |
+|                 |                 | controlla la    |                 |
+|                 |                 | quadratura e    | -  Gli IUV da   |
+|                 |                 | distingue,      |    rendicontare |
+|                 |                 | accantonandole, |    con codice 9 |
+|                 |                 | quelle relative |                 |
+|                 |                 | a un incasso    | Determina       |
+|                 |                 | (RT+). Ai fini  | inoltre gli     |
+|                 |                 | dei successivi  | importi dello   |
+|                 |                 | passi del       | SCT Cumulativo  |
+|                 |                 | processo di     | e degli SCT     |
+|                 |                 | rendicontazione | singoli da      |
+|                 |                 | sarà altresì    | eseguire.       |
+|                 |                 | necessario      |                 |
+|                 |                 | individuare gli |                 |
+|                 |                 | IUV per i       |                 |
+|                 |                 | quali, a causa  |                 |
+|                 |                 | di una          |                 |
+|                 |                 | eccezione,      |                 |
+|                 |                 | l’incasso,      |                 |
+|                 |                 | benché sia      |                 |
+|                 |                 | stato           |                 |
+|                 |                 | effettuato non  |                 |
+|                 |                 | corrisponde a   |                 |
+|                 |                 | una RT. Tali    |                 |
+|                 |                 | incassi saranno |                 |
+|                 |                 | rendicontati    |                 |
+|                 |                 | mediante        |                 |
+|                 |                 | *codiceEsitoSin |                 |
+|                 |                 | goloPagamento*  |                 |
+|                 |                 | 9 nel caso di   |                 |
+|                 |                 | riversamento    |                 |
+|                 |                 | cumulativo.     |                 |
++-----------------+-----------------+-----------------+-----------------+
+| 2.              | Ricezione SCT   | nel giorno D+1, | Esegue SCT di   |
+|                 |                 | la Banca        | cui al punto 1  |
+|                 |                 | Cassiera/Tesori |                 |
+|                 |                 | era             |                 |
+|                 |                 | dell’EC riceve  |                 |
+|                 |                 | dal PSP,        |                 |
+|                 |                 | tramite SCT, i  |                 |
+|                 |                 | flussi          |                 |
+|                 |                 | finanziari      |                 |
+|                 |                 | relativi agli   |                 |
+|                 |                 | incassi del     |                 |
+|                 |                 | giorno D. In    |                 |
+|                 |                 | generale, per   |                 |
+|                 |                 | ogni PSP, l’EC  |                 |
+|                 |                 | può ricevere un |                 |
+|                 |                 | SCT cumulativo  |                 |
+|                 |                 | e un numero     |                 |
+|                 |                 | indeterminato   |                 |
+|                 |                 | di SCT singoli  |                 |
+|                 |                 | relativi a una  |                 |
+|                 |                 | sola RT+        |                 |
++-----------------+-----------------+-----------------+-----------------+
+| 3.              | Quadratura FDR  | nel giorno D+2  | Il PSP genera   |
+|                 |                 | il motore,      | il FDR,         |
+|                 |                 | interrogando il | associandolo    |
+|                 |                 | NodoSPC, può    | allo SCT di cui |
+|                 |                 | effettuare il   | al punto 2 con  |
+|                 |                 | downloading del | il dato         |
+|                 |                 | Flusso di       | identificativoF |
+|                 |                 | Rendicontazione | lusso,          |
+|                 |                 | (FDR) relativo  | indicando:      |
+|                 |                 | al giorno D. Il |                 |
+|                 |                 | motore può      | -  Gli IUV per  |
+|                 |                 | quindi          |    i quali ha   |
+|                 |                 | controllare la  |    emesso RT+   |
+|                 |                 | quadratura      |    *codiceEsito |
+|                 |                 | dello FDR,      | SingoloPagament |
+|                 |                 | abbinando ad    | o*              |
+|                 |                 | esso, in base   |    pari a 0     |
+|                 |                 | allo IUV, le    |                 |
+|                 |                 | RT+ relative al | -  Gli IUV      |
+|                 |                 | giorno D, gli   |    rendicontati |
+|                 |                 | ulteriori       |    con          |
+|                 |                 | incassi non     |    *codiceEsito |
+|                 |                 | corrispondenti  | SingoloPagament |
+|                 |                 | a una RT e gli  | o*              |
+|                 |                 | ER (Esito       |    pari a 9     |
+|                 |                 | Revoca)         |                 |
+|                 |                 | eventualmente   | -  IUV          |
+|                 |                 | contenuti nel   |    associati a  |
+|                 |                 | FDR. In questo  |    un Estio     |
+|                 |                 | ultimo caso il  |    Revoca       |
+|                 |                 | motore esclude  |    accettato    |
+|                 |                 | gli ER          |    dall’EC      |
+|                 |                 | rendicontati    |    (ER+)        |
+|                 |                 | dal novero      |                 |
+|                 |                 | degli ER da     | Infine mette a  |
+|                 |                 | controllare.    | disposizione    |
+|                 |                 | Inoltre il      | dell’EC il FDR  |
+|                 |                 | motore, nel     | relativo al     |
+|                 |                 | processo di     | giorno D        |
+|                 |                 | quadratura,     |                 |
+|                 |                 | distingue gli   |                 |
+|                 |                 | importi a       |                 |
+|                 |                 | compensazione   |                 |
+|                 |                 | (in eccesso o   |                 |
+|                 |                 | difetto)        |                 |
+|                 |                 | eventualmente   |                 |
+|                 |                 | contenuti nel   |                 |
+|                 |                 | FDR. Per ogni   |                 |
+|                 |                 | PSP, il motore  |                 |
+|                 |                 | distingue e     |                 |
+|                 |                 | accantona le    |                 |
+|                 |                 | RT+ non         |                 |
+|                 |                 | abbinate a un   |                 |
+|                 |                 | FDR             |                 |
+|                 |                 | (RT:sub:`S`)    |                 |
++-----------------+-----------------+-----------------+-----------------+
+| 4.              | Quadratura      | a chiusura del  |                 |
+|                 | riversamenti    | giorno          |                 |
+|                 | SCT:            | lavorativo D+2  |                 |
+|                 |                 | il motore       |                 |
+|                 |                 | elabora tutte   |                 |
+|                 |                 | le notifiche di |                 |
+|                 |                 | incasso         |                 |
+|                 |                 | relative al     |                 |
+|                 |                 | giorno D+1      |                 |
+|                 |                 | ricevute dalla  |                 |
+|                 |                 | Banca           |                 |
+|                 |                 | Cassiera/Tesori |                 |
+|                 |                 | era             |                 |
+|                 |                 | (nel caso       |                 |
+|                 |                 | SIOPE+ la       |                 |
+|                 |                 | notifica è      |                 |
+|                 |                 | rappresentata   |                 |
+|                 |                 | dal "Giornale   |                 |
+|                 |                 | di Cassa" OPI). |                 |
+|                 |                 | Per ogni PSP il |                 |
+|                 |                 | motore conclude |                 |
+|                 |                 | il processo di  |                 |
+|                 |                 | riconciliazione |                 |
+|                 |                 | eseguendo le    |                 |
+|                 |                 | seguenti        |                 |
+|                 |                 | elaborazioni:   |                 |
+|                 |                 |                 |                 |
+|                 |                 | 1. esegue la    |                 |
+|                 |                 |    quadratura   |                 |
+|                 |                 |    di ogni      |                 |
+|                 |                 |    riversamento |                 |
+|                 |                 |    singolo in   |                 |
+|                 |                 |    abbinamento  |                 |
+|                 |                 |    con la       |                 |
+|                 |                 |    corrisponden |                 |
+|                 |                 | te              |                 |
+|                 |                 |    RT\ :sub:`S` |                 |
+|                 |                 |    controllando |                 |
+|                 |                 |    che:         |                 |
+|                 |                 |                 |                 |
+|                 |                 | 2. L’Identifica |                 |
+|                 |                 | tivo            |                 |
+|                 |                 |    univoco      |                 |
+|                 |                 |    versamento   |                 |
+|                 |                 |    (IUV) che    |                 |
+|                 |                 |    identifica   |                 |
+|                 |                 |    la singola   |                 |
+|                 |                 |    RT\ :sub:`s` |                 |
+|                 |                 |    coincida con |                 |
+|                 |                 |    la           |                 |
+|                 |                 |    componente   |                 |
+|                 |                 |    “identificat |                 |
+|                 |                 | ivo             |                 |
+|                 |                 |    univoco      |                 |
+|                 |                 |    versamento”  |                 |
+|                 |                 |    nel dato     |                 |
+|                 |                 |    “\ *Unstruct |                 |
+|                 |                 | ured            |                 |
+|                 |                 |    Remittance   |                 |
+|                 |                 |    Information* |                 |
+|                 |                 | \ ”             |                 |
+|                 |                 |    di cui al    |                 |
+|                 |                 |    tracciato    |                 |
+|                 |                 |    del SEPA     |                 |
+|                 |                 |    Credit       |                 |
+|                 |                 |    Transfer nel |                 |
+|                 |                 |    caso di      |                 |
+|                 |                 |    versamento   |                 |
+|                 |                 |    effettuato   |                 |
+|                 |                 |    tramite SCT  |                 |
+|                 |                 |    ovvero nel   |                 |
+|                 |                 |    campo        |                 |
+|                 |                 |    causale nel  |                 |
+|                 |                 |    caso di      |                 |
+|                 |                 |    versamento   |                 |
+|                 |                 |    effettuato   |                 |
+|                 |                 |    tramite      |                 |
+|                 |                 |    bollettino   |                 |
+|                 |                 |    di conto     |                 |
+|                 |                 |    corrente     |                 |
+|                 |                 |    postale.     |                 |
+|                 |                 |                 |                 |
+|                 |                 | 3. Il valore    |                 |
+|                 |                 |    del tag      |                 |
+|                 |                 |    *importoTota |                 |
+|                 |                 | lePagato*       |                 |
+|                 |                 |    della stessa |                 |
+|                 |                 |    RT\ :sub:`s` |                 |
+|                 |                 |    corrisponda  |                 |
+|                 |                 |    con          |                 |
+|                 |                 |    l’importo    |                 |
+|                 |                 |    effettivamen |                 |
+|                 |                 | te              |                 |
+|                 |                 |    trasferito   |                 |
+|                 |                 |                 |                 |
+|                 |                 | 4. esegue la    |                 |
+|                 |                 |    quadratura   |                 |
+|                 |                 |    di ogni      |                 |
+|                 |                 |    riversamento |                 |
+|                 |                 |    cumulativo,  |                 |
+|                 |                 |    in           |                 |
+|                 |                 |    abbinamento  |                 |
+|                 |                 |    con il       |                 |
+|                 |                 |    corrisponden |                 |
+|                 |                 | te              |                 |
+|                 |                 |    FDR          |                 |
+|                 |                 |    controllando |                 |
+|                 |                 |    che:         |                 |
+|                 |                 |                 |                 |
+|                 |                 | 5. L’Identifica |                 |
+|                 |                 | tivo            |                 |
+|                 |                 |    del FDR      |                 |
+|                 |                 |    coincida con |                 |
+|                 |                 |    la           |                 |
+|                 |                 |    componente   |                 |
+|                 |                 |    “identificat |                 |
+|                 |                 | ivo             |                 |
+|                 |                 |    flusso       |                 |
+|                 |                 |    versamento”  |                 |
+|                 |                 |    nel dato     |                 |
+|                 |                 |    “\ *Unstruct |                 |
+|                 |                 | ured            |                 |
+|                 |                 |    Remittance   |                 |
+|                 |                 |    Information* |                 |
+|                 |                 | \ ”             |                 |
+|                 |                 |    di cui al    |                 |
+|                 |                 |    tracciato    |                 |
+|                 |                 |    del SEPA     |                 |
+|                 |                 |    Credit       |                 |
+|                 |                 |    Transfer nel |                 |
+|                 |                 |    caso di      |                 |
+|                 |                 |    versamento   |                 |
+|                 |                 |    effettuato   |                 |
+|                 |                 |    tramite SCT  |                 |
+|                 |                 |                 |                 |
+|                 |                 | 6. Il valore    |                 |
+|                 |                 |    del tag      |                 |
+|                 |                 |    *importoTota |                 |
+|                 |                 | lePagamenti*    |                 |
+|                 |                 |    nel FDR      |                 |
+|                 |                 |    corrisponda  |                 |
+|                 |                 |    con          |                 |
+|                 |                 |    l’importo    |                 |
+|                 |                 |    effettivamen |                 |
+|                 |                 | te              |                 |
+|                 |                 |    trasferito.  |                 |
++-----------------+-----------------+-----------------+-----------------+
 
-2. nel giorno D+1, la Banca Cassiera/Tesoriera riceve da ogni PSP,
-   tramite SCT, i flussi finanziari relativi agli incassi del giorno D.
-   In generale, per ogni PSP, l’EC può ricevere un SCT cumulativo e un
-   numero indeterminato di SCT singoli relativi a una sola RT+;
+**Tabella** **8: Motore di Riconciliazione**
 
-3. nel giorno D+2 il motore, interrogando il NodoSPC, può effettuare il
-   downloading del Flusso di Rendicontazione (FDR) relativo al giorno D.
-   Il motore può quindi controllare la quadratura dello FDR, abbinando
-   ad esso, in base allo IUV, le RT+ relative al giorno D e agli ER
-   (Esito Revoca) eventualmente contenuti nel FDR. In questo ultimo caso
-   il motore esclude gli ER rendicontati dal novero degli ER da
-   controllare. Inoltre il motore, nel processo di quadratura, distingue
-   gli importi a compensazione (in eccesso o difetto) eventualmente
-   contenuti nel FDR. Per ogni PSP, il motore distingue e accantona le
-   RT+ non abbinate a un FDR (RT:sub:`S`);
+Gestione degli errori 
+~~~~~~~~~~~~~~~~~~~~~~
 
-4. a chiusura del giorno lavorativo D+2 il motore elabora tutte le
-   notifiche di incasso relative al giorno D+1 ricevute dalla Banca
-   Cassiera/Tesoriera (nel caso SIOPE+ la notifica è rappresentata dal
-   "Giornale di Cassa" OPI). Per ogni PSP il motore conclude il processo
-   di riconciliazione eseguendo le seguenti elaborazioni:
+Il paragrafo mostra le strategie di risoluzione per gli errori che
+possono verificarsi durante l’esecuzione del processo di quadratura
+mediante il motore di riconciliazione, rispetto ai passi presi in esame
+nella descrizione dell’MDR stesso.
 
-   -  esegue la quadratura di ogni riversamento singolo in abbinamento
-      con la corrispondente RT\ :sub:`S` controllando che:
+Passo3: Quadratura FDR 
+^^^^^^^^^^^^^^^^^^^^^^^
 
-      -  L’Identificativo univoco versamento (IUV) che identifica la
-         singola RT\ :sub:`s` coincida con la componente “identificativo
-         univoco versamento” nel dato “\ *Unstructured Remittance
-         Information*\ ” di cui al tracciato del SEPA Credit Transfer
-         nel caso di versamento effettuato tramite SCT ovvero nel campo
-         causale nel caso di versamento effettuato tramite bollettino di
-         conto corrente postale.
+-  **FDR non quadra**
 
-      -  Il valore del tag *importoTotalePagato* della stessa
-         RT\ :sub:`s` corrisponda con l’importo effettivamente
-         trasferito
+Nella eventualità in cui l’EC non riuscisse ad operare la quadratura del
+FDR, ad esempio per valori errati di qualsiasi elemento all’interno del
+flusso stesso; l’EC, mediante il ricorso al tavolo operativo provvederà
+a richiedere la ri-emissione del FDR per procedere nuovamente
+all’esecuzione del Passo3.
 
-   -  esegue la quadratura di ogni riversamento cumulativo, in
-      abbinamento con il corrispondente FDR controllando che:
+Passo4: Quadratura riversamenti SCT
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-      -  L’Identificativo del FDR coincida con la componente
-         “identificativo flusso versamento” nel dato “\ *Unstructured
-         Remittance Information*\ ” di cui al tracciato del SEPA Credit
-         Transfer nel caso di versamento effettuato tramite SCT
+-  **Riversamento in difetto**
 
-      -  Il valore del tag *importoTotalePagamenti* nel FDR corrisponda
-         con l’importo effettivamente trasferito.
+Nel presente scenario l’EC riscontra condizioni di squadratura in
+difetto tra gli SCT riversati dai PSP sulla propria Banca
+Tesoriera/Cassiera e le somme specificate dalle singole RTs o dal FDR
+nel caso di riversamento singolo o cumulativo, rispettivamente. In tale
+circostanza il PSP interessato il quale dovrà procedere alla generazione
+di un nuovo SCT, riportante causale:
 
-Gestione errore
+-  **SCT ad integrazione di un riversamento Cumulativo in difetto:** la
+   Causale del SCT dovrà essere valorizzata come segue:
+   **/PUR/LGPE-INTEGRAZIONE/URI/< identificativoFlusso >**
+   identificativoFlusso identifica lo FDR per il quale è stato
+   effettuato un riversamento in difetto.
 
-Punto 1
+-  **SCT ad integrazione di un riversamento Singolo**: la causale del
+   SCT dovrà essere valorizzata come segue:
 
--  RT mancante
+   -  /RFS/<IUV>/<importo>[/TXT/Integrazione]
 
-Punto 3:
+..
 
--  codice 9,
+   Oppure
 
--  totale non quadra,
+-  /RFB/<IUV>[/<importo>][/TXT/Integrazione]
 
--  singolo iuv non quadra,
+..
 
--  singolo dato versamento non quadra
+   Dove il valore dal tag IUV fa riferimento alla RTs per la quale è
+   stato riversato un SCTin difetto
 
--  Per SANP 3.0 introdurre modalità di reinvio FDR
+-  **Riversamento in eccesso**
 
-Punto 4
+Nel presente scenario l’EC riscontra condizioni di squadratura in
+eccesso tra gli SCT riversati dai PSP e le somme specificate nella RTs o
+dal FDR nel caso di riversamento singolo o cumulativo, rispettivamente.
+In tale circostanza la compensazione avviene in modalità manuale da
+concordare tra le controparti attraverso il tavolo operativo.
 
--  SCT in difetto
+3. .. rubric:: Gestione degli errori
+      :name: gestione-degli-errori-1
 
--  SCT in eccesso
-
-4= Compensazione SCT in eccesso si manda un documento simile ER
-
-5=Compensazione SCT in difetto si pretende un SCT ad integrazione che
-contenga come causale
-
-**/PUR/<purpose>/URI/< identificativoFlusso >**
-
-<**purpose**> rappresenta la codifica dello ‘scopo’ (PURpose) del SCT, e
-deve riportare il valore prefissato **LGPE-INTEGRAZIONE**
-
-12.3 Gestione degli errori
----------------------------
-
-12.3.1 Gestione degli errori di revoca
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   8. .. rubric:: Gestione degli errori di revoca
+         :name: gestione-degli-errori-di-revoca
 
 Il paragrafo mostra i casi di errore che si possono verificare durante
 il processo di richiesta di revoca di una Ricevuta Telematica, sia nel
@@ -752,7 +1010,7 @@ processo di revoca del pagamento.
 +-----------------------------------+-----------------------------------+
 | Pre-condizione                    | Il PSP sottomette all’EC una      |
 |                                   | Richiesta di Revoca di una RT     |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Descrizione                       | Il NodoSPC esegue la validazione  |
 |                                   | del documento RR replicando esito |
 |                                   | KO all’invocazione di invio       |
@@ -763,9 +1021,12 @@ processo di revoca del pagamento.
 |                                   | Revoca Rifiutata                  |
 +-----------------------------------+-----------------------------------+
 
-|SD_ERR_nodoInviaRichiestaRevoca|
+**Tabella** **9: RR Rifiutata dal NodoSPC**
 
-Figura XX: Diagramma di sequenza nel caso di RR rifiutata dal Nodo
+|image5|
+
+**Figura** **6: Diagramma di sequenza nel caso di RR rifiutata dal
+Nodo**
 
 L’evoluzione temporale è la seguente:
 
@@ -800,7 +1061,7 @@ Le azioni di controllo suggerite sono riportate nella Tabella successiva
 +-----------------------+-----------------------+-----------------------+
 | Strategia di          | Tipologia Errore      | Azione di Controllo   |
 | risoluzione           |                       | Suggerita             |
-+=======================+=======================+=======================+
++-----------------------+-----------------------+-----------------------+
 |                       | PPT_OPER_NON_REVOCABI | Verificare la         |
 |                       | LE                    | revocabilità          |
 |                       |                       | dell’operazione       |
@@ -831,14 +1092,15 @@ Le azioni di controllo suggerite sono riportate nella Tabella successiva
 |                       |                       | DE*)                  |
 +-----------------------+-----------------------+-----------------------+
 
-Tabella XX: Strategie di risoluzione nel caso di RR rifiutata dal Nodo
+**Tabella** **10: Strategie di risoluzione nel caso di RR rifiutata dal
+Nodo**
 
 **RR rifiutata dall’EC**
 
 +-----------------------------------+-----------------------------------+
 | Pre-condizione                    | Il PSP sottomette all’EC una      |
 |                                   | Richiesta di Revoca di una RT     |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Descrizione                       | Il NodoSPC valida positivamente   |
 |                                   | il documento informativo RR:      |
 |                                   |                                   |
@@ -855,10 +1117,10 @@ Tabella XX: Strategie di risoluzione nel caso di RR rifiutata dal Nodo
 |                                   | Revoca Rifiutata                  |
 +-----------------------------------+-----------------------------------+
 
-|C:\Users\gianni.papetti\AppData\Local\Microsoft\Windows\INetCache\Content.Word\SD_ERR_paaInviaRichiestaRevoca.png|
+|image6|
 
-Figura XX: Diagramma di sequenza per il caso di errore di RR rifiutata
-dall'EC
+**Figura** **7: Diagramma di sequenza per il caso di errore di RR
+rifiutata dall'EC**
 
 L’evoluzione temporale del caso d’uso è la seguente (dal punto 4):
 
@@ -883,12 +1145,13 @@ risoluzione dell’anomalia.
 +-----------------------+-----------------------+-----------------------+
 | Strategia di          | Tipologia Errore      | Azione di Controllo   |
 | risoluzione           |                       | Suggerita             |
-+=======================+=======================+=======================+
++-----------------------+-----------------------+-----------------------+
 |                       | PPT_ERRORE_EMESSO_DA_ | Attivazione del       |
 |                       | PAA                   | Tavolo Operativo      |
 +-----------------------+-----------------------+-----------------------+
 
-Figura XX: Strategia di risoluzione dello scenario RR rifiutata dall'EC
+**Tabella** **11: Strategia di risoluzione dello scenario RR rifiutata
+dall'EC**
 
 **ER Rifiutata dal NodoSPC**
 
@@ -896,7 +1159,7 @@ Figura XX: Strategia di risoluzione dello scenario RR rifiutata dall'EC
 | Pre-condizione                    | L’EC ha verificato la             |
 |                                   | revocabilità di una RT a seguito  |
 |                                   | di una richiesta di revoca        |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Descrizione                       | -  L’EC compone il documento      |
 |                                   |    informativo di esito revoca ER |
 |                                   |    e lo invia al NodoSPC          |
@@ -909,10 +1172,10 @@ Figura XX: Strategia di risoluzione dello scenario RR rifiutata dall'EC
 |                                   | Revoca Rifiutata                  |
 +-----------------------------------+-----------------------------------+
 
-|SD_ERR_nodoInviaRispostaRevoca|
+|image7|
 
-Figura XX: Diagramma di sequenza per lo scenario di ER rifiutata dal
-Nodo
+**Figura** **8: Diagramma di sequenza per lo scenario di ER rifiutata
+dal Nodo**
 
 L’evoluzione temporale dello scenario è il seguente­:
 
@@ -938,7 +1201,7 @@ risoluzione delle anomalie
 +-----------------------+-----------------------+-----------------------+
 | Strategia di          | Tipologia di Errore   | Azione di Controllo   |
 | risoluzione           |                       | Suggerita             |
-+=======================+=======================+=======================+
++-----------------------+-----------------------+-----------------------+
 |                       | PPT_OPER_NON_REVOCABI | Verificare la         |
 |                       | LE                    | revocabilità          |
 |                       |                       | dell’operazione       |
@@ -964,15 +1227,15 @@ risoluzione delle anomalie
 |                       |                       | documento XML RR      |
 +-----------------------+-----------------------+-----------------------+
 
-Tabella XX: Azioni di controllo per la risoluzione dello scenario di ER
-rifiutata dal Nodo
+**Tabella** **12: Azioni di controllo per la risoluzione dello scenario
+di ER rifiutata dal Nodo**
 
 **ER Rifiutata dal PSP**
 
 +-----------------------------------+-----------------------------------+
 | Pre-condizione                    | Il NodoSPC ha validato il         |
 |                                   | documento ER                      |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Descrizione                       | Il PSP replica con esito KO alla  |
 |                                   | invio della Esito della Revoca da |
 |                                   | parte dell’EC                     |
@@ -981,9 +1244,9 @@ rifiutata dal Nodo
 |                                   | Revoca Rifiutata                  |
 +-----------------------------------+-----------------------------------+
 
-|SD_ERR_nodoInviaRispostaRevoca_ERR_PSP|
+|image8|
 
-Figura XX: Diagramma di sequenza per il caso ER rifiutata dal PSP
+**Figura** **9: Diagramma di sequenza per il caso ER rifiutata dal PSP**
 
 L’evoluzione dello scenario in esame è il seguente (si assume
 validazione positiva da parte del NodoSPC, punto 3)
@@ -1007,15 +1270,16 @@ risoluzione dell’anomalia
 +-----------------------+-----------------------+-----------------------+
 | Strategia di          | Tipologia Errore      | Azione di Controllo   |
 | risoluzione           |                       | Suggerita             |
-+=======================+=======================+=======================+
++-----------------------+-----------------------+-----------------------+
 |                       | PPT_ERRORE_EMESSO_DA_ | Attivazione del       |
 |                       | PAA                   | Tavolo Operativo      |
 +-----------------------+-----------------------+-----------------------+
 
-Figura XX: Strategia di risoluzione dello scenario RR rifiutata dall'EC
+**Tabella** **13: Strategia di risoluzione dello scenario RR rifiutata
+dall'EC**
 
-12.3.2 Gestione degli errori di storno
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Gestione degli errori di storno 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Il paragrafo mostra i casi di errore che si possono verificare durante
 il processo di storno di un pagamento. Con assoluta generalità si
@@ -1034,7 +1298,7 @@ l’esito positivo o meno del processo di storno del pagamento.
 +-----------------------------------+-----------------------------------+
 | Pre-condizione                    | L’EC esegue una richiesta di      |
 |                                   | storno                            |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Descrizione                       | Il Nodo a seguito della           |
 |                                   | validazione replica fornendo      |
 |                                   | esito negativo                    |
@@ -1045,8 +1309,8 @@ l’esito positivo o meno del processo di storno del pagamento.
 
 |image9|
 
-Tabella XX: Diagramma di sequenza dello scenario richiesta storno
-rifiutata dal Nodo
+**Figura** **10: Diagramma di sequenza dello scenario richiesta storno
+rifiutata dal Nodo**
 
 L’evoluzione temporale è la seguente:
 
@@ -1123,8 +1387,8 @@ risoluzione delle anomalie.
 |                       |                       | DE*)                  |
 +-----------------------+-----------------------+-----------------------+
 
-Tabella XX: Azioni di controllo suggerite per lo scenario Richiesta
-Storno rifiutata dal Nodo
+**Tabella** **14: Azioni di controllo suggerite per lo scenario
+Richiesta Storno rifiutata dal Nodo**
 
 **Richiesta Storno Rifiutata dal PSP**
 
@@ -1140,10 +1404,10 @@ Storno rifiutata dal Nodo
 |                                   | Storno Rifiutato                  |
 +-----------------------------------+-----------------------------------+
 
-|SD_ERR_RICHIESTA_STORNO_KO_PSP|
+|image10|
 
-Figura XX: Evoluzione temporale dello scenario richiesta storno
-rifiutata dal PSP
+**Figura** **11: Evoluzione temporale dello scenario richiesta storno
+rifiutata dal PSP**
 
 L’evoluzione temporale è la seguente (dal punto 4):
 
@@ -1176,15 +1440,15 @@ La tabella successiva mostra le azioni di controllo suggerite per la
 risoluzione dell’anomalia.
 
 +-----------------------+-----------------------+-----------------------+
-| Strategia di          | Tipologia Errore      | Azione di Controllo   |
-| risoluzione           |                       | Suggerita             |
+| **Strategia di        | **Tipologia Errore**  | **Azione di Controllo |
+| risoluzione**         |                       | Suggerita**           |
 +=======================+=======================+=======================+
 |                       | PPT_CANALE_ERRORE     | Attivazione del       |
 |                       |                       | Tavolo Operativo      |
 +-----------------------+-----------------------+-----------------------+
 
-Tabella XX: Azioni di controllo suggerite per lo scenario Richiesta
-Storno rifiutata dal PSP
+**Tabella** **15: Azioni di controllo suggerite per lo scenario
+Richiesta Storno rifiutata dal PSP**
 
 **Esito Storno Rifiutato dal Nodo**
 
@@ -1201,9 +1465,9 @@ Storno rifiutata dal PSP
 |                                   | Storno Rifiutato                  |
 +-----------------------------------+-----------------------------------+
 
-|SD_ERR_ESITO_STORNO_KO_NODO|
+|image11|
 
-Figura XX: Scenario Esito Storno rifiutato dal Nodo
+**Figura** **12: Scenario Esito Storno rifiutato dal Nodo**
 
 L’evoluzione temporale è la seguente:
 
@@ -1277,7 +1541,8 @@ risoluzione delle anomalie.
 |                       |                       | DE*)                  |
 +-----------------------+-----------------------+-----------------------+
 
-Tabella XX: Strategie di risoluzione per il caso ER rifiutata dal Nodo
+**Tabella** **16: Strategie di risoluzione per il caso ER rifiutata dal
+Nodo**
 
 **Esito Storno rifiutato dall’EC**
 
@@ -1294,9 +1559,9 @@ Tabella XX: Strategie di risoluzione per il caso ER rifiutata dal Nodo
 |                                   | Storno Rifiutato                  |
 +-----------------------------------+-----------------------------------+
 
-|SD_ERR_ESITO_STORNO_KO_EC|
+|image12|
 
-Figura XX: Scenario Esito Storno rifiutato da EC
+**Figura** **13: Scenario Esito Storno rifiutato da EC**
 
 L’evoluzione temporale dello scenario è il seguente (dal punto 4):
 
@@ -1323,14 +1588,15 @@ La tabella successiva mostra le azioni di controllo suggerite per la
 risoluzione delle anomalie
 
 +-----------------------+-----------------------+-----------------------+
-| Strategia di          | Tipologia Errore      | Azione di Controllo   |
-| risoluzione           |                       | Suggerita             |
+| **Strategia di        | **Tipologia Errore**  | **Azione di Controllo |
+| risoluzione**         |                       | Suggerita**           |
 +=======================+=======================+=======================+
 |                       | PPT_ERRORE_EMESSO_DA_ | Attivazione del       |
 |                       | PAA                   | Tavolo Operativo      |
 +-----------------------+-----------------------+-----------------------+
 
-Tabella XX: Strategie di risoluzione per il caso ER rifiutata dall'EC
+**Tabella** **17: Strategie di risoluzione per il caso ER rifiutata
+dall'EC**
 
 **ER Mancante per timeout delle controparti**
 
@@ -1359,10 +1625,10 @@ caso in cui le parti riscontrassero fenomeni di timeout.
 |                                   | Richiesta Storno Inviata          |
 +-----------------------------------+-----------------------------------+
 
-|SD_ERR_ESITO_STORNO_TIMEOUT|
+|image13|
 
-Figura XX: Evoluzione temporale dello scenario Esito Storno mancate per
-timeout
+**Figura** **14: Evoluzione temporale dello scenario Esito Storno
+mancate per timeout**
 
 L’evoluzione temporale è la seguente:
 
@@ -1430,10 +1696,10 @@ oppure
 |                       | *response*            |                       |
 +-----------------------+-----------------------+-----------------------+
 
-Tabella XX: XX
+**Tabella** **18: strategia di risoluzione**
 
-12.3.3 Gestione degli errori di riconciliazione
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Gestione degli errori di riconciliazione 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Il paragrafo descrive la gestione degli errori che possono verificarsi
 durante l’esercizio del processo di riconciliazione contabile. In
@@ -1497,9 +1763,10 @@ successiva:
 |                                   | *RT_PAGATA*                       |
 +-----------------------------------+-----------------------------------+
 
-|SD_ERR_FLUSSO_KO_NODO|
+|image14|
 
-Figura XX: Evoluzione temporale dello scenario flusso rifiutato dal Nodo
+**Figura** **15: Evoluzione temporale dello scenario flusso rifiutato
+dal Nodo**
 
 L’evoluzione temporale dello scenario è la seguente:
 
@@ -1591,8 +1858,8 @@ successiva:
 |                       |                       | DE*)                  |
 +-----------------------+-----------------------+-----------------------+
 
-Tabella XX: Strategia di risoluzione dello scenario Flusso rifiutato dal
-Nodo
+**Tabella** **19: Strategia di risoluzione dello scenario Flusso
+rifiutato dal Nodo**
 
 **Timeout invio flusso di rendicontazione**
 
@@ -1618,7 +1885,7 @@ L’evoluzione temporale è la seguente:
 
 |image15|
 
-Figura XX: XX
+**Figura** **16: Timeout invio flusso di rendicontazione**
 
 1. il PSP accredita con SCT il conto dell’EC per l’importo delle somme
    incassate (l’SCT contiene l’indicazione del flusso di
@@ -1699,9 +1966,10 @@ Figura XX: XX
 |                                   | *RT_EC*                           |
 +-----------------------------------+-----------------------------------+
 
-|SD_ERR_RICHIESTA_FLUSSI_KO|
+|image16|
 
-Figura XX: XX
+**Figura** **17: Richiesta lista flussi di rendicontazione rifiutata dal
+NodoSPC**
 
 L’evoluzione temporale dello scenario è la seguente:
 
@@ -1733,8 +2001,8 @@ L’evoluzione temporale dello scenario è la seguente:
 |                       |                       | nella SOAP *request*  |
 +-----------------------+-----------------------+-----------------------+
 
-Tabella XX: Strategia di risoluzione dello scenario richiesta lista
-flussi rifiutata dal Nodo
+**Tabella** **20: Strategia di risoluzione dello scenario richiesta
+lista flussi rifiutata dal Nodo**
 
 **Richiesta Flusso Rifiutata dal Nodo / Nessun flusso presente**
 
@@ -1751,10 +2019,10 @@ flussi rifiutata dal Nodo
 | Post-condizione                   | Lo stato del pagamento è in RT_EC |
 +-----------------------------------+-----------------------------------+
 
-|SD_ERR_RICHIESTA_FLUSSO_KO|
+|image17|
 
-Figura XX: Evoluzione temporale dello scenario richiesta Flusso
-rifiutata dal Nodo / Flusso mancate
+**Figura** **18: Evoluzione temporale dello scenario richiesta Flusso
+rifiutata dal Nodo / Flusso mancate**
 
 L’evoluzione temporale dello scenario è la seguente:
 
@@ -1809,7 +2077,8 @@ L’evoluzione temporale dello scenario è la seguente:
 |                       |                       | il Tavolo Operativo   |
 +-----------------------+-----------------------+-----------------------+
 
-Tabella XX: XX
+**Tabella** **21: Richiesta Flusso Rifiutata dal Nodo / Nessun flusso
+presente**
 
 .. [1]
    Attività da considerarsi solo nel caso di Revoca per Charge-Back
@@ -1820,57 +2089,57 @@ Tabella XX: XX
 .. [3]
    Per i dettagli del Tavolo Operativo si rimanda alla sezione IV.
 
-.. |info| image:: media_Backoffice/media/image1.png
-   :width: 6.67847in
-   :height: 2.52153in
-.. |C:\Users\mogi\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\2QI8WBLX\SD_Annullo_Tecnico.png| image:: media_Backoffice/media/image2.png
+.. |image0| image:: media_Backoffice/media/image1.png
    :width: 6.69306in
-   :height: 3.82492in
-.. |C:\Users\mogi\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\2QI8WBLX\SD_ChargeBack.png| image:: media_Backoffice/media/image3.png
+   :height: 2.53125in
+.. |image1| image:: media_Backoffice/media/image2.png
    :width: 6.69306in
-   :height: 4.01233in
+   :height: 3.82778in
+.. |image2| image:: media_Backoffice/media/image3.png
+   :width: 6.325in
+   :height: 3.78922in
 .. |image3| image:: media_Backoffice/media/image4.png
-   :width: 5in
-   :height: 2.8125in
+   :width: 5.00479in
+   :height: 2.81377in
 .. |image4| image:: media_Backoffice/media/image5.png
    :width: 6.69306in
-   :height: 5.31944in
-.. |SD_ERR_nodoInviaRichiestaRevoca| image:: media_Backoffice/media/image6.png
-   :width: 5.11458in
-   :height: 2.46875in
-.. |C:\Users\gianni.papetti\AppData\Local\Microsoft\Windows\INetCache\Content.Word\SD_ERR_paaInviaRichiestaRevoca.png| image:: media_Backoffice/media/image7.png
-   :width: 5.7381in
-   :height: 2.67361in
-.. |SD_ERR_nodoInviaRispostaRevoca| image:: media_Backoffice/media/image8.png
-   :width: 4.98264in
-   :height: 3.13889in
-.. |SD_ERR_nodoInviaRispostaRevoca_ERR_PSP| image:: media_Backoffice/media/image9.png
-   :width: 5.09583in
-   :height: 2.66944in
+   :height: 5.31875in
+.. |image5| image:: media_Backoffice/media/image6.png
+   :width: 6.69306in
+   :height: 3.225in
+.. |image6| image:: media_Backoffice/media/image7.png
+   :width: 6.69306in
+   :height: 3.11181in
+.. |image7| image:: media_Backoffice/media/image8.png
+   :width: 6.41756in
+   :height: 4.02139in
+.. |image8| image:: media_Backoffice/media/image9.png
+   :width: 6.69306in
+   :height: 3.51042in
 .. |image9| image:: media_Backoffice/media/image10.png
-   :width: 5in
-   :height: 2.66667in
-.. |SD_ERR_RICHIESTA_STORNO_KO_PSP| image:: media_Backoffice/media/image11.png
-   :width: 6.68681in
-   :height: 2.77361in
-.. |SD_ERR_ESITO_STORNO_KO_NODO| image:: media_Backoffice/media/image12.png
-   :width: 5.60903in
-   :height: 3.17361in
-.. |SD_ERR_ESITO_STORNO_KO_EC| image:: media_Backoffice/media/image13.png
-   :width: 6.69583in
+   :width: 4.9957in
+   :height: 2.66377in
+.. |image10| image:: media_Backoffice/media/image11.png
+   :width: 6.69306in
+   :height: 2.76875in
+.. |image11| image:: media_Backoffice/media/image12.png
+   :width: 6.69306in
+   :height: 3.79306in
+.. |image12| image:: media_Backoffice/media/image13.png
+   :width: 6.69306in
    :height: 3.26944in
-.. |SD_ERR_ESITO_STORNO_TIMEOUT| image:: media_Backoffice/media/image14.png
-   :width: 6.68681in
-   :height: 4.94792in
-.. |SD_ERR_FLUSSO_KO_NODO| image:: media_Backoffice/media/image15.png
-   :width: 6.69583in
-   :height: 4.24375in
+.. |image13| image:: media_Backoffice/media/image14.png
+   :width: 6.69306in
+   :height: 4.95417in
+.. |image14| image:: media_Backoffice/media/image15.png
+   :width: 6.69306in
+   :height: 4.23611in
 .. |image15| image:: media_Backoffice/media/image16.png
-   :width: 5in
-   :height: 2.98958in
-.. |SD_ERR_RICHIESTA_FLUSSI_KO| image:: media_Backoffice/media/image17.png
-   :width: 5.97361in
-   :height: 2.00903in
-.. |SD_ERR_RICHIESTA_FLUSSO_KO| image:: media_Backoffice/media/image18.png
-   :width: 6.01736in
-   :height: 2.32153in
+   :width: 6.69306in
+   :height: 4.00486in
+.. |image16| image:: media_Backoffice/media/image17.png
+   :width: 5.96958in
+   :height: 2.0107in
+.. |image17| image:: media_Backoffice/media/image18.png
+   :width: 6.02167in
+   :height: 2.32324in
