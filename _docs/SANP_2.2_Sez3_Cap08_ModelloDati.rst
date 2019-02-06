@@ -131,8 +131,26 @@ Un versamento è caratterizzato dai seguenti attributi principali:
    servizi di pagamento dei PSP sulla base del massimo importo pagabile
    contenuto nel Catalogo Dati Informativi;
 
--  *Tipo Versamento*: campo mantenuto per retro-compatibilità; contiene
-   sempre il valore “BBT”;
+-  *Tipo Versamento*: descrive il tipo di versamento. I possibili valori
+   ammessi sono:
+
+   -  BBT, Bonifico Bancario di Tesoreria; pagamento con bonifico anche
+      utilizzato per indicare l’innesco di un pagamento online presso
+      l’EC
+
+   -  BP, Bonifico Postale.
+
+   -  AD, Addebito Diretto.
+
+   -  CP, Carta di Pagamento.
+
+   -  PO, pagamento presso PSP. utilizzato per innescare un pagamento
+      presso uno dei canali del PSP.
+
+   -  OBEP, Online Banking E-Payment; utilizzato per descrivere un
+      pagamento tramite canale MyBank.
+
+   -  OTH, Others; Altre forme di versamento.
 
 -  *identificativoUnivocoVersamento:* riferimento univoco assegnato al
    versamento da parte dell’EC (vedi allegato A alle Linee guida);

@@ -239,7 +239,7 @@ Richiesta Catalogo Dati Informativi
 
 **Tabella** **4: Richiesta Catalogo Dati Informativi**
 
-|SD_nodoChiediInformativaPSP|
+|image4|
 
 **Figura** **5: Richiesta Catalogo Dati Informativi**
 
@@ -258,25 +258,9 @@ L’evoluzione temporale è la seguente:
 
 ..
 
-   **Caso OK - Ricezione mediante componente SFTP_NodoSPC**
-
-3. il NodoSPC deposita il file XML relativo al Catalogo Dati Informativi
-   dei PSP codificato in Base64 nella directory assegnata all’EC;
-
-4. il NodoSPC replica alla primitiva di cui al punto 1 fornendo
-   *response* OK ad indicare la corretta elaborazione della richiesta e
-   la presenza del documento richiesto nella directory assegnata all’EC
-   sulla componete SFTP_NodoSPC del NodoSPC;
-
-5. l’EC preleva autenticandosi con username e password il file XML
-   richiesto dalla directory assegnata sulla componente SFTP_NodoSPC del
-   NodoSPC.
-
-..
-
    **Caso KO**
 
-6. il NodoSPC replica negativamente alla richiesta di cui al punto 1
+3. il NodoSPC replica negativamente alla richiesta di cui al punto 1
    emanando un *faultBean* il cui *faultBean*.\ *faultCode* è
    rappresentativo dell’errore riscontrato; in particolare:
 
@@ -728,9 +712,9 @@ Richiesta di avanzamento RT
 .. |nodoChiediStatoRPT| image:: media_FunzioniStrategieRecupero/media/image4.png
    :width: 5.56528in
    :height: 2.94792in
-.. |SD_nodoChiediInformativaPSP| image:: media_FunzioniStrategieRecupero/media/image5.png
-   :width: 5.37361in
-   :height: 4.30417in
+.. |image4| image:: media_FunzioniStrategieRecupero/media/image5.png
+   :width: 5.375in
+   :height: 3.23958in
 .. |SD_nodoChiediCatalogoServizi| image:: media_FunzioniStrategieRecupero/media/image6.png
    :width: 4.90417in
    :height: 2.63472in

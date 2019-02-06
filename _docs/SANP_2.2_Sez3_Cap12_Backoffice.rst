@@ -496,7 +496,10 @@ L’evoluzione temporale è la seguente:
 **Figura** **5: Diagramma di sequenza del processo di riconciliazione
 contabile**
 
-1. il PSP accredita con SCT il conto di un EC. L’importo dello SCT può
+1. il PSP genera il flusso di rendicontazione componendo il file XML di
+   rendicontazione codificato in *base64*;
+
+2. il PSP accredita con SCT il conto di un EC. L’importo dello SCT può
    essere pari all’importo di un singolo pagamento ovvero pari
    all’importo cumulativo di più pagamenti, purché tali pagamenti siano
    stati incassati a favore del medesimo EC nella medesima giornata
@@ -514,39 +517,7 @@ Nel caso di riversamento singolo, l’SCT dovrà riportare all’interno
 dell’attributo AT-05 *(Unstructured Remittance Information*) il valore
 della causale di versamento indicato nella RPT.
 
-2. il PSP genera il flusso di rendicontazione componendo il file XML di
-   rendicontazione codificato in *base64*;
-
-3. il PSP pone il file XML di rendicontazione nella propria coda di
-   invio.
-
-Sono possibili i seguenti scenari:
-
-   **Utilizzo della componente SFTP_NodoSPC**
-
-4. il PSP, autenticandosi mediante *username* e *password*, invia il
-   file XML di rendicontazione alla componente server SFTP_NodoSPC
-   all’interno della *directory* assegnata;
-
-5. il PSP segnala al NodoSPC la presenza di un nuovo flusso di
-   rendicontazione da elaborare mediante la primitiva SOAP
-   *nodoInviaFlussoRendicontazione*; in particolare:
-
-   a. valorizza il parametro di input *identificativoFlusso* con il
-      medesimo valore del campo *identificativoFlusso* contenuto nel
-      file XML di rendicontazione inviato nel punto 4;
-
-   b. non valorizza il parametro di input *XMLRendicontazione* (invio
-      già effettuato nel punto 4);
-
-6. il NodoSPC preleva dalla *directory* assegnata al PSP il file XML di
-   rendicontazione\ *;*
-
-..
-
-   **Utilizzo primitiva SOAP**
-
-7. il PSP, mediante la primitiva *nodoInviaFlussoRendicontazione*, invia
+3. il PSP, mediante la primitiva *nodoInviaFlussoRendicontazione*, invia
    al NodoSPC il flusso di rendicontazione generato, valorizzando i
    parametri di input *identificativoFlusso* con l’identificativo del
    flusso di rendicontazione da trasmettere e il parametro
@@ -558,40 +529,38 @@ Sono possibili i seguenti scenari:
    Eseguito uno dei due scenari alternativi, il flusso procede come
    segue:
 
-8.  il NodoSPC verifica il file XML di rendicontazione;
+4. il NodoSPC verifica il file XML di rendicontazione;
 
-9.  il NodoSPC elabora il file XML di rendicontazione\ *;*
+5. il NodoSPC elabora il file XML di rendicontazione\ *;*
 
-10. il NodoSPC esegue l’archiviazione del flusso di rendicontazione
-    sulle proprie basi di dati;
+6. il NodoSPC esegue l’archiviazione del flusso di rendicontazione sulle
+   proprie basi di dati;
 
-11. il NodoSPC replica fornendo esito OK alla primitiva
-    *nodoInviaFlussoRendicontazione;*
-
-12. il PSP rimuove il file XML di rendicontazione dalla coda di invio.
+7. il NodoSPC replica fornendo esito OK alla primitiva
+   *nodoInviaFlussoRendicontazione;*
 
 ..
 
    Il *workflow* prosegue descrivendo le operazioni lato EC. Il consumo
    delle interfacce esposte dal NodoSPC avviene in modalità *pull*.
 
-13. l’EC, mediante la primitiva *nodoChiediElencoFlussiRendicontazione,*
+8.  l’EC, mediante la primitiva *nodoChiediElencoFlussiRendicontazione,*
     richiede al NodoSPC la lista dei flussi di rendicontazione
     disponibili;
 
-14. il NodoSPC elabora la richiesta;
+9.  il NodoSPC elabora la richiesta;
 
-15. il NodoSPC, a seguito della validazione della richiesta, replica con
+10. il NodoSPC, a seguito della validazione della richiesta, replica con
     *response* OK fornendo in output la lista completa di tutti i flussi
     disponibili per l’EC;
 
-16. l’EC richiede al NodoSPC uno specifico flusso di rendicontazione
+11. l’EC richiede al NodoSPC uno specifico flusso di rendicontazione
     presente nella lista, mediante la primitiva
     *nodoChiediFlussoRendicontazione* valorizzando nella *request* il
     parametro di input *identificativoFlusso* con l’identificativo del
     flusso di rendicontazione richiesto\ *;*
 
-17. il NodoSPC elabora la richiesta.
+12. il NodoSPC elabora la richiesta.
 
 ..
 
@@ -599,33 +568,18 @@ Sono possibili i seguenti scenari:
 
    **Flusso mediante response SOAP**
 
-18. il Nodo invia all’Ente Creditore il flusso richiesto mediante
-    *response* positiva alla primitiva di cui al punto 16.
+13. il Nodo invia all’Ente Creditore il flusso richiesto mediante
+    *response* positiva alla primitiva di cui al punto 11.
 
-..
-
-   **Flusso mediante protocollo SFTP**
-
-19. il NodoSPC colloca il file XML di rendicontazione richiesto nella
-    *directory* assegnata all’EC;
-
-20. il Nodo invia all’EC *response* OK (senza flusso allegato) per
-    segnalare la possibilità da parte dell’EC di poter procedere al
-    prelievo del file XML dalla *directory* assegnata nella componente
-    SFTP_NodoSPC;
-
-21. l’EC preleva il file XML di rendicontazione dalla componente
-    SFTP_NodoSPC;
-
-22. l’EC elabora il flusso di rendicontazione veicolandolo verso i
+14. l’EC elabora il flusso di rendicontazione veicolandolo verso i
     propri sistemi di riconciliazione;
 
-23. l’EC riceve dalla propria Banca di Tesoreria in modalità digitale un
+15. l’EC riceve dalla propria Banca di Tesoreria in modalità digitale un
     flusso contenente i movimenti registrati sul proprio conto; in caso
     di utilizzo da parte dell’EC di SIOPE+, tale flusso è rappresentato
     dal Giornale di Cassa nel formato OPI;
 
-24. L’EC, sulla base dell’identificativo flusso ricevuto nel file XML di
+16. L’EC, sulla base dell’identificativo flusso ricevuto nel file XML di
     rendicontazione e delle RT archiviate, effettua la riconciliazione
     contabile.
 
@@ -1773,51 +1727,20 @@ L’evoluzione temporale dello scenario è la seguente:
 1. il PSP genera il flusso di rendicontazione componendo il file XML di
    rendicontazione codificato in *base64*;
 
-2. il PSP pone il file XML di rendicontazione nella propria coda di
-   invio.
-
-Sono possibili i seguenti scenari
-
-   Utilizzo della componente *SFTP_NodoSPC*
-
-3. il PSP, autenticandosi mediante *username* e *password*, invia il
-   file XML di rendicontazione alla componente server SFTP_NodoSPC
-   all’interno della *directory* assegnata;
-
-4. il PSP segnala al NodoSPC la presenza di un nuovo flusso di
-   rendicontazione da elaborare mediante la primitiva SOAP
-   *nodoInviaFlussoRendicontazione*; in particolare:
-
-   -  valorizza il parametro di input *identificativoFlusso* con il
-      medesimo valore del campo *identificativoFlusso* contenuto nel
-      file XML di rendicontazione inviato nel punto 4;
-
-   -  non valorizza il parametro di input *XMLRendicontazione* (invio
-      già effettuato nel punto 4);
-
-5. il NodoSPC preleva dalla *directory* assegnata al PSP il file XML di
-   rendicontazione\ *;*
-
-6. il NodoSPC verifica il file XML di rendicontazione;
-
-..
-
-   Utilizzo primitiva SOAP
-
-7. il PSP, mediante la primitiva *nodoInviaFlussoRendicontazione*, invia
+2. il PSP, mediante la primitiva *nodoInviaFlussoRendicontazione*, invia
    al NodoSPC il flusso di rendicontazione generato, valorizzando i
    parametri di input *identificativoFlusso* con l’identificativo del
    flusso di rendicontazione da trasmettere e il parametro
    *xmlRendicontazione* con il file XML di rendicontazione codificato in
    base64.
 
-8. il NodoSPC verifica il file XML di rendicontazione;
+3. il NodoSPC verifica il file XML di rendicontazione;
 
 ..
 
    Eseguito uno degli scenari alternativi, il flusso procede come segue:
 
-9. il Nodo replica negativamente alla primitiva precedente fornendo
+4. il Nodo replica negativamente alla primitiva precedente fornendo
    *response* con esito KO emanando un *faultBean* il cui
    *faultBean.faultCode* rappresenta l’errore riscontrato; in
    particolare:
@@ -1887,54 +1810,30 @@ L’evoluzione temporale è la seguente:
 
 **Figura** **16: Timeout invio flusso di rendicontazione**
 
-1. il PSP accredita con SCT il conto dell’EC per l’importo delle somme
+1. il PSP genera il flusso di rendicontazione componendo il file XML di
+   rendicontazione codificato in *base64*.
+
+2. il PSP accredita con SCT il conto dell’EC per l’importo delle somme
    incassate (l’SCT contiene l’indicazione del flusso di
    rendicontazione)
 
-2. il PSP genera il flusso di rendicontazione componendo il file XML di
-   rendicontazione codificato in *base64*.
-
-..
-
-   Si possono presentare i seguenti casi:
-
-   Utilizzo *SFTP_NodoSPC*
-
-3. il PSP pone il file XML di rendicontazione nella propria coda di
-   invio;
-
-4. il PSP invia alla componente SFTP_NodoSPC il file XML di
-   rendicontazione;
-
-5. il PSP avvisa il NodoSPC della presenza di un nuovo XML di
-   rendicontazione da elaborare mediante la primitiva
-   *nodoInviaFlussoRendicontazione*.
-
-..
-
-   Utilizzo primitiva SOAP
-
-6. il PSP invia al NodoSPC il file XML di rendicontazione da elaborare
+3. il PSP invia al NodoSPC il file XML di rendicontazione da elaborare
    mediante la primitiva *nodoInviaFlussoRendicontazione;*
 
-..
+il NodoSPC non risponde manifestando una condizione di *timeout*;
 
-   Eseguito uno degli scenari alternativi, il flusso procede come segue:
+4. il PSP richiede lo stato di elaborazione del flusso di
+   rendicontazione inviato mediante la primitiva
+   *nodoChiediStatoElaborazioneFlussoRendicontazione* valorizzando il
+   parametro di input *identificativoFlusso* con il valore
+   dell’identificativo flusso di cui richiedere lo stato;
 
-7.  il NodoSPC non risponde manifestando una condizione di *timeout*;
+5. Il NodoSPC effettua il controllo sullo stato di elaborazione del
+   flusso inviato;
 
-8.  il PSP richiede lo stato di elaborazione del flusso di
-    rendicontazione inviato mediante la primitiva
-    *nodoChiediStatoElaborazioneFlussoRendicontazione* valorizzando il
-    parametro di input *identificativoFlusso* con il valore
-    dell’identificativo flusso di cui richiedere lo stato;
-
-9.  Il NodoSPC effettua il controllo sullo stato di elaborazione del
-    flusso inviato;
-
-10. Il NodoSPC replica mediante *response* OK alla primitiva di cui al
-    punto 8 fornendo lo stato di elaborazione del flusso di
-    rendicontazione; in particolare:
+6. Il NodoSPC replica mediante *response* OK alla primitiva di cui al
+   punto 8 fornendo lo stato di elaborazione del flusso di
+   rendicontazione; in particolare:
 
 -  FLUSSO_IN_ELABORAZIONE: il NodoSPC deve terminare le operazioni di
    archiviazione dei flussi sulle proprie basi di dati;
@@ -1942,9 +1841,9 @@ L’evoluzione temporale è la seguente:
 -  FLUSSO_ELABORATO: il NodoSPC ha elaborato il flusso di
    rendicontazione inviato dal PSP;
 
-11. il PSP gestisce lo stato riscontrato dal NodoSPC eliminando il file
-    XML di rendicontazione nel caso di FLUSSO_ELABORATO oppure
-    attendendo oltre nel caso di FLUSSO_IN_ELABORAZIONE.
+7. il PSP gestisce lo stato riscontrato dal NodoSPC eliminando il file
+   XML di rendicontazione nel caso di FLUSSO_ELABORATO oppure attendendo
+   oltre nel caso di FLUSSO_IN_ELABORAZIONE.
 
 **Richiesta lista flussi di rendicontazione rifiutata dal NodoSPC**
 
@@ -2040,13 +1939,8 @@ L’evoluzione temporale dello scenario è la seguente:
       *identificativoFlusso* risulti non registrato nelle basi di dati
       del NodoSPC;
 
-   -  PPT_SYSTEM_ERROR: nel caso in cui il NodoSPC riscontri errori
-      nell’inizializzazione client-side del trasferimento SFTP del
-      flusso richiesto;
-
-   -  PPT_FLUSSO_ESISTENTE: il flusso di rendicontazione richiesto è
-      stato già depositato nella *directory* della componente
-      SFTP_NodoSPC dedicata all’EC.
+   -  PPT_SYSTEM_ERROR: nel caso in cui il NodoSPC riscontri errori di
+      sistema nell’elaborazione della richiesta;
 
 +-----------------------+-----------------------+-----------------------+
 | Strategia di          | Tipologia Errore      | Azione di Controllo   |
@@ -2102,8 +1996,6 @@ presente**
    :width: 5.00479in
    :height: 2.81377in
 .. |image4| image:: media_Backoffice/media/image5.png
-   :width: 6.69306in
-   :height: 5.31875in
 .. |image5| image:: media_Backoffice/media/image6.png
    :width: 6.69306in
    :height: 3.225in
@@ -2132,11 +2024,7 @@ presente**
    :width: 6.69306in
    :height: 4.95417in
 .. |image14| image:: media_Backoffice/media/image15.png
-   :width: 6.69306in
-   :height: 4.23611in
 .. |image15| image:: media_Backoffice/media/image16.png
-   :width: 6.69306in
-   :height: 4.00486in
 .. |image16| image:: media_Backoffice/media/image17.png
    :width: 5.96958in
    :height: 2.0107in
