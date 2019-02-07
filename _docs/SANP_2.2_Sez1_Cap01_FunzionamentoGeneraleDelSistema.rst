@@ -10,8 +10,8 @@ diffondere gli strumenti di pagamento elettronici, in particolare,
 quelli riferiti agli incassi della Pubblica Amministrazione, che da un
 lato migliorino, nel rispetto delle situazioni già in essere, la
 gestione dei servizi di tesoreria, dall’altro consentano alla Pubblica
-Amministrazione e ai gestori di Servizi Pubblici esporre ai cittadini e
-alle imprese servizi evoluti di pagamento, assicurando nel contempo un
+Amministrazione e ai gestori di Servizi Pubblici di esporre ai cittadini
+e alle imprese servizi evoluti di pagamento, assicurando nel contempo un
 coordinamento a livello nazionale della concreta attuazione ed
 evoluzione nel tempo del sistema.
 
@@ -58,7 +58,7 @@ soggetti coinvolti:
 |                                   | a favore dell’Ente Creditore,     |
 |                                   | ovvero che effettua un pagamento  |
 |                                   | spontaneo per ottenere a un       |
-|                                   | serviziodallo stesso Ente         |
+|                                   | servizio dallo stesso Ente        |
 |                                   | creditore. Nel rapporto con Ente  |
 |                                   | Creditore l’Utilizzatore finale   |
 |                                   | coincide con il soggetto          |
@@ -74,7 +74,7 @@ soggetti coinvolti:
 |                                   | l’Utilizzatore finale coincide    |
 |                                   | con il soggetto versante.         |
 +-----------------------------------+-----------------------------------+
-| **Ente Creditore** **(EC)**       | Soggetto che utilizza il sistema  |
+| **Ente Creditore (EC)**           | Soggetto che utilizza il sistema  |
 |                                   | pagoPA per l’incasso delle somme  |
 | **(Creditor)**                    | a vario titolo dovute             |
 |                                   | dall’Utilizzatore finale.         |
@@ -90,7 +90,7 @@ soggetti coinvolti:
 |                                   | privato.                          |
 +-----------------------------------+-----------------------------------+
 | **Prestatore di Servizi di        | Soggetto abilitato dalle norme    |
-| Pagamento** **(PSP)**             | vigenti in materia ad eseguire le |
+| Pagamento (PSP)**                 | vigenti in materia ad eseguire le |
 |                                   | richieste di pagamento ricevute   |
 | **(Debtor e Creditor Bank)**      | dall’EC tramite il NodoSPC al     |
 |                                   | quale restituisce ricevuta        |
@@ -128,10 +128,11 @@ obblighi delle parti nei servizi di pagamento.
 
 Dal punto di vista organizzativo, la partecipazione al sistema pagoPA si
 attua attraverso la sottoscrizione di accordi di servizio tra l’Agenzia
-per l’Italia Digitale, i Prestatori di Servizi di Pagamento, le
-Pubbliche Amministrazioni ed eventualmente i gestori di pubblici
-servizi: ciò consente di stabilire un rapporto di collaborazione “molti
-a molti”, accelerando il processo di attuazione del sistema.
+per l’Italia Digitale e i Prestatori di Servizi di Pagamento, nonché la
+sottoscrizione di lettere di adesione da parte delle Pubbliche
+Amministrazioni e dei Gestori di Pubblici Servizi: ciò consente di
+stabilire un rapporto di collaborazione “molti a molti”, accelerando il
+processo di attuazione del sistema.
 
 Il sistema pagoPA prevede inoltre la possibilità che le attività legate
 all’effettuazione dei pagamenti siano eseguite, in tutto od in parte, da
@@ -143,7 +144,7 @@ proposito si definisce:
    che risulta responsabile delle attività tecniche di interfacciamento
    del soggetto intermediato.
 
--  **Partner tecnologico** un fornitore soggetto intermediato,
+-  **Partner tecnologico** un fornitore del soggetto intermediato,
    utilizzato in via strumentale per l’esecuzione delle attività
    tecniche di interfacciamento con il NodoSPC, ferma restando la
    responsabilità nei confronti di AgID in capo al soggetto
@@ -154,9 +155,9 @@ diversi Intermediari o Partner tecnologici da parte del medesimo
 soggetto intermediato.
 
 È consentito altresì che un PSP sia intermediato verso pagoPA da
-circuiti o consorzi costituiti in ambito finanziario, purchè rimangano
-comunque inalterate nei confronti di terze parti e, in particolare,
-degli Utilizzatori finali.
+circuiti o consorzi costituiti in ambito finanziario, purché rimangano
+comunque inalterate le responsabilità del PSP nei confronti di terze
+parti e, in particolare, degli Utilizzatori finali.
 
 Il ciclo di vita del pagamento gestito sul Sistema pagoPA
 ---------------------------------------------------------
@@ -173,8 +174,8 @@ seguono un preordinato “Ciclo di vita” schematizzato nella Figura 2.
 1. L’esigenza del pagamento può nascere in due modi che innescano
    processi di business differenti:
 
--  su una iniziativa dell’Utilizzatore finale che necessita
-   dell’erogazione di un servizio da parte dell’EC
+-  su iniziativa dell’Utilizzatore finale che necessita dell’erogazione
+   di un servizio da parte dell’EC
 
 -  su iniziativa dell’EC che deve richiedere all’Utilizzatore finale
    l’estinzione di un debito creatosi nei suoi confronti.
@@ -195,7 +196,7 @@ seguono un preordinato “Ciclo di vita” schematizzato nella Figura 2.
    eccezioni previste dalla vigente normativa di settore.
 
 5. L’Ente Creditore estingue la posizione debitoria e esegue la fase di
-   riconciliazione contabile del pagamento
+   riconciliazione contabile del pagamento.
 
 6. L’Ente Creditore rilascia ricevuta all’Utilizzatore finale e, se
    previsto, la quietanza di pagamento.
@@ -210,10 +211,10 @@ selezione del Prestatore di Servizi di Pagamento da parte del pagatore.
 A tal fine il NodoSPC gestisce diversi *workflow* applicativi che
 prevedono lo scambio di oggetti contenenti le informazioni necessarie a
 garantire la corretta gestione dei processi. Sebbene tali *workflow*
-siano dettagliati nella sezione III se ne può dare qui una sommaria
+siano dettagliati nella sezione III se ne fornisce qui una sommaria
 descrizione.
 
-Per tutti *workflow* applicativi le *funzioni primari*\ e sono
+Per tutti i *workflow* applicativi le *funzioni primari*\ e sono
 assicurate dall’interscambio dei seguenti oggetti e informazioni:
 
 -  *Identificativo Univoco Versamento* (IUV). Codice generato dall’Ente
@@ -226,7 +227,8 @@ assicurate dall’interscambio dei seguenti oggetti e informazioni:
 
 -  *Richiesta Pagamento Telematico* (RPT). Emessa dall’Ente Creditore
    per richiedere il pagamento di una posizione debitoria, reca i
-   parametri necessari all’esecuzione dell’intero ciclo di vita;
+   parametri necessari all’esecuzione dell’intero ciclo di vita del
+   pagamento;
 
 -  *Ricevuta Telematica* (RT). Generata dal PSP per ogni RPT ricevuta
    per qualificare l’esito dell’operazione di pagamento. Se il pagamento
@@ -239,14 +241,15 @@ assicurate dall’interscambio dei seguenti oggetti e informazioni:
 
 -  *Flusso di Rendicontazione* (FR). Documento informatico messo a
    disposizione dal PSP che raccoglie il dettaglio di un accredito
-   cumulativo di una conto specificato dalla RPT ricevuta da un EC.
+   cumulativo di un conto specificato dalla RPT ricevuta da un EC.
 
 La piattaforma tecnologica del NodoSPC provvede all’istradamento di tali
-oggetti per inizializzare il pagamento e rendicontare gli esiti:
+oggetti per inizializzare il pagamento e rendicontarne gli esiti:
 
--  L’Utilizzatore finale rende disponibile a un PSP di sua scelta la RPT
-   relativa alla posizione debitoria che intende pagare. Le modalità
-   variano se l’interazione è avvenuta con i sistemi degli EC o dei PSP
+-  L’Utilizzatore finale, innescando il pagamento, rende disponibile a
+   un PSP di sua scelta la RPT relativa alla posizione debitoria che
+   intende pagare. Le modalità variano se l’interazione è avvenuta con i
+   sistemi degli EC o dei PSP
 
 -  L’Utilizzatore finale può autorizzare un pagamento, tramite canali
    fisici o telematici messi a disposizione dal PSP.
@@ -280,12 +283,12 @@ L’utilizzo dei servizi messi a disposizione dal NodoSPC è attivato
 attraverso apposite procedure, descritte in maggior dettaglio nella
 Sezione IV, che prevedono:
 
--  per le Pubbliche Amministrazioni e i gestori di pubblici servizi
-   l’invio all’Agenzia per l’Italia Digitale lettere di adesione
+-  per le Pubbliche Amministrazioni e i Gestori di Pubblici Servizi
+   l’invio all’Agenzia per l’Italia Digitale di lettere di adesione
    unilaterali da loro sottoscritte;
 
--  per i PSP sottoscrivono con l’Agenzia per l’Italia Digitale, su base
-   volontaria, atti bilaterali denominati “Accordi di Servizio”.
+-  per i PSP la sottoscrizione con l’Agenzia per l’Italia Digitale, su
+   base volontaria, di atti bilaterali denominati “Accordi di Servizio”.
 
 Ogni soggetto aderente che, per lo svolgimento delle attività tecniche
 di interfacciamento al NodoSPC, utilizza soggetti intermediari, rimane
@@ -294,52 +297,10 @@ flussi informativi.
 
 Nel Dominio, le attività di pertinenza di ogni soggetto sono effettuate
 conformemente ai requisiti di riservatezza e di protezione da accessi
-non autorizzati. Inoltre gli indirizzi internet dei servizi dedicati ai
-pagamenti devono essere inoltre pubblicati sull'Indice delle Pubbliche
-Amministrazioni (IPA [1]_) istituito con il DPCM del 31 ottobre 2000
-recante le regole tecniche per il protocollo informatico.
+non autorizzati previsti dalla normativa vigente.
 
-Si ricorda, altresì, che i siti Web di cui all'art. 3, comma 1, della
-Legge 9 gennaio 2004, n. 4 devono rispettare i requisiti di
-accessibilità previsti dall'Allegato A del DM 8 luglio 2005 [2]_,
-rispettando, tra l'altro, il punto 3 dei criteri di conformità (Processi
-completi: quando un servizio è erogato mediante un processo che si
-sviluppa su più pagine web allora tutte le pagine web ad esso relative
-devono essere conformi, anche quando tali pagine si trovino su siti
-diversi). Per ulteriori riferimenti, consultare la sezione accessibilità
-del sito dell’Agenzia per l'Italia Digitale.
-
-*Governance* del sistema
-------------------------
-
-Stante la valenza infrastrutturale dell’iniziativa, la guida ed il
-controllo del sistema (*governance*) è affidata all’\ **Agenzia per
-l’Italia Digitale**, che assicura la gestione del sistema attraverso la
-definizione di regole e standard, definisce l’elenco delle Pubbliche
-Amministrazioni e dei Prestatori di Servizi di Pagamento partecipanti al
-sistema, provvede alla gestione ed al monitoraggio dell’infrastruttura;
-
--  
--  
--  
--  
--  
--  
--  
--  
--  
-
-   -  
-   -  
-
--  
-
--  
--  
--  
-
-   5. .. rubric:: Obblighi degli Enti Creditori
-         :name: obblighi-degli-enti-creditori
+Obblighi degli Enti Creditori
+-----------------------------
 
 Al fine di gestire nel modo migliore l’iter del processo di pagamento
 gli Enti Creditori hanno l’obbligo di rendere disponibili direttamente
@@ -349,20 +310,20 @@ offerti direttamente o tramite intermediari:
 -  le modalità per effettuare i pagamenti informatici e ogni altra
    informazione che abbia il fine di agevolarne l’esecuzione;
 
--  l’accesso all’archivio delle RT relative ad ai pagamenti disposti.
-   Fino a prescrizione, è fatto obbligo all’Ente Creditore di conservare
-   le informazioni di ogni pagamento;
+-  l’accesso all’archivio delle RT relative ai pagamenti disposti. Fino
+   a prescrizione, è fatto obbligo all’Ente Creditore di conservare le
+   informazioni di ogni pagamento;
 
 -  le modalità di gestione, nel rispetto della normativa vigente, delle
-   procedure attinente ai pagamenti (reclami, rimborsi, storni), anche
+   procedure attinenti ai pagamenti (reclami, rimborsi, storni), anche
    usufruendo delle funzionalità messe a disposizione dalla piattaforma.
 
 Si sottolinea inoltre che l’Ente Creditore, responsabile della relazione
 con il soggetto pagatore, dovrà erogare un adeguato servizio di
-assistenza agli utenti, opportunamente pubblicizzato e con disponibilità
-temporale la più ampia possibile.
+assistenza agli utenti, opportunamente pubblicizzato e con adeguata
+disponibilità temporale.
 
-Ogni Ente Creditore infine ha l’obbligo di costituire a un tavolo
+Ogni Ente Creditore infine ha l’obbligo di costituire un tavolo
 operativo per interloquire con l’analoga struttura del NodoSPC e
 collaborare alla risoluzione delle anomalie o incidenti che si dovessero
 verificare. La disponibilità del tavolo operativo è la stessa dei
@@ -372,20 +333,21 @@ Interfaccia WISP
 -----------------
 
 Per garantire la trasparenza dell’operazione di pagamento nei confronti
-dell’utilizzatore finale il NodoSPC mette a disposizione una
+dell’Utilizzatore finale, il NodoSPC mette a disposizione una
 applicazione che consente ai PSP di esporre on line i costi del
 servizio, differenziati per strumento e/o canale di pagamento, in modo
-da rendere consapevole la scelta effettuata degli utilizzatori finali.
+da rendere consapevole la scelta effettuata dagli Utilizzatori finali.
 
 Tali informazioni sono rese disponibili da una interfaccia WEB,
-denominata WISP, caratterizzata dalla stessa *user experience* ,
-indipendentemente dall’EC che ha innescato il pagamento.
+denominata WISP (Wizard Interattivo per la Scelta del PSP),
+caratterizzata dalla stessa *user experience*, indipendentemente dall’EC
+che ha innescato il pagamento.
 
 Per supportare gli Enti Creditori nello sviluppo di App *mobile* è
 disponibile un SDK (Software Development Kit) fornito in modalità nativa
 per le tecnologie IOS e Android.
 
-Tale funzione mantiene inalterata la facoltà in capo al Prestatore di
+La funzione WISP mantiene inalterata la facoltà in capo al Prestatore di
 Servizi di Pagamento di stabilire costi di servizio di maggior favore
 per gruppi o singoli Utilizzatori finali, purché non ricada sul NodoSPC
 l’onere di promuovere e pubblicizzare tali specificità.
@@ -400,8 +362,8 @@ da questi derivano.
 
 A supporto di tali funzioni, ogni soggetto (Enti Creditori e Prestatori
 di Servizi di Pagamento aderenti, NodoSPC) deve registrare all’interno
-del proprio sistema (dominio del soggetto) ogni singolo evento
-significativo dal punto di vista applicativo al fine di tenerne traccia.
+del proprio sistema ogni singolo evento significativo dal punto di vista
+applicativo al fine di tenerne traccia.
 
 L’insieme di tali registrazioni, indipendentemente dalle peculiarità
 tecniche delle soluzioni adottate da ciascun soggetto che definisce in
@@ -409,7 +371,7 @@ autonomia tali aspetti, costituisce il “Giornale degli Eventi” che
 riporta gli estremi di tutte le situazioni verificatesi nell’esecuzione
 dell’operazione di pagamento nelle varie tratte coinvolte (tra Enti
 Creditori e NodoSPC, nel NodoSPC, tra NodoSPC e Prestatori di Servizi di
-Pagamento). Tali informazioni devono essere rese disponibili ai tavoli
+Pagamento).Tali informazioni devono essere rese disponibili ai tavoli
 operativi nei formati definiti in Sezione III).
 
 Sicurezza e conservazione
@@ -423,9 +385,8 @@ informatici e di sicurezza dei dati.
 
 In merito, si rammenta che la conservazione è finalizzata a proteggere
 nel tempo i documenti informatici e i dati ivi contenuti, assicurandone,
-tra l’altro, la sicurezza, l'integrità e la non modificabilità, al fine
-di preservare il valore probatorio del documento informatico e, nel caso
-specifico del Sistema pagoPA, della transazione di pagamento.
+tra l’altro, l'integrità al fine di preservare il valore probatorio del
+documento informatico.
 
 *Software Development KIT* per applicazioni “mobile”
 ----------------------------------------------------
@@ -439,16 +400,6 @@ Lo SDK è disponibile in download, previa sottoscrizione di un apposito
 *disclaimer*, fra gli strumenti GitHub del sito
 https://developers.italia.it/ e fornito in modalità nativa per le due
 principali tecnologie presenti sul mercato: IOS e Android.
-
-.. [1]
-   Vedi http://www.indicepa.gov.it/
-
-.. [2]
-   Aggiornato con DM 20 marzo 2013, recante “Modifiche all'allegato A
-   del decreto 8 luglio 2005 del Ministro per l'innovazione e le
-   tecnologie, recante: «Requisiti tecnici e i diversi livelli per
-   l'accessibilità agli strumenti informatici»” pubblicato in GU Serie
-   Generale n.217 del 16-9-2013.
 
 .. |image0| image:: media_FunzionamentoGeneraleDelSistema/media/image1.png
    :width: 3.39472in
