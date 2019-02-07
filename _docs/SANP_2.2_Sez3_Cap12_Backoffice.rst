@@ -526,7 +526,7 @@ NodoSPC:
 |                        |                        | corrisponde a una RT.         |                        |
 |                        |                        | Tali incassi saranno          |                        |
 |                        |                        | rendicontati mediante         |                        |
-|                        |                        | *codiceEsitoSingoloPagamento* |                 |
+|                        |                        | *codiceEsitoSingoloPagamento* |                        |
 |                        |                        | 9 nel caso di                 |                        |
 |                        |                        | riversamento                  |                        |
 |                        |                        | cumulativo.                   |                        |
@@ -563,8 +563,8 @@ NodoSPC:
 |                        |                        | al giorno D, gli              | -  Gli IUV             |
 |                        |                        | ulteriori incassi non         |    rendicontati con    |
 |                        |                        | corrispondenti a una          |    codiceEsitoSingoloP |
-|                        |                        | RT e gli ER (Esito            | agamento               |
-|                        |                        | Revoca) eventualmente         |    pari a 9            |
+|                        |                        | RT e gli ER (Esito            | agamento pari a 9      |
+|                        |                        | Revoca) eventualmente         |                        |
 |                        |                        | contenuti nel FDR. In         |                        |
 |                        |                        | questo ultimo caso il         | -  IUV associati a un  |
 |                        |                        | motore esclude gli ER         |    Estio Revoca        |
