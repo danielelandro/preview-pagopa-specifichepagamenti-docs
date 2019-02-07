@@ -755,7 +755,7 @@ aderente al NodoSPC:
 |                 |                 | seguenti        |                 |
 |                 |                 | elaborazioni:   |                 |
 |                 |                 |                 |                 |
-|                 |                 | 1. esegue la    |                 |
+|                 |                 | 1. Esegue la    |                 |
 |                 |                 |    quadratura   |                 |
 |                 |                 |    di ogni      |                 |
 |                 |                 |    riversamento |                 |
@@ -764,7 +764,7 @@ aderente al NodoSPC:
 |                 |                 |    con la       |                 |
 |                 |                 |    corrisponden |                 |
 |                 |                 | te              |                 |
-|                 |                 |    RT\ :sub:`S` |                 |
+|                 |                 |    RTS          |                 |
 |                 |                 |    controllando |                 |
 |                 |                 |    che:         |                 |
 |                 |                 |                 |                 |
@@ -783,11 +783,11 @@ aderente al NodoSPC:
 |                 |                 |    univoco      |                 |
 |                 |                 |    versamento”  |                 |
 |                 |                 |    nel dato     |                 |
-|                 |                 |    *“Unstructur |                 |
-|                 |                 | ed              |                 |
+|                 |                 |    “\ *Unstruct |                 |
+|                 |                 | ured            |                 |
 |                 |                 |    Remittance   |                 |
-|                 |                 |    Information” |                 |
-|                 |                 | *               |                 |
+|                 |                 |    Information* |                 |
+|                 |                 | \ ”             |                 |
 |                 |                 |    di cui al    |                 |
 |                 |                 |    tracciato    |                 |
 |                 |                 |    del SEPA     |                 |
@@ -822,7 +822,7 @@ aderente al NodoSPC:
 |                 |                 | te              |                 |
 |                 |                 |    trasferito.  |                 |
 |                 |                 |                 |                 |
-|                 |                 | 4. esegue la    |                 |
+|                 |                 | 4. Esegue la    |                 |
 |                 |                 |    quadratura   |                 |
 |                 |                 |    di ogni      |                 |
 |                 |                 |    riversamento |                 |
@@ -847,11 +847,11 @@ aderente al NodoSPC:
 |                 |                 |    flusso       |                 |
 |                 |                 |    versamento”  |                 |
 |                 |                 |    nel dato     |                 |
-|                 |                 |    *“Unstructur |                 |
-|                 |                 | ed              |                 |
+|                 |                 |    “\ *Unstruct |                 |
+|                 |                 | ured            |                 |
 |                 |                 |    Remittance   |                 |
-|                 |                 |    Information” |                 |
-|                 |                 | *               |                 |
+|                 |                 |    Information* |                 |
+|                 |                 | \ ”             |                 |
 |                 |                 |    di cui al    |                 |
 |                 |                 |    tracciato    |                 |
 |                 |                 |    del SEPA     |                 |
@@ -890,23 +890,27 @@ Passo3: Quadratura FDR
 
 -  **FDR non quadra**
 
-Nella eventualità in cui l’EC non riuscisse ad operare la quadratura del
-FDR, ad esempio per valori errati di qualsiasi elemento all’interno del
-flusso stesso; l’EC, mediante il ricorso al tavolo operativo provvederà
-a richiedere la ri-emissione del FDR per procedere nuovamente
-all’esecuzione del Passo3.
+..
+
+   Nella eventualità in cui l’EC non riuscisse ad operare la quadratura
+   del FDR, ad esempio per valori errati di qualsiasi elemento
+   all’interno del flusso stesso; l’EC, mediante il ricorso al tavolo
+   operativo provvederà a richiedere la ri-emissione del FDR per
+   procedere nuovamente all’esecuzione del Passo3.
 
 Passo4: Quadratura riversamenti SCT
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  **Riversamento in difetto**
 
-Nel presente scenario l’EC riscontra condizioni di squadratura in
-difetto tra gli SCT riversati dai PSP sulla propria Banca
-Tesoriera/Cassiera e le somme specificate dalle singole RTs o dal FDR
-nel caso di riversamento singolo o cumulativo, rispettivamente. In tale
-circostanza il PSP interessato il quale dovrà procedere alla generazione
-di un nuovo SCT, riportante causale:
+..
+
+   Nel presente scenario l’EC riscontra condizioni di squadratura in
+   difetto tra gli SCT riversati dai PSP sulla propria Banca
+   Tesoriera/Cassiera e le somme specificate dalle singole RTs o dal FDR
+   nel caso di riversamento singolo o cumulativo, rispettivamente. In
+   tale circostanza il PSP interessato il quale dovrà procedere alla
+   generazione di un nuovo SCT, riportante causale:
 
 -  **SCT ad integrazione di un riversamento Cumulativo in difetto:** la
    Causale del SCT dovrà essere valorizzata come segue:
@@ -1223,9 +1227,9 @@ La Tabella successiva mostra le azioni di controllo suggerite per la
 risoluzione dell’anomalia
 
 +-----------------------+-----------------------+-----------------------+
-| Strategia di          | Tipologia Errore      | Azione di Controllo   |
-| risoluzione           |                       | Suggerita             |
-+-----------------------+-----------------------+-----------------------+
+| **Strategia di        | Tipologia Errore      | Azione di Controllo   |
+| risoluzione**         |                       | Suggerita             |
++=======================+=======================+=======================+
 |                       | PPT_ERRORE_EMESSO_DA_ | Attivazione del       |
 |                       | PAA                   | Tavolo Operativo      |
 +-----------------------+-----------------------+-----------------------+
@@ -1396,9 +1400,8 @@ La tabella successiva mostra le azioni di controllo suggerite per la
 risoluzione dell’anomalia.
 
 +-----------------------+-----------------------+-----------------------+
-| **Strategia di        | **Tipologia Errore**  | **Azione di           |
-| risoluzione**         |                       | Controllo**           |
-|                       |                       | **Suggerita**         |
+| **Strategia di        | **Tipologia Errore**  | **Azione di Controllo |
+| risoluzione**         |                       | Suggerita**           |
 +=======================+=======================+=======================+
 |                       | PPT_CANALE_ERRORE     | Attivazione del       |
 |                       |                       | Tavolo Operativo      |
@@ -1832,11 +1835,11 @@ il NodoSPC non risponde manifestando una condizione di *timeout*;
    punto 8 fornendo lo stato di elaborazione del flusso di
    rendicontazione; in particolare:
 
--  FLUSSO_IN_ELABORAZIONE: il NodoSPC deve terminare le operazioni di
-   archiviazione dei flussi sulle proprie basi di dati;
+   -  FLUSSO_IN_ELABORAZIONE: il NodoSPC deve terminare le operazioni di
+      archiviazione dei flussi sulle proprie basi di dati;
 
--  FLUSSO_ELABORATO: il NodoSPC ha elaborato il flusso di
-   rendicontazione inviato dal PSP;
+   -  FLUSSO_ELABORATO: il NodoSPC ha elaborato il flusso di
+      rendicontazione inviato dal PSP;
 
 7. il PSP gestisce lo stato riscontrato dal NodoSPC eliminando il file
    XML di rendicontazione nel caso di FLUSSO_ELABORATO oppure attendendo
