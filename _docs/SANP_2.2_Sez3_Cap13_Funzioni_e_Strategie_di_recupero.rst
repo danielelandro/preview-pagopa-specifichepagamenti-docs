@@ -274,7 +274,7 @@ L’evoluzione temporale è la seguente:
 
    -  PPT_SYSTEM_ERROR: errore nella generazione del file XML richiesto.
 
-   1. .. rubric:: Funzioni ausiliarie per il PSP
+   2. .. rubric:: Funzioni ausiliarie per il PSP
          :name: funzioni-ausiliarie-per-il-psp
 
 Richiesta del Catalogo dei Servizi
@@ -599,8 +599,8 @@ Strategie di retry per il recapito della RT
 16. Il PSP replica fornendo esito OK alla primitiva di cui al punto
     precedente
 
-Funzioni Ausiliarie per il NodoSPC
-----------------------------------
+    3. .. rubric:: Funzioni Ausiliarie per il NodoSPC
+          :name: funzioni-ausiliarie-per-il-nodospc
 
 Richiesta avanzamento RPT
 ~~~~~~~~~~~~~~~~~~~~~~~~~
