@@ -783,11 +783,11 @@ aderente al NodoSPC:
 |                 |                 |    univoco      |                 |
 |                 |                 |    versamento”  |                 |
 |                 |                 |    nel dato     |                 |
-|                 |                 |    “\ *Unstruct |                 |
-|                 |                 | ured            |                 |
-|                 |                 |    Remittance   |                 |
-|                 |                 |    Information* |                 |
-|                 |                 | \ ”             |                 |
+|                 |                 |    *“Unstructur |                 |
+|                 |                 | ed              |                 |
+|                 |                 |    Remittanced  |                 |
+|                 |                 |    Information” |                 |
+|                 |                 | *               |                 |
 |                 |                 |    di cui al    |                 |
 |                 |                 |    tracciato    |                 |
 |                 |                 |    del SEPA     |                 |
