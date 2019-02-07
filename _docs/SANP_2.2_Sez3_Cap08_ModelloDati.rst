@@ -306,7 +306,7 @@ Esito Della Revoca (ER)
 
 La ER descrive l’esito di una RR di un pagamento effettuato.
 
-|C:\Users\mogi\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\2QI8WBLX\cd_ES.png|
+|image5|
 
 **Figura** **6: Diagramma delle classi dell’Esito della Revoca**
 
@@ -1554,9 +1554,9 @@ pagamento) così valorizzando i seguenti campi del giornale:
 .. |image4| image:: media_ModelloDati/media/image5.png
    :width: 6.69306in
    :height: 2.10764in
-.. |C:\Users\mogi\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\2QI8WBLX\cd_ES.png| image:: media_ModelloDati/media/image6.png
+.. |image5| image:: media_ModelloDati/media/image6.png
    :width: 6.69306in
-   :height: 1.69857in
+   :height: 1.69514in
 .. |image6| image:: media_ModelloDati/media/image7.png
    :width: 6.69306in
    :height: 2.77083in

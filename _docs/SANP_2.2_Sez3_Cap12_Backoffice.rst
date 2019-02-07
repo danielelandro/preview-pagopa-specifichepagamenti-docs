@@ -728,7 +728,7 @@ aderente al NodoSPC:
 |                 |                 | FDR             |                 |
 |                 |                 | (RT:sub:`S`)    |                 |
 +-----------------+-----------------+-----------------+-----------------+
-| 4.              | Quadratura      | a chiusura del  |                 |
+| 4.              | Quadratura      | A chiusura del  |                 |
 |                 | riversamenti    | giorno          |                 |
 |                 | SCT:            | lavorativo D+2  |                 |
 |                 |                 | il motore       |                 |
@@ -775,20 +775,19 @@ aderente al NodoSPC:
 |                 |                 |    (IUV) che    |                 |
 |                 |                 |    identifica   |                 |
 |                 |                 |    la singola   |                 |
-|                 |                 |    RT\ :sub:`s` |                 |
-|                 |                 |    coincida con |                 |
-|                 |                 |    la           |                 |
+|                 |                 |    RTs coincida |                 |
+|                 |                 |    con la       |                 |
 |                 |                 |    componente   |                 |
 |                 |                 |    “identificat |                 |
 |                 |                 | ivo             |                 |
 |                 |                 |    univoco      |                 |
 |                 |                 |    versamento”  |                 |
 |                 |                 |    nel dato     |                 |
-|                 |                 |    “\ *Unstruct |                 |
-|                 |                 | ured            |                 |
+|                 |                 |    *“Unstructur |                 |
+|                 |                 | ed              |                 |
 |                 |                 |    Remittance   |                 |
-|                 |                 |    Information* |                 |
-|                 |                 | \ ”             |                 |
+|                 |                 |    Information” |                 |
+|                 |                 | *               |                 |
 |                 |                 |    di cui al    |                 |
 |                 |                 |    tracciato    |                 |
 |                 |                 |    del SEPA     |                 |
@@ -815,13 +814,13 @@ aderente al NodoSPC:
 |                 |                 |    *importoTota |                 |
 |                 |                 | lePagato*       |                 |
 |                 |                 |    della stessa |                 |
-|                 |                 |    RT\ :sub:`s` |                 |
+|                 |                 |    RTs          |                 |
 |                 |                 |    corrisponda  |                 |
 |                 |                 |    con          |                 |
 |                 |                 |    l’importo    |                 |
 |                 |                 |    effettivamen |                 |
 |                 |                 | te              |                 |
-|                 |                 |    trasferito   |                 |
+|                 |                 |    trasferito.  |                 |
 |                 |                 |                 |                 |
 |                 |                 | 4. esegue la    |                 |
 |                 |                 |    quadratura   |                 |
@@ -848,11 +847,11 @@ aderente al NodoSPC:
 |                 |                 |    flusso       |                 |
 |                 |                 |    versamento”  |                 |
 |                 |                 |    nel dato     |                 |
-|                 |                 |    “\ *Unstruct |                 |
-|                 |                 | ured            |                 |
+|                 |                 |    *“Unstructur |                 |
+|                 |                 | ed              |                 |
 |                 |                 |    Remittance   |                 |
-|                 |                 |    Information* |                 |
-|                 |                 | \ ”             |                 |
+|                 |                 |    Information” |                 |
+|                 |                 | *               |                 |
 |                 |                 |    di cui al    |                 |
 |                 |                 |    tracciato    |                 |
 |                 |                 |    del SEPA     |                 |
@@ -1375,16 +1374,17 @@ L’evoluzione temporale è la seguente (dal punto 4):
 3. il PSP replica con esito KO indicando un fault.bean il cui fault.code
    specifica l’errore riscontrato; in particolare:
 
--  CANALE_SEMANTICA nel caso di errori nel tracciato XML RR
+   -  CANALE_SEMANTICA nel caso di errori nel tracciato XML RR
 
--  CANALE_OPER_NON_STORNABILE nel caso di operazione non stornabile dal
-   PSP
+   -  CANALE_OPER_NON_STORNABILE nel caso di operazione non stornabile
+      dal PSP
 
--  CANALE_RR_DUPLICATA nel caso in cui l’EC sottomette una richiesta di
-   storno precedentemente inviata
+   -  CANALE_RR_DUPLICATA nel caso in cui l’EC sottomette una richiesta
+      di storno precedentemente inviata
 
--  CANALE_RT_SCONOSCIUTA nel caso in cui non sussista corrispondenza tra
-   la richiesta di storno e la RT attestante il pagamento da stornare
+   -  CANALE_RT_SCONOSCIUTA nel caso in cui non sussista corrispondenza
+      tra la richiesta di storno e la RT attestante il pagamento da
+      stornare
 
 4. il NodoSPC emette esito KO alla primitiva *nodoInviaRichiestaStorno*
    inoltrando l’errore riscontrato dal PSP emanando un *faultBean* il
@@ -1396,8 +1396,9 @@ La tabella successiva mostra le azioni di controllo suggerite per la
 risoluzione dell’anomalia.
 
 +-----------------------+-----------------------+-----------------------+
-| **Strategia di        | **Tipologia Errore**  | **Azione di Controllo |
-| risoluzione**         |                       | Suggerita**           |
+| **Strategia di        | **Tipologia Errore**  | **Azione di           |
+| risoluzione**         |                       | Controllo**           |
+|                       |                       | **Suggerita**         |
 +=======================+=======================+=======================+
 |                       | PPT_CANALE_ERRORE     | Attivazione del       |
 |                       |                       | Tavolo Operativo      |
@@ -1413,7 +1414,7 @@ Richiesta Storno rifiutata dal PSP**
 |                                   | di storno precedentemente         |
 |                                   | sottomessa dal NodoSPC e procede  |
 |                                   | ad inviare l’esito storno         |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Descrizione                       | Il NodoSPC valida negativamente   |
 |                                   | l’Esito storno                    |
 +-----------------------------------+-----------------------------------+
@@ -1507,7 +1508,7 @@ Nodo**
 |                                   | di storno precedentemente         |
 |                                   | sottomessa dal NodoSPC e procede  |
 |                                   | ad inviare l’esito storno         |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Descrizione                       | L’EC valida negativamente l’Esito |
 |                                   | storno                            |
 +-----------------------------------+-----------------------------------+
@@ -1546,7 +1547,7 @@ risoluzione delle anomalie
 +-----------------------+-----------------------+-----------------------+
 | **Strategia di        | **Tipologia Errore**  | **Azione di Controllo |
 | risoluzione**         |                       | Suggerita**           |
-+=======================+=======================+=======================+
++-----------------------+-----------------------+-----------------------+
 |                       | PPT_ERRORE_EMESSO_DA_ | Attivazione del       |
 |                       | PAA                   | Tavolo Operativo      |
 +-----------------------+-----------------------+-----------------------+
@@ -1567,7 +1568,7 @@ caso in cui le parti riscontrassero fenomeni di timeout.
 +-----------------------------------+-----------------------------------+
 | Pre-condizione                    | La posizione debitoria è nello    |
 |                                   | stato Richiesta Storno Inviata    |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Descrizione                       | Il PSP e l’EC riscontrano         |
 |                                   | fenomeni                          |
 |                                   | applicativo/infrastrutturali per  |
@@ -1604,9 +1605,7 @@ A questo punto sono possibili i seguenti scenari:
 
 4. Il NodoSPC valida positivamente la richiesta.
 
-..
-
-   Alternativamente
+Alternativamente
 
 5. l’EC riscontra condizioni di *timeout* per le quali fallisce
    l’invocazione della primitiva *paaInviaEsitoStorno;*
@@ -1617,9 +1616,7 @@ oppure
    quali la *response* alla primitiva *paaInviaEsitoStorno* non giunge
    al PSP.
 
-..
-
-   In ogni caso
+In ogni caso
 
 7. il NodoSPC invia *response* KO alla primitiva *nodoInviaEsitoStorno*
    emanando un *faultBean* il cui *faultCode* è pari a
@@ -1644,7 +1641,7 @@ oppure
 +-----------------------+-----------------------+-----------------------+
 | Strategia di          | Tipologia Errore      | Azione di Controllo   |
 | risoluzione           |                       | Suggerita             |
-+=======================+=======================+=======================+
++-----------------------+-----------------------+-----------------------+
 |                       | PPT_STAZIONE_INT_PA_T | Attivazione del       |
 |                       | IMEOUT                | Tavolo Operativo      |
 +-----------------------+-----------------------+-----------------------+
@@ -1674,7 +1671,7 @@ suggerita non risultasse risolutiva.
 +-----------------------------------+-----------------------------------+
 | Pre-condizione                    | Il PSP ha incassato diversi       |
 |                                   | servizi                           |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Descrizione                       | Nell’elaborare un SCT singolo di  |
 |                                   | riversamento relativamente ad un  |
 |                                   | flusso di rendicontazione in      |
@@ -1697,7 +1694,7 @@ successiva:
 +-----------------------+-----------------------+-----------------------+
 | Strategia di          | Tipologia Errore      | Azione di Controllo   |
 | risoluzione           |                       | Suggerita             |
-+=======================+=======================+=======================+
++-----------------------+-----------------------+-----------------------+
 |                       | Flusso codice 9       | E’ necessario         |
 |                       |                       | attivare un TAVOLO    |
 |                       |                       | OPERATIVO             |
@@ -1710,7 +1707,7 @@ successiva:
 +-----------------------------------+-----------------------------------+
 | Pre-condizione                    | Il PSP invia al NodoSPC un flusso |
 |                                   | di rendicontazione                |
-+===================================+===================================+
++-----------------------------------+-----------------------------------+
 | Descrizione                       | Il NodoSPC esegue la validazione  |
 |                                   | del flusso fornendo *response*    |
 |                                   | negativa                          |
@@ -1738,9 +1735,7 @@ L’evoluzione temporale dello scenario è la seguente:
 
 3. il NodoSPC verifica il file XML di rendicontazione;
 
-..
-
-   Eseguito uno degli scenari alternativi, il flusso procede come segue:
+Eseguito uno degli scenari alternativi, il flusso procede come segue:
 
 4. il Nodo replica negativamente alla primitiva precedente fornendo
    *response* con esito KO emanando un *faultBean* il cui
@@ -1761,7 +1756,7 @@ successiva:
 +-----------------------+-----------------------+-----------------------+
 | Strategia di          | Tipologia Errore      | Azione di Controllo   |
 | risoluzione           |                       | Suggerita             |
-+=======================+=======================+=======================+
++-----------------------+-----------------------+-----------------------+
 |                       | PPT_FLUSSO_SCONOSCIUT | Verificare la         |
 |                       | O                     | composizione della    |
 |                       |                       | SOAP *request*        |
