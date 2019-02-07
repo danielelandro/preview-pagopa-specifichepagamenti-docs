@@ -526,8 +526,7 @@ NodoSPC:
 |                        |                        | corrisponde a una RT.  |                        |
 |                        |                        | Tali incassi saranno   |                        |
 |                        |                        | rendicontati mediante  |                        |
-|                        |                        | *codiceEsitoSingoloPag |                        |
-|                        |                        | amento*                |                        |
+|                        |                        | *codiceEsitoSingoloPagamento* |                 |
 |                        |                        | 9 nel caso di          |                        |
 |                        |                        | riversamento           |                        |
 |                        |                        | cumulativo.            |                        |
@@ -622,9 +621,9 @@ NodoSPC:
 |                        |                        |    “identificativo     |                        |
 |                        |                        |    univoco versamento” |                        |
 |                        |                        |    nel dato            |                        |
-|                        |                        |    *“Unstructured      |                        |
+|                        |                        |    "Unstructured      |                        |
 |                        |                        |    Remittanced         |                        |
-|                        |                        |    Information”* di    |                        |
+|                        |                        |    Information" di    |                        |
 |                        |                        |    cui al tracciato    |                        |
 |                        |                        |    del SEPA Credit     |                        |
 |                        |                        |    Transfer nel caso   |                        |
@@ -638,8 +637,7 @@ NodoSPC:
 |                        |                        |    corrente postale.   |                        |
 |                        |                        |                        |                        |
 |                        |                        | 3. Il valore del tag   |                        |
-|                        |                        |    *importoTotalePagat |                        |
-|                        |                        | o*                     |                        |
+|                        |                        |    *importoTotalePagato* |                      |
 |                        |                        |    della stessa RTs    |                        |
 |                        |                        |    corrisponda con     |                        |
 |                        |                        |    l’importo           |                        |
@@ -660,9 +658,9 @@ NodoSPC:
 |                        |                        |    “identificativo     |                        |
 |                        |                        |    flusso versamento”  |                        |
 |                        |                        |    nel dato            |                        |
-|                        |                        |    “\ *Unstructured    |                        |
+|                        |                        |    "Unstructured       |                        |
 |                        |                        |    Remittance          |                        |
-|                        |                        |    Information*\ ” di  |                        |
+|                        |                        |    Information" di     |                        |
 |                        |                        |    cui al tracciato    |                        |
 |                        |                        |    del SEPA Credit     |                        |
 |                        |                        |    Transfer nel caso   |                        |
@@ -671,8 +669,7 @@ NodoSPC:
 |                        |                        |    SCT                 |                        |
 |                        |                        |                        |                        |
 |                        |                        | 6. Il valore del tag   |                        |
-|                        |                        |    *importoTotalePagam |                        |
-|                        |                        | enti*                  |                        |
+|                        |                        |    *importoTotalePagamenti* |                   |
 |                        |                        |    nel FDR corrisponda |                        |
 |                        |                        |    con l’importo       |                        |
 |                        |                        |    effettivamente      |                        |
@@ -681,14 +678,14 @@ NodoSPC:
 
 **Tabella** **8: Motore di Riconciliazione**
 
-Gestione degli errori 
+Gestione degli errori
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Il paragrafo mostra le strategie di risoluzione per gli errori che possono verificarsi durante
 l’esecuzione del processo di quadratura mediante il motore di riconciliazione, rispetto ai passi
 presi in esame nella descrizione dell’MDR stesso.
 
-Passo3: Quadratura FDR 
+Passo3: Quadratura FDR
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 -  **FDR non quadra**
@@ -745,7 +742,7 @@ le controparti attraverso il tavolo operativo.
 Gestione degli errori
 ---------------------
 
-Gestione degli errori di revoca 
+Gestione degli errori di revoca
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Il paragrafo mostra i casi di errore che si possono verificare durante il processo di richiesta di
@@ -974,7 +971,7 @@ La Tabella successiva mostra le azioni di controllo suggerite per la risoluzione
 
 **Tabella** **13: Strategia di risoluzione dello scenario RR rifiutata dall'EC**
 
-Gestione degli errori di storno 
+Gestione degli errori di storno
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Il paragrafo mostra i casi di errore che si possono verificare durante il processo di storno di un
@@ -1301,7 +1298,7 @@ In ogni caso
 
 **Tabella** **18: strategia di risoluzione**
 
-Gestione degli errori di riconciliazione 
+Gestione degli errori di riconciliazione
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Il paragrafo descrive la gestione degli errori che possono verificarsi durante l’esercizio del
