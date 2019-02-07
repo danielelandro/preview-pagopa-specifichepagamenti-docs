@@ -319,8 +319,8 @@ charge-back**
 13. il PSP notifica l’Utilizzatore finale circa l’esito positivo della
     procedura di revoca della ricevuta telematica.
 
-    3. .. rubric:: Processo di Storno di un pagamento
-          :name: processo-di-storno-di-un-pagamento
+Processo di Storno di un pagamento
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Il processo di storno di un pagamento, attivato dall’EC, è innescato
 quando l’Utilizzatore finale richieda a vario titolo la cancellazione di
@@ -399,8 +399,8 @@ pagamento**
 14. l’EC informa l’Utilizzatore finale in merito all’esito delle
     operazioni di storno.
 
-    2. .. rubric:: Riconciliazione
-          :name: riconciliazione
+Riconciliazione
+---------------
 
 All’interno di questo paragrafo vengono descritti i casi d’uso che
 descrivono il processo contabile operato dall’Ente Creditore al fine di
@@ -424,8 +424,8 @@ Gli attori coinvolti nel processo di riconciliazione sono i seguenti:
    destinatario del flusso di riversamento SCT e notifica all’EC
    l’avvenuto incasso su sistemi esterni a pagoPA.
 
-   5. .. rubric:: Worflow di Riconciliazione
-         :name: worflow-di-riconciliazione
+Worflow di Riconciliazione
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Il processo di riconciliazione comporta il seguente *workflow* dove
 saranno utilizzati i seguenti termini:
@@ -583,8 +583,8 @@ della causale di versamento indicato nella RPT.
     rendicontazione e delle RT archiviate, effettua la riconciliazione
     contabile.
 
-    6. .. rubric:: Motore di Riconciliazione
-          :name: motore-di-riconciliazione
+Motore di Riconciliazione
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 L’obiettivo del presente paragrafo è quello di tratteggiare in termini
 essenziali il modello concettuale di un algoritmo (il Motore di
@@ -939,11 +939,13 @@ dal FDR nel caso di riversamento singolo o cumulativo, rispettivamente.
 In tale circostanza la compensazione avviene in modalità manuale da
 concordare tra le controparti attraverso il tavolo operativo.
 
-3. .. rubric:: Gestione degli errori
-      :name: gestione-degli-errori-1
+.. _gestione-degli-errori-1:
 
-   8. .. rubric:: Gestione degli errori di revoca
-         :name: gestione-degli-errori-di-revoca
+Gestione degli errori
+---------------------
+
+Gestione degli errori di revoca 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Il paragrafo mostra i casi di errore che si possono verificare durante
 il processo di richiesta di revoca di una Ricevuta Telematica, sia nel

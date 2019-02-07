@@ -1553,13 +1553,13 @@ pagamento) così valorizzando i seguenti campi del giornale:
    :height: 1.56042in
 .. |image4| image:: media_ModelloDati/media/image5.png
    :width: 6.69306in
-   :height: 1.89868in
+   :height: 2.10764in
 .. |C:\Users\mogi\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\2QI8WBLX\cd_ES.png| image:: media_ModelloDati/media/image6.png
    :width: 6.69306in
    :height: 1.69857in
 .. |image6| image:: media_ModelloDati/media/image7.png
    :width: 6.69306in
-   :height: 2.61481in
+   :height: 2.77083in
 .. |https://www.plantuml.com/plantuml/img/LOv12eDG34JtEONxN49gwGKyGV2d4eZvaiHLyUxQebXdDJnumxIHvBbC2di6fOZcJOlcWycQ3w0Km1_eQk6ZzkbY8s3X65pcb6g0mIwaWDLb52DzNT8DdV89dtyZw_T4orRsFni0| image:: media_ModelloDati/media/image8.png
    :width: 1.54653in
    :height: 1.75in
