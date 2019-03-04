@@ -587,10 +587,10 @@ NodoSPC:
 |                        |                        | ogni PSP, il motore    |                        |
 |                        |                        | distingue e accantona  |                        |
 |                        |                        | le RT+ non abbinate a  |                        |
-|                        |                        | un FDR (RT:sub:`S`)    |                        |
+|                        |                        | un FDR (RTS)           |                        |
 +------------------------+------------------------+------------------------+------------------------+
 | 4.                     | Quadratura             | A chiusura del giorno  |                        |
-|                        | riversamenti SCT:      | lavorativo D+2 il      |                        |
+|                        | riversamenti SCT       | lavorativo D+2 il      |                        |
 |                        |                        | motore elabora tutte   |                        |
 |                        |                        | le notifiche di        |                        |
 |                        |                        | incasso relative al    |                        |
@@ -626,9 +626,9 @@ NodoSPC:
 |                        |                        |    “identificativo     |                        |
 |                        |                        |    univoco versamento” |                        |
 |                        |                        |    nel dato            |                        |
-|                        |                        |    *“Unstructured      |                        |
+|                        |                        |    “\ *Unstructured    |                        |
 |                        |                        |    Remittanced         |                        |
-|                        |                        |    Information”* di    |                        |
+|                        |                        |    Information*\ ” di  |                        |
 |                        |                        |    cui al tracciato    |                        |
 |                        |                        |    del SEPA Credit     |                        |
 |                        |                        |    Transfer nel caso   |                        |
@@ -666,7 +666,7 @@ NodoSPC:
 |                        |                        |    nel dato            |                        |
 |                        |                        |    “\ *Unstructured    |                        |
 |                        |                        |    Remittance          |                        |
-|                        |                        |    Information”* di    |                        |
+|                        |                        |    Information*\ ” di  |                        |
 |                        |                        |    cui al tracciato    |                        |
 |                        |                        |    del SEPA Credit     |                        |
 |                        |                        |    Transfer nel caso   |                        |
