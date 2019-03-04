@@ -683,16 +683,45 @@ NodoSPC:
 |                        |                        |    trasferito.         |                        |
 +------------------------+------------------------+------------------------+------------------------+
 
+
+Passo,Descrizione,Attività EC,Attività PSP
+1.         ,Quadratura degli incassi,"A chiusura del giorno lavorativo (D), il motore individua le RPT inviate prima del cut-off. Per ognuna di tali RPT il motore seleziona le corrispondenti RT, ne controlla la quadratura e distingue, accantonandole, quelle relative a un incasso (RT+). Ai fini dei successivi passi del processo di rendicontazione sarà altresì necessario individuare gli IUV per i quali, a causa di una eccezione, l’incasso, benché sia stato effettuato non corrisponde a una RT. Tali incassi saranno rendicontati mediante codiceEsitoSingoloPagamento 9 nel caso di riversamento cumulativo.","A chiusura della giornata operativa il PSP, controlla la quadratura degli incassi eseguiti per l’EC determinando:"
+,,,·         Gli IUV per cui ha emesso RT+
+,,,·         Gli IUV da rendicontare con codice 9
+,,,Determina inoltre gli importi dello SCT Cumulativo e degli SCT singoli da eseguire.
+2.         ,Ricezione SCT,"nel giorno D+1, la Banca Cassiera/Tesoriera dell’EC riceve dal PSP, tramite SCT, i flussi finanziari relativi agli incassi del giorno D. In generale, per ogni PSP, l’EC può ricevere un SCT cumulativo e un numero indeterminato di SCT singoli relativi a una sola RT+",Esegue SCT di cui al punto 1
+3.         ,Quadratura FDR,"nel giorno D+2 il motore, interrogando il NodoSPC, può effettuare il downloading del Flusso di Rendicontazione (FDR) relativo al giorno D. Il motore può quindi controllare la quadratura dello FDR, abbinando ad esso, in base allo IUV, le RT+ relative al giorno D, gli ulteriori incassi non corrispondenti a una RT e gli ER (Esito Revoca) eventualmente contenuti nel FDR. In questo ultimo caso il motore esclude gli ER rendicontati dal novero degli ER da controllare. Inoltre il motore, nel processo di quadratura, distingue gli importi a compensazione (in eccesso o difetto) eventualmente contenuti nel FDR. Per ogni PSP, il motore distingue e accantona le RT+ non abbinate a un FDR (RTS)","Il PSP genera il FDR, associandolo allo SCT di cui al punto 2 con il dato identificativoFlusso, indicando:"
+,,,·         Gli IUV per i quali ha emesso RT+ codiceEsitoSingoloPagamento pari a 0
+,,,·         Gli IUV rendicontati con codiceEsitoSingoloPagamento pari a 9
+,,,·         IUV associati a un Estio Revoca accettato dall’EC (ER+)
+,,,Infine mette a disposizione dell’EC il FDR relativo al giorno D
+4.         ,Quadratura riversamenti SCT:,"A chiusura del giorno lavorativo D+2 il motore elabora tutte le notifiche di incasso relative al giorno D+1 ricevute dalla Banca Cassiera/Tesoriera (nel caso SIOPE+ la notifica è rappresentata dal ""Giornale di Cassa"" OPI). Per ogni PSP il motore conclude il processo di riconciliazione eseguendo le seguenti elaborazioni:",
+,,,
+,,,
+,,,
+,,1.        Esegue la quadratura di ogni riversamento singolo in abbinamento con la corrispondente RTS controllando che:,
+,,,
+,,2.        L’Identificativo univoco versamento (IUV) che identifica la singola RTs coincida con la componente “identificativo univoco versamento” nel dato “Unstructured Remittanced Information” di cui al tracciato del SEPA Credit Transfer nel caso di versamento effettuato tramite SCT ovvero nel campo causale nel caso di versamento effettuato tramite bollettino di conto corrente postale.,
+,,,
+,,3.        Il valore del tag importoTotalePagato della stessa RTs corrisponda con l’importo effettivamente trasferito.,
+,,,
+,,"4.        Esegue la quadratura di ogni riversamento cumulativo, in abbinamento con il corrispondente FDR controllando che:",
+,,,
+,,5.        L’Identificativo del FDR coincida con la componente “identificativo flusso versamento” nel dato “Unstructured Remittance Information” di cui al tracciato del SEPA Credit Transfer nel caso di versamento effettuato tramite SCT,
+,,,
+,,6.        Il valore del tag importoTotalePagamenti nel FDR corrisponda con l’importo effettivamente trasferito.,
+
+
 **Tabella** **8: Motore di Riconciliazione**
 
-Gestione degli errori 
+Gestione degli errori
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Il paragrafo mostra le strategie di risoluzione per gli errori che possono verificarsi durante
 l’esecuzione del processo di quadratura mediante il motore di riconciliazione, rispetto ai passi
 presi in esame nella descrizione dell’MDR stesso.
 
-Passo3: Quadratura FDR 
+Passo3: Quadratura FDR
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 -  **FDR non quadra**
@@ -749,7 +778,7 @@ le controparti attraverso il tavolo operativo.
 Gestione degli errori
 ---------------------
 
-Gestione degli errori di revoca 
+Gestione degli errori di revoca
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Il paragrafo mostra i casi di errore che si possono verificare durante il processo di richiesta di
@@ -978,7 +1007,7 @@ La Tabella successiva mostra le azioni di controllo suggerite per la risoluzione
 
 **Tabella** **13: Strategia di risoluzione dello scenario RR rifiutata dall'EC**
 
-Gestione degli errori di storno 
+Gestione degli errori di storno
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Il paragrafo mostra i casi di errore che si possono verificare durante il processo di storno di un
@@ -1305,7 +1334,7 @@ In ogni caso
 
 **Tabella** **18: strategia di risoluzione**
 
-Gestione degli errori di riconciliazione 
+Gestione degli errori di riconciliazione
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Il paragrafo descrive la gestione degli errori che possono verificarsi durante l’esercizio del
